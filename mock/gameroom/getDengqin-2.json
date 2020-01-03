@@ -1,0 +1,160 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "pageId": 1127,
+    "region": {
+      "icon": {
+        "regionName": "icon",
+        "regionType": 11,
+        "blocks": [
+          {
+            "id": 62211,
+            "blockName": "64253",
+            "blockType": 8,
+            "url": "#icon",
+            "pageId": 1127,
+            "image": "//yun.tuisnake.com/mami-media/img/9dg8hfj7jh.png",
+            "embedInfo": {
+              "st_info_dpm_exposure": "{\"dpm\":\"23251.48.1.1\",\"consumerId\":4937978078,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dcm\":\"1018.51.3.1127\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click": "{\"dpm\":\"23251.48.1.1\",\"consumerId\":4937978078,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"url\":\"/statistics/click\",\"dcm\":\"1018.51.3.1127\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "23251.48.1.1",
+            "dcm": "1018.51.3.1127",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "gameId": 51,
+            "title": "54311",
+            "bannerUrl": "//yun.tuisnake.com/mami-media/img/9dg8hfj7jh.png"
+          },
+          {
+            "id": 62212,
+            "blockName": "46372",
+            "blockType": 8,
+            "url": "",
+            "pageId": 1127,
+            "image": "//yun.tuisnake.com/mami-media/img/92vfxehe14.png",
+            "embedInfo": {
+              "st_info_dpm_exposure": "{\"dpm\":\"23251.48.1.2\",\"consumerId\":4937978078,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dcm\":\"1018.21.3.1127\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click": "{\"dpm\":\"23251.48.1.2\",\"consumerId\":4937978078,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"url\":\"/statistics/click\",\"dcm\":\"1018.21.3.1127\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "23251.48.1.2",
+            "dcm": "1018.21.3.1127",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "gameId": 21,
+            "title": "65321",
+            "bannerUrl": "//yun.tuisnake.com/mami-media/img/92vfxehe14.png"
+          },
+          {
+            "id": 62213,
+            "blockName": "54221",
+            "blockType": 8,
+            "url": "",
+            "pageId": 1127,
+            "image": "//yun.tuisnake.com/mami-media/img/1ncanvmyuf.png",
+            "embedInfo": {
+              "st_info_dpm_exposure": "{\"dpm\":\"23251.48.1.3\",\"consumerId\":4937978078,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dcm\":\"1018.22.3.1127\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click": "{\"dpm\":\"23251.48.1.3\",\"consumerId\":4937978078,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"url\":\"/statistics/click\",\"dcm\":\"1018.22.3.1127\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "23251.48.1.3",
+            "dcm": "1018.22.3.1127",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "gameId": 22,
+            "title": "54212",
+            "bannerUrl": "//yun.tuisnake.com/mami-media/img/1ncanvmyuf.png"
+          },
+          {
+            "id": 62214,
+            "blockName": "55424",
+            "blockType": 8,
+            "url": "",
+            "pageId": 1127,
+            "image": "//yun.tuisnake.com/mami-media/img/8vbipstwjr.png",
+            "embedInfo": {
+              "st_info_dpm_exposure": "{\"dpm\":\"23251.48.1.4\",\"consumerId\":4937978078,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dcm\":\"1018.43.3.1127\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click": "{\"dpm\":\"23251.48.1.4\",\"consumerId\":4937978078,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"url\":\"/statistics/click\",\"dcm\":\"1018.43.3.1127\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "23251.48.1.4",
+            "dcm": "1018.43.3.1127",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "gameId": 43,
+            "title": "35325",
+            "bannerUrl": "//yun.tuisnake.com/mami-media/img/8vbipstwjr.png"
+          }
+        ],
+        "blockNum": 4
+      },
+      "banner": {
+        "regionName": "banner",
+        "regionType": 12,
+        "blocks": [
+          {
+            "id": 62215,
+            "blockName": "111",
+            "blockType": 5,
+            "url": "#banner",
+            "pageId": 1127,
+            "image": "//yun.tuisnake.com/mami-media/img/zihyq21cle.png",
+            "embedInfo": {
+              "st_info_dpm_exposure": "{\"dpm\":\"23251.48.2.1\",\"consumerId\":4937978078,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dcm\":\"701.6702.3.1127\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click": "{\"dpm\":\"23251.48.2.1\",\"consumerId\":4937978078,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"url\":\"/statistics/click\",\"dcm\":\"701.6702.3.1127\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "23251.48.2.1",
+            "dcm": "701.6702.3.1127",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "activityId": 6702,
+            "title": null,
+            "bannerUrl": null,
+            "listUrl": null,
+            "recommendUrl": null
+          }
+        ],
+        "blockNum": 1
+      },
+      "produce": {
+        "regionName": "produce",
+        "regionType": 13,
+        "blocks": [
+          {
+            "id": 62216,
+            "blockName": "53214",
+            "blockType": 4,
+            "url": "",
+            "pageId": 1127,
+            "image": "//yun.tuisnake.com/mami-media/img/9ksnn6qa1q.png",
+            "embedInfo": {
+              "st_info_dpm_exposure": "{\"dpm\":\"23251.48.3.1\",\"consumerId\":4937978078,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dcm\":\"112.0.3.1127\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click": "{\"dpm\":\"23251.48.3.1\",\"consumerId\":4937978078,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"url\":\"/statistics/click\",\"dcm\":\"112.0.3.1127\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "23251.48.3.1",
+            "dcm": "112.0.3.1127",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null
+          },
+          {
+            "id": 62217,
+            "blockName": "65354",
+            "blockType": 4,
+            "url": "",
+            "pageId": 1127,
+            "image": "//yun.tuisnake.com/mami-media/img/veg35twy4q.png",
+            "embedInfo": {
+              "st_info_dpm_exposure": "{\"dpm\":\"23251.48.3.2\",\"consumerId\":4937978078,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dcm\":\"112.0.3.1127\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click": "{\"dpm\":\"23251.48.3.2\",\"consumerId\":4937978078,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"url\":\"/statistics/click\",\"dcm\":\"112.0.3.1127\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"directpage\":1161,\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "23251.48.3.2",
+            "dcm": "112.0.3.1127",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null
+          }
+        ],
+        "blockNum": 2
+      }
+    }
+  },
+  "success": true
+}

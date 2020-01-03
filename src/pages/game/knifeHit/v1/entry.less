@@ -1,0 +1,444 @@
+@rem: 200rem;
+@url: '//yun.dui88.com/h5-mami/webgame/chicken/pop/';
+
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.img(@w, @h, @pic){
+    width: @w/@rem;
+    height: @h/@rem;
+    background: url("@{url}@{pic}") no-repeat center;
+    background-size: contain;
+}
+.only-img(@pic){
+    background-image: url("//yun.dui88.com/h5-mami/webgame/knife/@{pic}");
+}
+.mask-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask-content{
+    width: 620/@rem;
+    height: 800/@rem;
+    position: relative;
+}
+
+.other-games-box{
+    position: absolute;
+    left: 0;
+    top: 360/@rem;
+    width: 100%;
+    .other-games-tip{
+        text-align: center;
+        font-size: 0.12rem;
+        margin-bottom: 32/@rem;
+        color: rgb(103, 41, 21);
+        font-weight: 600;
+    }
+    .other-games-list{
+        text-align: center;
+        font-size: 0;
+    }
+    .other-games-item{
+        display: inline-block;
+        width: 282px;
+        height: 198px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        &:last-child{
+            margin-left: -0.04rem;
+        }
+    }
+}
+
+.mask-title{
+    .img(421, 148, "shengli.png");
+    position: absolute;
+    z-index: 1;
+    left: 92/@rem;
+    top: -60/@rem;
+}
+.mask-bar{
+    .img(618, 678, "shengli-l.png");
+}
+
+.mask-no-ticket{
+    .mask-ads, .mask-gift{
+        display: none;
+    }
+}
+
+.mask-no-btns{
+    .sort-normal:nth-child(1){
+        .img(491, 112, "long-normal.png");
+    }
+    .sort-normal:nth-child(2){
+        display: none;
+    }
+}
+
+.mask-win{
+    .mask-bar{
+        .img(618, 678, "shengli-l.png");
+    }
+    .mask-no-ticket{
+        .img(618, 438, "shengli-s.png");
+    }
+}
+
+.mask-lost{
+    .mask-bar{
+        .img(618, 678, "shibai-l.png");
+    }
+    .mask-no-ticket{
+        .img(618, 438, "shibai-s.png");
+    }
+    .mask-title{
+        .img(401, 130, "shibai.png");
+        left: 112/@rem;
+    }
+}
+
+.mask-draw{
+    .mask-bar{
+        .img(618, 678, "shibai-l.png");
+    }
+    .mask-no-ticket{
+        .img(618, 438, "shibai-s.png");
+        .mask-title{
+            .img(401, 130, "shibai.png");
+        }
+    }
+    .mask-title{
+        .img(215, 128, "pingju.png");
+        left: 200/@rem;
+    }
+}
+
+
+.mask-btns{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mask-btn{
+    margin: 20/@rem 8/@rem;
+}
+.mask-again-btn{
+    .img(260, 112, "zailai.png");
+}
+.mask-get-btn{
+    .img(330, 112, "liji.png");
+}
+
+.mask-compari{
+    position: relative;
+    display: flex;
+    padding-top: 120/@rem;
+    justify-content: center;
+    align-items: center;
+}
+.mask-user{
+    width: 150/@rem;
+    position: relative;
+}
+.mask-vs{
+    .img(148, 133, "vs.png");
+    margin: 0 18/@rem;
+}
+.mask-hander{
+    width: 120/@rem;
+    height: 120/@rem;
+    background: #555555;
+    border-radius: 50%;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+}
+.mask-name{
+    font-size: 24/@rem;
+    color: #924a0e;
+    text-align: center;
+    margin: 10/@rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1rem;
+    left: -0.1rem;
+}
+.mask-qq{
+    position: absolute;
+    .img(94, 85, "xiaolian.png");
+    top: -20/@rem;
+}
+.mask-qq.mask-xiaolian{
+    .img(94, 85, "xiaolian.png");
+}
+.mask-qq.mask-kulian{
+    .img(94, 85, "kulian.png");
+}
+.mask-qq.mask-shengqi{
+    .img(94, 85, "shengqi.png");
+}
+.mask-left{
+    .mask-qq{
+        left: -30/@rem;
+    }
+}
+.mask-right{
+    .mask-qq{
+        right: -30/@rem;
+        transform: scale(-1, 1);
+    }
+}
+.mask-scale{
+    transform: scale(0.84);
+}
+.mask-boy::before{
+    content: "";
+    display: inline-block;
+    .img(38, 36, "nan.png");
+    margin-right: 8/@rem;
+}
+.mask-girl::before{
+    content: "";
+    display: inline-block;
+    .img(38, 36, "nv.png");
+    margin-right: 8/@rem;
+}
+.mask-gift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30/@rem 0 8/@rem;
+}
+.mask-tip{
+    font-size: 24/@rem;
+    color: #924a0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mask-tip::before{
+    content: "";
+    display: inline-block;
+    .img(46, 51, "lihe.png");
+    margin-right: 8/@rem;
+    text-align: center;
+}
+.mask-ads{
+    .img(500, 250, "shibai-s.png");
+    background-size: cover;
+    border-radius: 12/@rem;
+    margin: auto;
+}
+.mask-close-btn{
+    .img(58, 58, "close.png");
+    margin: 12/@rem auto;
+}
+
+
+
+//不服再战
+.mask-btn-bufu{
+    .img(260, 112, "bufu.png");
+}
+
+//再来一次
+.mask-btn-zailai{
+    .img(260, 112, "zailai.png");
+}
+
+//在虐一盘
+.mask-btn-zainue{
+    .img(260, 112, "zainue.png");
+}
+
+//换个对手
+.mask-btn-huange{
+    .img(260, 112, "huange.png");
+}
+
+//对方不敢应战
+.mask-btn-bugan{
+    .img(260, 112, "bugan.png");
+}
+
+//对方已离开
+.mask-btn-likai{
+    .img(260, 112, "likai.png");
+}
+
+//点击接受
+.mask-btn-dianji{
+    .img(260, 112, "dianji.png");
+}
+
+//对方已离开
+.mask-btn-likai{
+    .img(260, 112, "likai.png");
+}
+
+//已邀请1
+.mask-btn-yaoqing1{
+    .img(260, 112, "yaoqing1.png");
+}
+
+//已邀请2
+.mask-btn-yaoqing2{
+    .img(260, 112, "yaoqing2.png");
+}
+
+//已邀请3
+.mask-btn-yaoqing3{
+    .img(260, 112, "yaoqing3.png");
+}
+
+//再来一次大按钮
+.mask-btn-chongwan{
+    .img(491, 112, "bufu-l.png");
+}
+
+
+.match-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f0d332;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match-title{
+    font-size: 32/@rem;
+    color: #924a0e;
+    text-align: center;
+    margin-bottom: 32/@rem;
+}
+.match-user{
+    text-align: center;
+}
+.match-header{
+    width: 240/@rem;
+    height: 240/@rem;
+    background: #555555;
+    border-radius: 50%;
+    border: solid #ffffff 4/@rem;
+    margin: auto;
+}
+.match-name{
+    margin-top: 20/@rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match-sex{
+    display: inline-block;
+    .img(38, 36, "nan.png");
+    margin-right: 8/@rem;
+}
+.match-name-word{
+    font-size: 16/@rem;
+    color: #924a0e;
+}
+
+
+.btn-word{
+    position: relative;
+    top: -8/@rem;
+    width: 100%;
+    font-size: 36/@rem;
+}
+.sort-normal{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    color: #924a0e;
+    text-align: center;
+    .img(260, 112, "sort-normal.png");
+    margin: 16/@rem;
+}
+.btn-tip{
+    font-size: 20/@rem;
+    position: relative;
+    top: -8/@rem;
+}
+.long-normal{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    color: #924a0e;
+    text-align: center;
+    .img(491, 112, "long-normal.png");
+}
+.mask-say-tip{
+    position: absolute;
+    left: 0;
+    top: -120/@rem;
+    font-size: 24/@rem;
+    // background-image: url(//yun.dui88.com/h5-mami/webgame/knife/ui/tt-suc3.png);
+    .only-img("tt-suc1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60/@rem;
+}
+
+.tt-draw{
+    .only-img("tt-draw.png");
+}
+.tt-suc1{
+    .only-img("tt-suc1.png");
+}
+.tt-suc2{
+    .only-img("tt-suc2.png");
+}
+.tt-suc3{
+    .only-img("tt-suc3.png");
+}
+.tt-suc4{
+    .only-img("tt-suc4.png");
+}
+.tt-los1{
+    .only-img("tt-los1.png");
+}
+.tt-los2{
+    .only-img("tt-los2.png");
+}
+.tt-los3{
+    .only-img("tt-los3.png");
+}
+
+.game-view{
+    width: 100%;
+    height: 100%;
+    #game{
+        canvas{
+            width: 100%;
+        }
+    }
+}
+

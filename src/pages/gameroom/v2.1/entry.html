@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <title>游戏大厅</title>
+  #include("@layout/global/head640.html")
+  <script>
+    window.pageStartTime = +new Date();
+  </script>
+  <script src="//yun.tuisnake.com/h5-mami/webgame/lib/anime.min.js"></script>
+  <!--<script src="//yun.dui88.com/h5-mami/webgame/user-pop/dest/welcome.js"></script>-->
+</head>
+
+<body>
+<div class="toast-tip">修改昵称身份即将上线，敬请期待</div>
+
+<div name='' id="db-content">
+
+  <div class="new-banner">
+    <div class="new-header"></div>
+    <div class="new-info">
+      <div class="new-nickname"><span class="nickname-txt"></span>
+        <div class="sex-ico"></div>
+      </div>
+      <br>
+      <div class="new-amount">
+        <div class="new-coin"></div>
+        <div class="new-money"></div>
+        <div class="new-add"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-tell">
+    <div class="new-wall">
+      <div class="wall-ico"></div>
+      <div class="word-container">
+        <div class="wall-word">
+        </div>
+      </div>
+    </div>
+    <div class="new-wall">
+      <div class="wall-ico"></div>
+      <div class="word-container">
+
+        <div class="wall-word">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentBox">
+    <!--<div class="room-gesture"></div>-->
+    <div id="one" data-name="icon" class="content ">
+      <div class="container">
+      </div>
+    </div>
+    <!--后台区块遍历-->
+    <!--<div id="two" data-name="banner" class="content">-->
+      <!--<div class="activityTitle"></div>-->
+    <!--</div>-->
+    <div id="three" data-name="produce" class="content activity-thirteen">
+
+    </div>
+    <div class="thirteen-more">查看更多奖品>></div>
+    <div class="thirteen-tip">*兑换项与活动皆和设备生产商Apple Inc.无关</div>
+  </div>
+</div>
+
+<div class="coin-work"></div>
+#include("../layout/common.html")
+
+
+</body>
+
+</html>

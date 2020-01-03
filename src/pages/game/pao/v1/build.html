@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+  <title>糖果泡泡堂</title>
+  <!-- common plugins -->
+  <link rel="stylesheet" href="./css/all.css">
+
+  <script>
+    ! function (e, i) {
+      var t = e.documentElement,
+        n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+        a = n ? Math.min(i.devicePixelRatio, 3) : 1,
+        m = "orientationchange" in window ? "orientationchange" : "resize";
+      t.dataset.dpr = a;
+      for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" == l.name &&
+        (c = !0, d = l);
+      if (c) d.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+      else {
+        var o = e.createElement("meta");
+        o.name = "viewport", o.content =
+          "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild
+          .appendChild(o)
+      }
+      var s = function () {
+        var e = t.clientWidth;
+        e / a > 750 && (e = 750 * a), window.remScale = e / 750, t.style.fontSize = 200 * (e / 750) + "px"
+      };
+      s(), e.addEventListener && i.addEventListener(m, s, !1)
+    }(document, window);
+  </script>
+
+  <script type="text/javascript">
+    var CFG = {
+      monsters: '${monsters}',//怪物列表
+      nick_name: '${nickName}', //用户昵称
+      url: '${url}',//获取更多金币链接
+      rule: '${rule}',//规则列表
+      guns: '${guns}',//炮筒规格
+      amount: '${amount}',//用户金币数
+      imgList: '${imgList}',//图片列表
+      isPreview: '${isPreview}'//是否预览
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="stage">
+    <div class="bg"></div>
+    <div class="container">
+      <div class="row1">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+      <div class="row2">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+      <div class="row3">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+    </div>
+
+    <div class="coins coins1">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins2">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins3">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins4">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+
+    <div class="tip">
+      <!--弹幕-->
+    </div>
+
+    <div class="guider">
+      <!--引导-->
+    </div>
+
+  </div>
+
+  <div class="ui">
+    <div class="top">
+      <div class="clock">
+        <div class="timer">0</div>
+      </div>
+    </div>
+    <div class="bomb"></div>
+    <div class="add-coin">
+      <div class="btxt"></div>
+      <div class="ftxt"></div>
+    </div>
+    <div class="bottom">
+      <div class="pao">
+        <div class="pao-num">100</div>
+        <div class="fire"></div>
+      </div>
+      <div class="get"></div>
+      <div class="cut"></div>
+      <div class="add"></div>
+      <div class="score"></div>
+    </div>
+    <div class="info-ico"></div>
+  </div>
+
+  <div class="mask countdown">
+    <div class="count-ico"></div>
+    <div class="count-num count-1"></div>
+    <div class="count-num count-2"></div>
+    <div class="count-num count-3"></div>
+    <div class="count-num count-go"></div>
+  </div>
+
+  <div class="mask info">
+    <div class="info-content">
+      <div class="info-scroll">
+        <!--游戏说明-->
+      </div>
+    </div>
+    <div class="info-close"></div>
+  </div>
+
+  <div class="mask modes">
+    <div class="mode arena"></div>
+    <div class="mode infinite"></div>
+  </div>
+
+  <div class="mask none">
+    <div class="none-content">
+      <div class="none-close"></div>
+      <div class="none-get"></div>
+    </div>
+  </div>
+
+  <div class="mask rank">
+    <div class="rank-content">
+      <div class="rank-list">
+        <!--积分榜单-->
+      </div>
+      <div class="rank-gift">
+        <div class="rank-ico"></div><span class="rank-tip">别灰心，送你一份小礼物</span>
+      </div>
+      <div class="rank-pic"></div>
+      <div class="rank-close"></div>
+      <div class="rank-replay"></div>
+      <div class="rank-take"></div>
+    </div>
+  </div>
+
+  <div class="mask result">
+    <div class="result-content">
+      <!--结果统计-->
+    </div>
+  </div>
+
+<!--引导-->
+<script id="guider" type="text/html">
+  <div class="guider-word"></div>
+  <div class="guider-hander"></div>
+  <div class="guider-cir"></div>
+  <div class="guider-glow"></div>
+</script>
+
+<!--弹幕-->
+<script id="tip" type="text/html">
+  <span class="tip-name"><%== p.name =%></span>
+  <img class="tip-img" src="<%== p.url =%>">
+  <span class="tip-money"><%== p.word =%></span>
+</script>
+
+<!--结果统计-->
+<script id="result-content" type="text/html">
+  <div class="result-title"></div>
+  <div class="result-money"><%== p.money =%>枚</div>
+  <div class="result-total"><%== p.total =%>个</div>
+  <div class="result-items">
+  <%= for(var i = 0; i < p.list.length; i++){ =%>
+  <div class="result-item">
+    <div class="result-ico">
+      <img class="result-img" src="<%== p.list[i].url =%>">
+    </div>
+    <span class="result-item-num"><%== p.list[i].num =%></span>
+  </div>
+  <%= } =%>
+  </div>
+</script>
+
+<!--积分榜单-->
+<script id="rank-content" type="text/html">
+  <%= for(var i = 0, len = p.list.length; i < len; i++){ =%>
+  <div class="rank-item">
+    <div class="rank-id"><%== i + 1 =%></div>
+    <div class="rank-name"><%== p.list[i].name =%></div>
+    <div class="rank-coin"></div>
+    <div class="rank-money"><%== p.list[i].money =%></div>
+  </div>
+  <%= } =%>
+  <div class="rank-item rank-last">
+    <div class="rank-id"><%== p.userRank =%></div>
+    <div class="rank-name"><%== p.userName =%></div>
+    <div class="rank-coin"></div>
+    <div class="rank-money"><%== p.userGet =%></div>
+  </div>
+</script>
+
+<!--游戏说明-->
+<script id="info-content" type="text/html">
+  <div class="info-word"><%== p.desc =%></div>
+  <div class="info-items">
+    <%= for(var i = 0; i < p.list.length; i++){ =%>
+    <div class="info-item">
+      <img class="info-img" src="<%== p.list[i].url =%>">
+      <div class="info-life"><%== p.list[i].life =%>生命值</div>
+      <div class="info-money">最高返<%== p.list[i].money =%>金币</div>
+    </div>
+    <%= } =%>
+  </div>
+</script>
+
+<script type="text/javascript" src="//wq.360buyimg.com/fd/h5/wxsq_base/zepto.min.js"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js"></script>
+<script type="text/javascript" src="./dest/all_201804250678.js"></script> 
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+﻿<font>
+	<info face="combo" size="80" />
+	<common lineHeight="80" scaleW="132" scaleH="132" pages="1" />
+	<pages>
+		<page id="0" file="combox-export.png" />
+	</pages>
+	<chars count="19">
+		<char id="43" x="54" y="70" width="26" height="25" xoffset="0" yoffset="54" xadvance="27" /><!-- + -->
+		<char id="48" x="81" y="35" width="26" height="34" xoffset="0" yoffset="46" xadvance="27" /><!-- 0 -->
+		<char id="49" x="108" y="35" width="17" height="33" xoffset="0" yoffset="46" xadvance="18" /><!-- 1 -->
+		<char id="50" x="81" y="98" width="25" height="33" xoffset="0" yoffset="46" xadvance="26" /><!-- 2 -->
+		<char id="51" x="54" y="96" width="26" height="34" xoffset="0" yoffset="46" xadvance="27" /><!-- 3 -->
+		<char id="52" x="0" y="27" width="28" height="33" xoffset="0" yoffset="46" xadvance="29" /><!-- 4 -->
+		<char id="53" x="36" y="0" width="26" height="34" xoffset="0" yoffset="46" xadvance="27" /><!-- 5 -->
+		<char id="54" x="63" y="0" width="26" height="34" xoffset="0" yoffset="46" xadvance="27" /><!-- 6 -->
+		<char id="55" x="107" y="70" width="24" height="33" xoffset="0" yoffset="46" xadvance="25" /><!-- 7 -->
+		<char id="56" x="27" y="61" width="26" height="34" xoffset="0" yoffset="46" xadvance="27" /><!-- 8 -->
+		<char id="57" x="54" y="35" width="26" height="34" xoffset="0" yoffset="46" xadvance="27" /><!-- 9 -->
+		<char id="33" x="116" y="0" width="12" height="33" xoffset="0" yoffset="46" xadvance="13" /><!-- ! -->
+		<char id="120" x="27" y="96" width="26" height="26" xoffset="0" yoffset="53" xadvance="27" /><!-- x -->
+		<char id="99" x="81" y="70" width="25" height="27" xoffset="0" yoffset="53" xadvance="26" /><!-- c -->
+		<char id="111" x="0" y="89" width="26" height="27" xoffset="0" yoffset="53" xadvance="27" /><!-- o -->
+		<char id="109" x="0" y="0" width="35" height="26" xoffset="0" yoffset="53" xadvance="36" /><!-- m -->
+		<char id="98" x="90" y="0" width="25" height="34" xoffset="0" yoffset="46" xadvance="26" /><!-- b -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" /><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

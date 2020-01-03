@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载趣晒赚钱</title>
+    #include('@layout/global/head.html')
+</head>
+<body>
+<main id="main" class="active" onclick="linkTo()">
+    <div id="carousel" class="carousel">
+        <div id="container" class="container">
+            <div><img src="img/1.png"></div>
+            <div><img src="img/2.png"></div>
+            <div><img src="img/3.png"></div>
+            <div><img src="img/4.png"></div>
+        </div>
+        <div id="helper" class="helper" >
+            <div><img src="img/1.png"></div>
+            <div><img src="img/2.png"></div>
+            <div><img src="img/3.png"></div>
+            <div><img src="img/4.png"></div>
+        </div>
+    </div>
+</main>
+<div id="mask" class="mask" onclick="hidePop()">
+    <div class="container">
+    </div>
+</div>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js" type="text/javascript"></script>
+<script src="//yun.tuisnake.com/h5-mami/log.js" id="send_log"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js"></script>
+<script>
+    let CFG={"st_btn_down_click":"{\"sourceCid\":5423143516,\"consumerId\":5957187488,\"ip\":\"115.236.166.122\",\"domain4Web\":\"//activity.vhuse.com\",\"type\":5,\"url\":\"/youtui/log/landEmbedLog\",\"activityId\":\"26\",\"appId\":47392,\"host\":\"activity.vhuse.com\",\"slotId\":184362,\"subType\":\"0\"}"}
+    const downloadUrl = CFG.downUrl || 'http://yun.tuia.cn/lx/qushai-release-ccb0085acf523b025ace46a31bfd66cd68b12dc9.apk'
+    let ua = navigator.userAgent;
+    let isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1; //android终端
+    let isWeixin = ua.indexOf('micromessenger') != -1 || ua.indexOf('MicroMessenger') != -1; //微信浏览器
+
+</script>
+<script>
+    function linkTo() {
+        window.DB.exposure.singleClk({
+            data: CFG.st_btn_down_click,
+            callback: function () {
+                if (isWeixin) {
+                    showPop()
+                }else{
+                    if (isAndroid) {
+                        setTimeout(() => {
+                            window.location.href = downloadUrl
+                        }, 500)
+                    }
+                }
+            }
+        });
+
+    }
+    function hidePop() {
+        document.getElementById('mask').style.display='none'
+    }
+    function showPop() {
+        document.getElementById('mask').style.display='block'
+    }
+    const item_tansy_dir=40/100;
+    const ele_count = 4;
+    const  item_transy_durantion =1400;
+    let i = 0;
+    setInterval (function () {
+        stepAnimate(i%(ele_count*2));
+        i++;
+    },item_transy_durantion);
+    function stepAnimate(i){
+        let helper = document.getElementById('helper');
+        let container = document.getElementById('container');
+        if(i===0){
+            container.style.display='block'
+            container.style.transform='translateY(0)'
+            helper.style.display='block'
+            helper.style.transform='translateY('+-ele_count*item_tansy_dir+'rem)'
+        }
+        if(i>0&&i<=ele_count-1){
+            container.style.display='block'
+            container.style.transform='translateY('+-item_tansy_dir*i+'rem)'
+            helper.style.display='none'
+            helper.style.transform='translateY('+item_tansy_dir+'rem)'
+            if (i===ele_count-1){
+                helper.style.display='block'
+            }
+        }
+        if(i===ele_count){
+            container.style.display='block'
+            container.style.transform='translateY('+-ele_count*item_tansy_dir+'rem)'
+            helper.style.display='block'
+            helper.style.transform='translateY(0)'
+        }
+        if(i>ele_count&&i<=2*ele_count-1){
+            container.style.display='none'
+            container.style.transform='translateY('+item_tansy_dir+'rem)'
+            helper.style.display='block'
+            helper.style.transform='translateY('+-item_tansy_dir*(i-ele_count)+'rem)'
+            if (i===2*ele_count-1){
+                container.style.display='block'
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

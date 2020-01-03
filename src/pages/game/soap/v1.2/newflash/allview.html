@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CreateJS export from allview</title>
+
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.3.0.min.js"></script>
+<script src="allview.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"images/ban.png", id:"ban"},
+		{src:"images/bgsie.png", id:"bgsie"},
+		{src:"images/bu1.png", id:"bu1"},
+		{src:"images/duck.png", id:"duck"},
+		{src:"images/goodsa.png", id:"goodsa"},
+		{src:"images/kuchax.png", id:"kuchax"},
+		{src:"images/leftthumb_1.png", id:"leftthumb_1"},
+		{src:"images/_long.png", id:"_long"},
+		{src:"images/muzhi3.png", id:"muzhi3"},
+		{src:"images/nfeizao.png", id:"nfeizao"},
+		{src:"images/rightthumb_1.png", id:"rightthumb_1"},
+		{src:"images/s1_kujiao.png", id:"s1_kujiao"},
+		{src:"images/s1_yifu1.png", id:"s1_yifu1"},
+		{src:"images/s3_shenti.png", id:"s3_shenti"},
+		{src:"images/s3_youmuzhi.png", id:"s3_youmuzhi"},
+		{src:"images/s3_yousizhi.png", id:"s3_yousizhi"},
+		{src:"images/s3_zuomuzhi.png", id:"s3_zuomuzhi"},
+		{src:"images/s4_shenti.png", id:"s4_shenti"},
+		{src:"images/s4_shou.png", id:"s4_shou"},
+		{src:"images/s5_shenti.png", id:"s5_shenti"},
+		{src:"images/shenti_1.png", id:"shenti_1"},
+		{src:"images/shoudix.png", id:"shoudix"},
+		{src:"images/shoushiz4.png", id:"shoushiz4"},
+		{src:"images/shouxin_1.png", id:"shouxin_1"},
+		{src:"images/sizhi_1.png", id:"sizhi_1"},
+		{src:"images/sui1.png", id:"sui1"},
+		{src:"images/sui2.png", id:"sui2"},
+		{src:"images/sui3.png", id:"sui3"},
+		{src:"images/sui4.png", id:"sui4"},
+		{src:"images/sui5.png", id:"sui5"},
+		{src:"images/xiaochou.png", id:"xiaochou"},
+		{src:"images/youshoua3.png", id:"youshoua3"},
+		{src:"images/zuoyou1.png", id:"zuoyou1"}
+	];
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib.allview();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(24);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="750" height="1206" style="background-color:#CCCCCC"></canvas>
+</body>
+</html>

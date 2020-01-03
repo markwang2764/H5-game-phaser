@@ -1,0 +1,10 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "amount": 888,
+    "thirdAmount": 66,
+    "desc": "success"
+  },
+  "success": true
+}

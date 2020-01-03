@@ -1,0 +1,67 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "st_info_click_daily_choose_game": {
+      "dpm": "27355.131.2.2",
+      "consumer_id": 4933222376,
+      "consumerId": 4933222376,
+      "domain": "//embedlog.duiba.com.cn",
+      "appId": 27355,
+      "host": "activity.tacota.cn",
+      "dcm": "1019.2.1.802",
+      "dsm": "1.2380.0.0"
+    },
+    "st_info_click_first_choose_game": {
+      "dpm": "27355.131.2.1",
+      "consumer_id": 4933222376,
+      "consumerId": 4933222376,
+      "domain": "//embedlog.duiba.com.cn",
+      "appId": 27355,
+      "host": "activity.tacota.cn",
+      "dcm": "1019.2.1.802",
+      "dsm": "1.2380.0.0"
+    },
+    "st_info_exposure_normal_choose_game": {
+      "dpm": "27355.131.2.3",
+      "consumer_id": 4933222376,
+      "consumerId": 4933222376,
+      "domain": "//embedlog.duiba.com.cn",
+      "appId": 27355,
+      "host": "activity.tacota.cn",
+      "dcm": "1019.2.1.802",
+      "dsm": "1.2380.0.0"
+    },
+    "st_info_click_normal_choose_game": {
+      "dpm": "27355.131.2.3",
+      "consumer_id": 4933222376,
+      "consumerId": 4933222376,
+      "domain": "//embedlog.duiba.com.cn",
+      "appId": 27355,
+      "host": "activity.tacota.cn",
+      "dcm": "1019.2.1.802",
+      "dsm": "1.2380.0.0"
+    },
+    "st_info_exposure_first_choose_game": {
+      "dpm": "27355.131.2.1",
+      "consumer_id": 4933222376,
+      "consumerId": 4933222376,
+      "domain": "//embedlog.duiba.com.cn",
+      "appId": 27355,
+      "host": "activity.tacota.cn",
+      "dcm": "1019.2.1.802",
+      "dsm": "1.2380.0.0"
+    },
+    "st_info_exposure_daily_choose_game": {
+      "dpm": "27355.131.2.2",
+      "consumer_id": 4933222376,
+      "consumerId": 4933222376,
+      "domain": "//embedlog.duiba.com.cn",
+      "appId": 27355,
+      "host": "activity.tacota.cn",
+      "dcm": "1019.2.1.802",
+      "dsm": "1.2380.0.0"
+    }
+  },
+  "success": true
+}

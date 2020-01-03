@@ -1,0 +1,1422 @@
+
+
+
+
+
+2
+
+
+
+
+<script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+        <link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131902.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131902.js" crossorigin="anonymous"></script>
+
+
+
+3
+
+
+
+<script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+        <link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131633.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131633.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+4
+
+
+
+
+
+
+<script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+        <link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131638.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131638.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+5
+
+
+
+
+
+
+
+
+<script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+        <link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131640.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131640.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+6
+
+
+
+
+
+
+<script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+<link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131645.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131645.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+7
+
+
+
+
+
+
+<script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+<link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131648.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131648.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+8
+
+
+
+
+
+  <script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+<link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131650.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131650.js" crossorigin="anonymous"></script>
+
+ 
+
+
+
+
+9
+
+
+
+
+
+
+<script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+<link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131651.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131651.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+10
+
+
+
+
+
+
+  <script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+<link href="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131653.css" rel="stylesheet">
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/img/redbag_small_9c8ca31.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+<!--gameroom通用-->
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/imgnew/button_open_49ee0eb.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAERUlEQVRYhd2Z3YtVVRTAf3Pv5EhCJE5WlpalBUoY2SQEMkZBEPRBESqUkBU0YJNhBUEPPVR/QW9FgVKCJZGGkWE9KCVUlEIFKmqm+VVkmNBVZ3497HWYcy/345yr1tSCxXDu3nut397nrLXX3tOjUkKqQB8wHxgAbgZuAKYD/cCE6Hca+BX4GdgFfAd8BXwD1ICRog57CgL2AjOA+4B7gTuAnnD2V/w9k3NcBS6KyUyMvwKfAxuBDcAB4Oz5ALwMWAosB+aRVucwsBX4GvgB2AP8EqAE0DRgFjAHuBVYCFxJWuUdwFvAWuB4W+9qO12kfmiSmrpVHVbndBjXTOfE2K1hy7C9qN24Vg096lJ1dxjaFcZndAHWqDPC1q6wvTt89ZQBXK7+HgbWqAvOA1ijLgjbhq/lRQEXx4AR9VV16gWAy3Rq+BgJn4s7AQ6qB2JWr6kTLyBcphPDl+F7sBVgv7oxOr6jTr6AUBc3PE8OnwZDfyNgVX1GPWP6eAcaDNxu+rBvOkewXnVIXa3e2dA2EL7PBEs1D3idulM9HSCV3MBL1PfUU+qX6vwu4SrqC+oJ9az6SpP24WDYGUxks1qpjqrb1KsbBlbVl2NmmvJY2ZWsqk+rf4SNvU1WkPC9LVhWqr2ok9QtpuQ53MLBpeqbOchP1BtLAA45lrZ+Uh/MXmETHQ6WLeok1IVBvF+d28ZJv/p2DnKzOrsDWEV9XD0WYw6qD9siKYfODZZRdSHqqhi8psBKTFPXmfLWqPqBOrNF36r6qHo47B9VlxVc8SyBr8IUUTVT5BQZPE1dH4AG5FVNVm6Jeij6HFefLGifYKmpq1G3myLrrhIGrlc/ckzWqFfk2h8wfWuaAmOohG2C5YS6nZjl0TavqpXOVj/NQb4RK3m3ui9+O6E+a33aKqIzg+kQsZQH1b6SRjCVUJ8FTE3dpH4fzyfV501prKzdvmCqEcb2d2Ek03mmlJCXY+qLXU460/2qlU7ldAHZAawjlfSZ7IuKudZ0RAmpkEr4XlKZ3o0MAMtIZ5RMZgNDpPNIN9IXTKfPJUhQb1G/iNd6ypQjv809v6RO6MJuXZB0k2Yw7cfbct/d66bdZlD9MX47Gd9i2UCpSzNlE3UWvVlgjJr26Sm59nvUPdH+pynVlIGsS9RltjrUWerHAXY2xl3e0Kei3m9EYqzGCovnw7qtrmixgHqNuiH6j6hrTVtfs77ZdpcdIX5Tn7B9oYBNioUi5RamWu39HNx6dXqB1XhEPRKQR+K5VamFTcqtTgUrpn323XAyajpwX1vwdaE+5ljJdch0Dm4G2bRgxfYlP+pzjslm03dYJiqxvmjdq97W0N6y5MfOh6YVYXST3V175O0cCV3S0Nb20ITtj51TTHcojXVfWa2oD6lPWR/5HY+dmQ46jg/umY7rq49Mx/XlEf4Hrt8yXeS/fIE57q+A/xeX6Hn5x/8N8TcZs3Ik8EKknwAAAABJRU5ErkJggg=="/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+<script type="text/javascript" src="//yun.dui88.com/h5-mami/webgame/friendsArticle/v1/entry-201808131653.js" crossorigin="anonymous"></script>

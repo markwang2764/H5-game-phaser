@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <title>游戏大厅</title>
+  #include("@layout/global/head640.html")
+  <script>
+    window.pageStartTime = +new Date();
+  </script>
+  <script type="text/javascript">
+
+  </script>
+  <!--<script src="//yun.dui88.com/h5-mami/webgame/user-pop/dest/welcome.js"></script>-->
+</head>
+
+<body>
+
+<div id="db-content">
+
+  <div class="new-banner">
+    <div class="new-header"></div>
+    <div class="new-info">
+      <div class="new-nickname"><span class="nickname-txt"></span>
+        <div class="sex-ico"></div>
+      </div>
+      <br>
+      <div class="new-amount">
+        <div class="new-coin"></div>
+        <div class="new-money"></div>
+        <div class="new-add"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-tell">
+    <div class="wall-ico-box">
+      <div class="wall-ico"></div>
+    </div>
+
+    <div class="new-wall">
+      <div class="word-container">
+        <div class="wall-word">
+        </div>
+      </div>
+    </div>
+    <div class="new-wall">
+      <div class="word-container">
+        <div class="wall-word">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="index-page">
+    <!--最热-->
+    <div id="one" data-name="hot" class="block-container block-hot">
+      <div class="title-wrap">
+        <div class="title-left">
+          <div class="t-icon"></div>
+          <div class="t-title">最热推荐</div>
+          <div class="t-subtitle"></div>
+        </div>
+        <div class="title-right hide">
+          <div class="t-more">更多</div>
+          <div class="t-arrow"></div>
+        </div>
+      </div>
+      <div id="horizontalScroll">
+        <ul class="block-list">
+        </ul>
+      </div>
+
+    </div>
+    <!--金币-->
+    <div id="two" data-name="coin" class="block-container block-coin">
+      <div class="title-wrap">
+        <div class="title-left">
+          <div class="t-icon"></div>
+          <div class="t-title">金币游戏</div>
+          <div class="t-subtitle">玩游戏，赚金币</div>
+        </div>
+        <div class="title-right hide">
+          <div class="t-more">更多</div>
+          <div class="t-arrow"></div>
+        </div>
+      </div>
+      <ul class="block-list">
+
+      </ul>
+    </div>
+    <!--对战-->
+    <div id="three" data-name="battle" class="block-container block-battle">
+      <div class="title-wrap">
+        <div class="title-left">
+          <div class="t-icon"></div>
+          <div class="t-title">PK游戏</div>
+          <div class="t-subtitle">人群之中，必有王者</div>
+        </div>
+        <div class="title-right hide">
+          <div class="t-more">更多</div>
+          <div class="t-arrow"></div>
+        </div>
+      </div>
+      <ul class="block-list">
+
+      </ul>
+    </div>
+    <!--<div class="thirteen-more">查看更多奖品>></div>-->
+    <!--<div class="thirteen-tip">*兑换项与活动皆和设备生产商Apple Inc.无关</div>-->
+  </div>
+
+  <div class="exchange-page">
+    <div id="four" data-name="exchange" class="block-container block-exchange">
+      <div class="title-wrap">
+        <div class="title-left">
+          <div class="t-icon"></div>
+          <div class="t-title">热门兑换</div>
+          <div class="t-subtitle"></div>
+        </div>
+        <div class="title-right hide">
+          <div class="t-more">更多</div>
+          <div class="t-arrow"></div>
+        </div>
+      </div>
+      <ul class="block-list">
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="bottom-menu">
+    <div class="btn-game-box active">
+      <div class="btn-icon"></div>
+      <div class="btn-name">游戏赚金币</div>
+    </div>
+    <div class="btn-coin-box">
+      <div class="btn-icon"></div>
+      <div class="btn-name">金币换现金</div>
+    </div>
+    <div class="half-round-box">
+      <div class="half-round"></div>
+    </div>
+    <div id="five" data-name="start" class="block-container block-start">
+
+    </div>
+  </div>
+</div>
+
+#include("../layout/common.html")
+
+</body>
+
+</html>

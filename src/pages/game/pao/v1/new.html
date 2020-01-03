@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+  <title>糖果泡泡堂</title>
+  <!-- common plugins -->
+
+  <script>
+    ! function (e, i) {
+      var t = e.documentElement,
+        n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+        a = n ? Math.min(i.devicePixelRatio, 3) : 1,
+        m = "orientationchange" in window ? "orientationchange" : "resize";
+      t.dataset.dpr = a;
+      for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" == l.name &&
+        (c = !0, d = l);
+      if (c) d.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+      else {
+        var o = e.createElement("meta");
+        o.name = "viewport", o.content =
+          "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild
+          .appendChild(o)
+      }
+      var s = function () {
+        var e = t.clientWidth;
+        e / a > 750 && (e = 750 * a), window.remScale = e / 750, t.style.fontSize = 200 * (e / 750) + "px"
+      };
+      s(), e.addEventListener && i.addEventListener(m, s, !1)
+    }(document, window);
+  </script>
+  <style>
+  html,body{
+    margin: 0;
+    padding: 0;
+  }
+  .info{
+    font-size: 0.2rem;
+    position: absolute;
+    padding: 0.2rem;
+  }
+  </style>
+  <script>
+  var CFG = {
+          monsters: '[{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/hze3kkhls6.png","prizeAmount":88,"proportion":20,"level":1,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/0mo3b4k76i.png","prizeAmount":260,"proportion":20,"level":2,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/iehv4p27vn.png","prizeAmount":366,"proportion":20,"level":3,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/qc9b318y5d.png","prizeAmount":521,"proportion":20,"level":4,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/ffxacwcxkg.png","prizeAmount":888,"proportion":15,"level":5,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/zyizqhzswl.png","prizeAmount":950,"proportion":5,"level":6,"monsterType":0}]',//怪物列表
+          nick_name: '幼学壮行的星谷', //用户昵称
+          url: '//activity.tuia.cn/direct/index?id=1021&slotId=369&deviceId=aaa7b8cace5e3517d22533652e1eac85-161467ceccc&login=normal&appKey=3GQxGmKh7MwTkRojiFuRF2qPMYAn&dpm=23251.48.1.1&dcm=1018.24.3.1021&dsm=1.369.7.24&towId=81da6e83-c73c-4a33-9527-d6e5fd0c7a64&wu=bo',//获取更多金币链接
+          amount: '13648',//用户金币数
+          rule: '<p>糖果们逃离了被人们支配的恐惧，开启了人类报复计划。</p><p>每个糖果怪会携带不同的金币，开炮时会消耗相应的金币，打死糖果怪才能获得全部金币！</p><p>赶快设置好炮的火力，每局时间60秒，快去点击糖果怪开炮吧！<br></p>',//规则列表
+          imgList: '{"200":"http://yun.tuisnake.com/tuia-media/img/cw9gi1zo38.png","300":"http://yun.tuisnake.com/tuia-media/img/glm0qm8ilw.png","400":"http://yun.tuisnake.com/tuia-media/img/21ieiedp4w.png","301":"http://yun.tuisnake.com/tuia-media/img/9qqkj56rak.png","302":"http://yun.tuisnake.com/tuia-media/img/s66wgobbra.png"}',//图片列表
+          guns: '[100,200,300,500,800,900]',//炮筒规格
+          firstLogin: '0',//登陆类型
+          rewardAmount: '0',//金额
+          prizeEmbed: '{"st_info_click_daily_choose_game":{"dpm":"23251.131.2.2","consumerId":4923419776,"appId":23251,"domain4Web":"////activity.tuia.cn","host":"//activity.tuia.cn","url":"/statistics/click","dcm":"1019.2.2.24","dsm":"1.369.3.1021"},"st_info_click_first_choose_game":{"dpm":"23251.131.2.1","consumerId":4923419776,"appId":23251,"domain4Web":"////activity.tuia.cn","host":"//activity.tuia.cn","url":"/statistics/click","dcm":"1019.2.2.24","dsm":"1.369.3.1021"},"st_info_exposure_normal_choose_game":{"dpm":"23251.131.2.3","consumer_id":4923419776,"consumerId":4923419776,"domain":"//embedlog.duiba.com.cn","appId":23251,"host":"//activity.tuia.cn","dcm":"1019.2.2.24","dsm":"1.369.3.1021"},"st_info_click_normal_choose_game":{"dpm":"23251.131.2.3","consumerId":4923419776,"appId":23251,"domain4Web":"////activity.tuia.cn","host":"//activity.tuia.cn","url":"/statistics/click","dcm":"1019.2.2.24","dsm":"1.369.3.1021"},"st_info_exposure_first_choose_game":{"dpm":"23251.131.2.1","consumer_id":4923419776,"consumerId":4923419776,"domain":"//embedlog.duiba.com.cn","appId":23251,"host":"//activity.tuia.cn","dcm":"1019.2.2.24","dsm":"1.369.3.1021"},"st_info_exposure_daily_choose_game":{"dpm":"23251.131.2.2","consumer_id":4923419776,"consumerId":4923419776,"domain":"//embedlog.duiba.com.cn","appId":23251,"host":"//activity.tuia.cn","dcm":"1019.2.2.24","dsm":"1.369.3.1021"}}',//埋点
+          headUrl:'//yun.tuisnake.com/h5-mami/webgame/web-login/header/header4.png',//头像
+          sex:'1',//性别
+          isPreview: 'false'//是否预览
+        }
+  </script>
+
+</head>
+
+<body>
+<div class="info"></div>
+<div id="phaser"></div>
+
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/phaser@2.6.2.min.js"></script>
+<script type="text/javascript" src="./newjs/phgame.js"></script>
+<script type="text/javascript" src="./newjs/phmonster.js"></script>
+
+</body>
+
+</html>

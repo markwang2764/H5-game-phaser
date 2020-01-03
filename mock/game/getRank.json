@@ -1,0 +1,134 @@
+{
+  "rank": 6,
+  "amount": 2519.0,
+  "sex": 0,
+  "img": "//yun.duiba.com.cn/h5-mami/webgame/web-login/header/newhander4.png",
+  "userName": "游客yk0v4e",
+  "leaderboards": [{
+    "amount": 120.0,
+    "userName": "游客yk0v4e",
+    "userId": null,
+    "sex": 0,
+    "img": "//yun.duiba.com.cn/h5-mami/webgame/web-login/header/newhander4.png"
+  }, {
+    "amount": 40.0,
+    "userName": "游客1",
+    "userId": null,
+    "sex": 0,
+    "img": "//yun.duiba.com.cn/h5-mami/webgame/web-login/header/newhander4.png"
+  }, {
+    "amount": 1.0,
+    "userName": "游客2",
+    "userId": null,
+    "sex": 0,
+    "img": "//yun.duiba.com.cn/h5-mami/webgame/web-login/header/newhander4.png"
+  }],
+  "lottery": {
+    "imgurl999": "//yun.duiba.com.cn/h5-mami/webgame/web-login/header/newhander4.png"
+  },
+  "embed": {
+    "st_info_click_know_button": {
+      "dpm": "18643.115.3.5",
+      "dcm": "1018.96.0.0",
+      "dsm": "1.2034.3.762",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11089013,
+      "appId": 18643,
+      "slotId": 2034,
+      "orderId": null,
+      "device_type": null,
+      "activityId": null,
+      "materialld": null,
+      "couponSource": null
+    },
+    "st_info_exposure_refresh_button": {
+      "dpm": "18643.115.3.4",
+      "dcm": "1018.96.0.0",
+      "dsm": "1.2034.3.762",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11089013,
+      "appId": 18643,
+      "slotId": 2034,
+      "orderId": null,
+      "device_type": null,
+      "activityId": null,
+      "materialld": null,
+      "couponSource": null
+    },
+    "st_info_exposure_know_button": {
+      "dpm": "18643.115.3.5",
+      "dcm": "1018.96.0.0",
+      "dsm": "1.2034.3.762",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11089013,
+      "appId": 18643,
+      "slotId": 2034,
+      "orderId": null,
+      "device_type": null,
+      "activityId": null,
+      "materialld": null,
+      "couponSource": null
+    },
+    "st_info_exposure_close": {
+      "dpm": "18643.115.3.1",
+      "dcm": "1018.96.0.0",
+      "dsm": "1.2034.3.762",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11089013,
+      "appId": 18643,
+      "slotId": 2034,
+      "orderId": null,
+      "device_type": null,
+      "activityId": null,
+      "materialld": null,
+      "couponSource": null
+    },
+    "st_info_click_close": {
+      "dpm": "18643.115.3.1",
+      "dcm": "1018.96.0.0",
+      "dsm": "1.2034.3.762",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11089013,
+      "appId": 18643,
+      "slotId": 2034,
+      "orderId": null,
+      "device_type": null,
+      "activityId": null,
+      "materialld": null,
+      "couponSource": null
+    },
+    "st_info_click_refresh_button": {
+      "dpm": "18643.115.3.4",
+      "dcm": "1018.96.0.0",
+      "dsm": "1.2034.3.762",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11089013,
+      "appId": 18643,
+      "slotId": 2034,
+      "orderId": null,
+      "device_type": null,
+      "activityId": null,
+      "materialld": null,
+      "couponSource": null
+    }
+  },
+  "preUser": {
+    "amount": 0.0,
+    "userName": "游客100",
+    "userId": null,
+    "sex": 0,
+    "img": "//yun.duiba.com.cn/h5-mami/webgame/web-login/header/newhander4.png"
+  }
+}

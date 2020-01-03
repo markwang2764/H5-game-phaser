@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>拼图</title>
+    <link rel="stylesheet" type="text/css" href="./dest/all_201804250456.css" />
+
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js" type="text/javascript"></script>
+    
+    <!--
+    <script src="./js/zepto.min.js" type="text/javascript"></script>
+    <script src="./js/less.min.js"></script>
+    -->
+    <script>
+        ! function (e, i) {
+            var t = e.documentElement,
+                n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+                a = n ? Math.min(i.devicePixelRatio, 3) : 1,
+                m = "orientationchange" in window ? "orientationchange" : "resize";
+            t.dataset.dpr = a;
+            for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" ==
+                l.name &&
+                (c = !0, d = l);
+            if (c) d.content =
+                "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+            else {
+                var o = e.createElement("meta");
+                o.name = "viewport", o.content =
+                    "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild
+                    .appendChild(o)
+            }
+            var s = function () {
+                var e = t.clientWidth;
+                e / a > 750 && (e = 750 * a), window.remScale = e / 750, t.style.fontSize = 200 * (e / 750) + "px"
+            };
+            s(), e.addEventListener && i.addEventListener(m, s, !1)
+        }(document, window);
+    </script>
+    <script type="text/javascript">
+        var CFG = '{"usk":"bStZVWxTTktnU0NTWTJkZ1BPcm5mQT09"}';
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="ui">
+            <div class="item-4203781"></div>
+            <div class="item-4210189"></div>
+        </div>
+
+        <!--游戏加载进度-->
+        <div class="item-7296133 loading">
+            <div class="item-7323613"></div>
+            <div class="item-7350133"></div>
+            <div class="item-7357696">
+                <div class="item-7357696-color"></div>
+                <div class="item-7408901"></div>
+            </div>
+        </div>
+
+        <!--次数用完弹窗-->
+        <div class="mask overspend">
+            <div class="item-0850708">
+                <div class="item-0863989"></div>
+                <div class="item-0876749"></div>
+            </div>
+        </div>
+
+        <!--游戏进行-->
+        <div class="">
+            <div class="item-4221005"></div>
+            <div class="item-4229749">
+                <div class="item-4865701">
+                    <div class="item-5076197 border-txt"></div>
+                    <div class="item-5076197"></div>
+                </div>
+                <div class="item-4877349">
+                    <!--碎片-->
+                </div>
+                <div class="item-shine"></div>
+                <div class="result-btns">
+                    <div class="item-4914956"></div>
+                    <div class="next-level"></div>
+                </div>
+                <div class="item-4927445"></div>
+                <div class="item-4976119 border-txt"></div>
+                <div class="item-4976119"></div>
+                <div class="item-5052796 border-txt"></div>
+                <div class="item-5052796"></div>
+            </div>
+            <div class="item-4260037">
+                <div class="item-6831365"></div>
+            </div>
+            <div class="item-4563981"></div>
+        </div>
+
+        <!--掉线弹窗-->
+        <div class="mask offline">
+            <div class="item-7623247">
+                <div class="item-7738638"></div>
+                <div class="item-7747726"></div>
+                <div class="item-7776742"></div>
+                <div class="item-7796390"></div>
+                <div class="item-7815254"></div>
+            </div>
+        </div>
+
+        <!--游戏规则-->
+        <div class="mask rule">
+            <div class="item-8643543"></div>
+            <div class="item-8649222">
+                <div class="item-8741438"></div>
+                <div class="item-8752582">游戏规则</div>
+                <div class="item-8761886"></div>
+            </div>
+            <div class="item-8713566"></div>
+            <div class="item-8719238"></div>
+            <div class="item-8724224"></div>
+            <div class="item-8727958"></div>
+            <div class="item-8733175"></div>
+        </div>
+
+        <!--游戏开始-->
+        <div class="mask starting">
+            <div class="item-2153862"></div>
+            <div class="item-2172574"></div>
+            <div class="item-2180542"></div>
+        </div>
+
+        <!--我的奖品-->
+        <div class="mask my-prize">
+            <div class="scroll-page">
+                <div class="nav-bar">
+                    <div class="nav-item selected">往期权益</div>
+                    <div class="nav-item">我的余额</div>
+                </div>
+                <div class="nav-page">
+                    <div class="prize-page">
+                        <!--往期权益-->
+                    </div>
+                    <div class="my-page">
+                        <!--我的余额-->
+                        <div class="item-8697565">
+                            <div class="item-8703173">我的余额</div>
+                            <div class="item-8725317"><span class="my-money-tip"></span>元</div>
+                            <div class="item-8755957">立即提现</div>
+                            <div class="item-8772157">< 返回</div>
+                        </div>
+    
+                        <!--提现-->
+                        <div class="tixian-cxt">
+                            <div class="xuanzhe">请选择提现金额：<span class="xuanzhe-tip">奖励金额累计到20元以上才能提现哦~</span></div>
+                            <div class="jine-list">
+                                <div class="jine-item">
+                                    <div class="jine-num">20元</div>
+                                    <div class="jine-tip">包含手续费2元</div>
+                                </div>
+                                <div class="jine-item">
+                                    <div class="jine-num">30元</div>
+                                    <div class="jine-tip">包含手续费1元</div>
+                                </div>
+                                <div class="jine-item">
+                                    <div class="jine-num">50元</div>
+                                    <div class="jine-tip">无手续费</div>
+                                </div>
+                            </div>
+                            <div class="tixian-btn">提现</div>
+                            <div class="tixian-tip">提现金额将在1~5个工作日到达您的微信零钱中</div>
+                        </div>
+    
+                        <!--明细-->
+                        <div class="mingxi-cxt">
+                            <div class="mingxi"><div class="mingxi-line"></div>交易明细</div>
+                            <div class="mingxi-list">
+                                <!--交易明细-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--引导手势-->
+    <div class="guider">
+        <div class="mask-canvas"></div>
+        <div class="hander">
+            <div class="hander-cir"></div>
+            <div class="hander-img"></div>
+        </div>
+        <div class="guider-tip1 guider-txt">第一步：点击要交换的拼图</div>
+        <div class="guider-tip2 guider-txt">第二步：点击第二块拼图</div>
+        <div class="guider-tip3 guider-txt">第三步：拼图交换成功</div>
+        <div class="guider-btn"></div>
+    </div>
+
+<!--广播提示-->
+<script id="tip-content" type="text/html">
+    <%= for(var i = 0; i < p.list.length; i++){ =%>
+    <div class="tip-cast"><%== p.list[i] =%></div>
+    <%= } =%>
+</script>
+
+<!--碎片-->
+<script id="piece-content" type="text/html">
+    <%= for(var i = 0; i < p.total; i++){ =%>
+    <div class="piece-item"></div>
+    <%= } =%>
+</script>
+
+<!--明细-->
+<script id="detail-content" type="text/html">
+    <%= for(var i = 0; i < p.list.length; i++){ =%>
+    <div class="mingxi-item">
+        <div class="mingxi-t1"><%== p.list[i].pageFrom =%></div>
+        <div class="mingxi-t2"><%== p.list[i].time =%></div>
+        <div class="mingxi-t3"><%== p.list[i].count =%></div>
+    </div>
+    <%= } =%>
+</script>
+
+<!--往期权益-->
+<script id="old-content" type="text/html">
+    <%= for(var i = 0; i < p.list.length; i++){ =%>
+    <div class="prize-item">
+        <div class="item-1176513">
+            <div class="item-1189465">
+                <div class="item-1578137"></div>
+            </div>
+            <div class="item-1347345" style="background-image:url(<%== p.list[i].thumbnailPng =%>)"></div>
+            <div class="item-1411865"><%== p.list[i].title =%></div>
+            <div class="item-1426691">有效期：2018-02-03</div>
+            <div class="item-1438825">立即领取</div>
+        </div>
+    </div>
+    <%= } =%>
+</script>
+
+
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js"></script>
+
+<script type="text/javascript" src="./dest/all_201804250456.js"></script> 
+
+</body>
+
+</html>

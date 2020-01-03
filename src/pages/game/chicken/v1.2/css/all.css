@@ -1,0 +1,419 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.mask-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mask-content {
+  width: 3.1rem;
+  height: 4rem;
+  position: relative;
+}
+.mask-title {
+  width: 2.105rem;
+  height: 0.74rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shengli.png") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  z-index: 1;
+  left: 0.46rem;
+  top: -0.3rem;
+}
+.mask-bar {
+  width: 3.09rem;
+  height: 3.39rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shengli-l.png") no-repeat center;
+  background-size: contain;
+}
+.mask-no-ticket .mask-ads,
+.mask-no-ticket .mask-gift {
+  display: none;
+}
+.mask-win .mask-bar {
+  width: 3.09rem;
+  height: 3.39rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shengli-l.png") no-repeat center;
+  background-size: contain;
+}
+.mask-win .mask-no-ticket {
+  width: 3.09rem;
+  height: 2.19rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shengli-s.png") no-repeat center;
+  background-size: contain;
+}
+.mask-lost .mask-bar {
+  width: 3.09rem;
+  height: 3.39rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shibai-l.png") no-repeat center;
+  background-size: contain;
+}
+.mask-lost .mask-no-ticket {
+  width: 3.09rem;
+  height: 2.19rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shibai-s.png") no-repeat center;
+  background-size: contain;
+}
+.mask-lost .mask-title {
+  width: 2.005rem;
+  height: 0.65rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shibai.png") no-repeat center;
+  background-size: contain;
+  left: 0.56rem;
+}
+.mask-same .mask-bar {
+  width: 3.09rem;
+  height: 3.39rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shibai-l.png") no-repeat center;
+  background-size: contain;
+}
+.mask-same .mask-no-ticket {
+  width: 3.09rem;
+  height: 2.19rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shibai-s.png") no-repeat center;
+  background-size: contain;
+}
+.mask-same .mask-no-ticket .mask-title {
+  width: 2.005rem;
+  height: 0.65rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shibai.png") no-repeat center;
+  background-size: contain;
+}
+.mask-same .mask-title {
+  width: 1.075rem;
+  height: 0.64rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/pingju.png") no-repeat center;
+  background-size: contain;
+  left: 1rem;
+}
+.mask-btns {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mask-btn {
+  margin: 0.1rem 0.04rem;
+}
+.mask-again-btn {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/zailai.png") no-repeat center;
+  background-size: contain;
+}
+.mask-get-btn {
+  width: 1.65rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/liji.png") no-repeat center;
+  background-size: contain;
+}
+.mask-compari {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.6rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mask-user {
+  width: 0.75rem;
+  position: relative;
+}
+.mask-vs {
+  width: 0.74rem;
+  height: 0.665rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/vs.png") no-repeat center;
+  background-size: contain;
+}
+.mask-hander {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #555555;
+  border-radius: 50%;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+}
+.mask-name {
+  font-size: 0.12rem;
+  color: #924a0e;
+  text-align: center;
+  margin: 0.05rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  width: 1rem;
+  left: -0.1rem;
+}
+.mask-qq {
+  position: absolute;
+  width: 0.47rem;
+  height: 0.425rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/xiaolian.png") no-repeat center;
+  background-size: contain;
+  top: -0.1rem;
+}
+.mask-qq.mask-xiaolian {
+  width: 0.47rem;
+  height: 0.425rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/xiaolian.png") no-repeat center;
+  background-size: contain;
+}
+.mask-qq.mask-kulian {
+  width: 0.47rem;
+  height: 0.425rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/kulian.png") no-repeat center;
+  background-size: contain;
+}
+.mask-qq.mask-shengqi {
+  width: 0.47rem;
+  height: 0.425rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shengqi.png") no-repeat center;
+  background-size: contain;
+}
+.mask-left .mask-qq {
+  left: -0.15rem;
+}
+.mask-right .mask-qq {
+  right: -0.15rem;
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.mask-scale {
+  -webkit-transform: scale(0.84);
+  transform: scale(0.84);
+}
+.mask-boy::before {
+  content: "";
+  display: inline-block;
+  width: 0.19rem;
+  height: 0.18rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/nan.png") no-repeat center;
+  background-size: contain;
+  margin-right: 0.04rem;
+}
+.mask-girl::before {
+  content: "";
+  display: inline-block;
+  width: 0.19rem;
+  height: 0.18rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/nv.png") no-repeat center;
+  background-size: contain;
+  margin-right: 0.04rem;
+}
+.mask-gift {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.15rem 0 0.04rem;
+}
+.mask-tip {
+  font-size: 0.12rem;
+  color: #924a0e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mask-tip::before {
+  content: "";
+  display: inline-block;
+  width: 0.23rem;
+  height: 0.255rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/lihe.png") no-repeat center;
+  background-size: contain;
+  margin-right: 0.04rem;
+  text-align: center;
+}
+.mask-ads {
+  width: 2.5rem;
+  height: 1.25rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/shibai-s.png") no-repeat center;
+  background-size: contain;
+  background-size: cover;
+  border-radius: 0.06rem;
+  margin: auto;
+}
+.mask-close-btn {
+  width: 0.29rem;
+  height: 0.29rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/close.png") no-repeat center;
+  background-size: contain;
+  margin: auto;
+}
+.mask-btn-bufu {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/bufu-s.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-zailai {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/zailai.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-zainue {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/zainue.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-huange {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/huange.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-bugan {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/bugan.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-likai {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/likai.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-dianji {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/dianji.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-likai {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/likai.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-yaoqing1 {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/yaoqing1.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-yaoqing2 {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/yaoqing2.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-yaoqing3 {
+  width: 1.3rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/yaoqing3.png") no-repeat center;
+  background-size: contain;
+}
+.mask-btn-chongwan {
+  width: 2.455rem;
+  height: 0.56rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/bufu-l.png") no-repeat center;
+  background-size: contain;
+}
+.match-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f0d332;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.match-title {
+  font-size: 0.16rem;
+  color: #924a0e;
+  text-align: center;
+  margin-bottom: 0.16rem;
+}
+.match-user {
+  text-align: center;
+}
+.match-header {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #555555;
+  border-radius: 50%;
+  border: solid #ffffff 0.02rem;
+  margin: auto;
+}
+.match-name {
+  margin-top: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.match-sex {
+  display: inline-block;
+  width: 0.19rem;
+  height: 0.18rem;
+  background: url("//yun.dui88.com/h5-mami/webgame/chicken/pop/nan.png") no-repeat center;
+  background-size: contain;
+  margin-right: 0.04rem;
+}
+.match-name-word {
+  font-size: 0.08rem;
+  color: #924a0e;
+}

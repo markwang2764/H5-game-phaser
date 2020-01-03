@@ -1,0 +1,24 @@
+{
+  "amount": "7186",
+  "amountHighest": false,
+  "killNum": 19,
+  "killNumHighest": false,
+  "perKillNum": [
+    9,
+    5,
+    0,
+    1,
+    3,
+    0,
+    1
+  ],
+  "perKillNumHighest": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false
+  ]
+}

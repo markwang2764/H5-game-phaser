@@ -1,0 +1,14 @@
+<TextureAtlas imagePath="assets.png">
+	<SubTexture name="circle_red.png" x="0" y="942" width="50" height="50"/>
+	<SubTexture name="circle_white.png" x="120" y="655" width="86" height="86"/>
+	<SubTexture name="guide.png" x="0" y="901" width="282" height="39"/>
+	<SubTexture name="heart.png" x="485" y="531" width="368" height="368"/>
+	<SubTexture name="knife_0.png" x="208" y="655" width="40" height="208"/>
+	<SubTexture name="knife_1.png" x="250" y="655" width="40" height="208"/>
+	<SubTexture name="life_blue.png" x="0" y="531" width="483" height="60"/>
+	<SubTexture name="life_red.png" x="0" y="593" width="483" height="60"/>
+	<SubTexture name="slide.png" x="52" y="942" width="4" height="61"/>
+	<SubTexture name="stroke_avator_blue.png" x="0" y="655" width="118" height="118"/>
+	<SubTexture name="stroke_avator_red.png" x="0" y="775" width="118" height="118"/>
+	<SubTexture name="wood.png" x="0" y="0" width="530" height="529"/>
+</TextureAtlas>

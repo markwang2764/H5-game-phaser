@@ -1,0 +1,27 @@
+<font>
+	<info face="C:\Users\Administrator.PC-20171127KUVI\Desktop
+um8-export" size="80" />
+	<common lineHeight="80" scaleW="175" scaleH="159" pages="1" />
+	<pages>
+		<page id="0" file="C:\Users\Administrator.PC-20171127KUVI\Desktop
+um8-export.png" />
+	</pages>
+	<chars count="14">
+		<char id="46" x="0" y="144" width="14" height="14" xoffset="12" yoffset="66" xadvance="25" /><!-- . -->
+		<char id="48" x="0" y="97" width="46" height="46" xoffset="6" yoffset="34" xadvance="47" /><!-- 0 -->
+		<char id="49" x="136" y="47" width="15" height="46" xoffset="8" yoffset="34" xadvance="16" /><!-- 1 -->
+		<char id="50" x="105" y="0" width="42" height="46" xoffset="8" yoffset="34" xadvance="43" /><!-- 2 -->
+		<char id="51" x="135" y="94" width="39" height="46" xoffset="10" yoffset="34" xadvance="40" /><!-- 3 -->
+		<char id="52" x="0" y="50" width="46" height="46" xoffset="6" yoffset="34" xadvance="47" /><!-- 4 -->
+		<char id="53" x="93" y="47" width="42" height="46" xoffset="8" yoffset="34" xadvance="43" /><!-- 5 -->
+		<char id="54" x="47" y="97" width="44" height="46" xoffset="7" yoffset="34" xadvance="45" /><!-- 6 -->
+		<char id="55" x="92" y="97" width="42" height="46" xoffset="8" yoffset="34" xadvance="43" /><!-- 7 -->
+		<char id="56" x="47" y="50" width="45" height="46" xoffset="7" yoffset="34" xadvance="46" /><!-- 8 -->
+		<char id="57" x="60" y="0" width="44" height="46" xoffset="7" yoffset="34" xadvance="45" /><!-- 9 -->
+		<char id="36" x="0" y="0" width="59" height="49" xoffset="20" yoffset="31" xadvance="60" /><!-- $ -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" /><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title>欢迎弹层测试</title>
+  #include('@layout/global/head.html')
+
+</head>
+<body>
+#include('@layout/global/footer.html')
+
+</body>
+<script >
+  var welcomePop
+  window.addEventListener('message', function(event) {
+    if (event.data === 'showpop') {
+       welcomePop = new CREATE.WelcomePop( {
+        loginType: 3,
+        userHeader: "//yun.tuisnake.com/h5-mami/webgame/web-login/header/header2.png",
+        userName: "哈哈感觉",
+        inHall: true,
+        amount: 246700,
+        rewardMoney: 24600
+      });
+    } else if (event.data === 'hidepop'){
+      welcomePop.hide()
+    }
+
+  })
+
+</script>
+</html>

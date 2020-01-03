@@ -1,0 +1,15 @@
+{
+  "data": {
+    "materialUrl": "//yun.dui88.com/babi/img/lxa23yl6nt.png",
+    "materialId": 18382,
+    "clickUrl": "//pangu.tuiatest.cn/third/V1/redirect?url=http%3A%2F%2Factivity.tuiatest.cn%2Fland%2FlandPage%3Fid%3DNDYw&orderId=PGW-120051590041&param=slotId%253D2034%2526gameId%253D96%2526dcm%253D1018.96.3.762%2526dpm%253D18643.48.1.1%2526dsm%253D1.2034.3.762&consumerId=11305001&materialId=18382&advertId=3089&",
+    "advertId": 3089,
+    "advertName": "tyh",
+    "success": false,
+    "orderId": "PGW-120051590041",
+    "embed": "{\"task_advert_click\":{\"appId\":18643,\"consumerId\":11305001,\"dcm\":\"104.3089.6.1\",\"domain4Web\":\"//activity.tuiatest.cn\",\"dpm\":\"18643.115.7.7\",\"dsm\":\"1.2034.3.762\",\"slotId\":2034,\"url\":\"/statistics/click\"},\"task_advert_exposure\":{\"appId\":18643,\"consumerId\":11305001,\"dcm\":\"104.3089.6.1\",\"domain\":\"//embedlog.dui88.com\",\"dpm\":\"18643.115.7.7\",\"dsm\":\"1.2034.3.762\",\"slotId\":2034}}"
+  },
+  "success": true,
+  "code": "0000000",
+  "desc": "成功"
+}

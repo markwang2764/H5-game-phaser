@@ -1,0 +1,125 @@
+{
+    "res": [
+        {
+			"type": "image",
+			"name": "start_bg",
+			"url": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/start_bg1.jpg"
+		},
+		{
+			"type": "image",
+			"name": "play_bg",
+			"url": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/play_bg.jpg"
+		},
+		{
+			"type": "image",
+			"name": "pk_bg",
+			"url": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/pkresult_bg.jpg"
+		},
+		{
+			"type": "image",
+			"name": "cd_label",
+			"url": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/countdown.png"
+		},
+		{
+			"type": "atlasXML",
+			"name": "assets",
+			"pic": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/assets2.png",
+			"xml": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/assets2.xml"
+		},
+		{
+			"type": "atlasXML",
+			"name": "preload",
+			"pic": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/preload.png",
+			"xml": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/preload.xml"
+		},
+		{
+			"type": "spritesheet",
+			"name": "light",
+			"url": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/lights.png",
+			"w": 450,
+			"h": 350,
+			"frame": 5
+		},
+		{
+			"type": "spritesheet",
+			"name": "bubble",
+			"url": "//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/bubbles.png",
+			"w": 200,
+			"h": 200,
+			"frame": 10
+		},
+		{
+			"type":"bitmapFont",
+			"name":"w_num", 
+			"texture":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/w_num.png", 
+			"xml":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/w_num.xml", 
+			"atlas":null, 
+			"xs":0,
+			"ys":0
+		},
+		{
+			"type":"bitmapFont",
+			"name":"b_num", 
+			"texture":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/b_num.png", 
+			"xml":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/b_num.xml", 
+			"atlas":null, 
+			"xs":0,
+			"ys":0
+		},
+		{
+			"type":"bitmapFont",
+			"name":"r_num", 
+			"texture":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/r_num.png", 
+			"xml":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/r_num.xml", 
+			"atlas":null, 
+			"xs":0,
+			"ys":0
+		},
+		{
+			"type":"audio",
+			"name":"bgm",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/bgm.mp3"
+		},
+		{
+			"type":"audio",
+			"name":"board_drop",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/board_drop.mp3"
+		},
+		{
+			"type":"audio",
+			"name":"start_btn_show",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/start_btn_show.mp3"
+		},
+		{
+			"type":"audio",
+			"name":"click_invalid",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/click_invalid.mp3"
+		},
+		{
+			"type":"audio",
+			"name":"click_valid",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/click_valid.mp3"
+		},
+		{
+			"type":"audio",
+			"name":"countdown",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/countdown1.mp3"
+		},
+		{
+			"type":"audio",
+			"name":"ready",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/ready.mp3"
+		},
+		{
+			"type":"audio",
+			"name":"win",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/win.mp3"
+		},
+		{
+			"type":"audio",
+			"name":"lost",
+			"url":"//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/res/lost.mp3"
+		}
+
+    ]
+}

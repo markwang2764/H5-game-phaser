@@ -1,0 +1,10 @@
+{
+  "thirdReward": 0,
+  "targetCompleted": null,
+  "completedReward": null,
+  "reward": 24000,
+  "rewardWay": "0",
+  "jumpLink": null,
+  "success": false,
+  "gameHost": "http://127.0.0.1:4000"
+}

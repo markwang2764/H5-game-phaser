@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <meta content=yes name=apple-mobile-web-app-capable />
+    <meta content=yes name=apple-touch-fullscreen />
+    <meta content="telephone=no,email=no" name=format-detection />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>游戏工程项目</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+        }
+        .list{
+            padding: 8px;
+        }
+        .item{
+            background: rgb(235, 235, 235);
+            border-bottom: solid 1px rgb(194, 194, 194);
+            margin-bottom: 12px;
+        }
+        .title{
+            background: rgb(0, 145, 212);
+            color: #ffffff;
+            padding: 8px;
+        }
+        .game{
+            display: block;
+            color: dimgray;
+            padding: 8px 8px 8px 32px;
+            border-bottom: solid 1px rgb(252, 252, 252);
+        }
+    </style>
+</head>
+
+
+<body>
+    <h3>游戏项目</h3>
+    <div class="list"></div>
+    
+    <!--游戏说明-->
+    <script id="list" type="text/html">
+        <%= for(var i = 0; i < p.list.length; i++){ =%>
+        <div class="item">
+            <div class="title"><%== p.list[i].name =%></div>
+            <%= for(var j = 0; j < p.list[i].version.length; j++){ =%>
+                <a class="game" href="<%== p.list[i].version[j].url =%>">
+                    <div class="desc"><%== p.list[i].version[j].desc =%></div>
+                </a>
+            <%= } =%>
+        </div>
+        <%= } =%>
+    </script>
+
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js" type="text/javascript"></script>
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/Jtemp.js" type="text/javascript"></script>
+    <script>
+        var list = [
+            {
+                name:"押注",
+                version:[
+                    {
+                        desc: "猜猫猫-押注2.0",
+                        url: "/game/bet/v2/entry.html"
+                    }
+                ]
+            },
+            {
+                name:"吃鸡大作战",
+                version:[
+                    {
+                        desc: "吃鸡1.0",
+                        url: "/game/chicken/v1/entry.html"
+                    }
+                ]
+            },
+            {
+                name:"柯基跳",
+                version:[
+                    {
+                        desc: "柯基跳1.0",
+                        url: "/game/jump/v1/entry.html"
+                    }
+                ]
+            },
+            {
+                name:"见缝插针",
+                version:[
+                    {
+                        desc: "见缝插针1.0",
+                        url: "/game/knifeHit/v1/entry.html"
+                    }
+                ]
+            },
+            {
+                name:"泡泡堂",
+                version:[
+                    {
+                        desc: "v1-dom版本",
+                        url: "/game/pao/v1/index.html"
+                    },
+                    {
+                        desc: "v1.0.1-添加首页引导手势",
+                        url: "/game/pao/v1.0.1/index.html"
+                    },
+                    {
+                        desc: "v2-添加boss",
+                        url: "/game/pao/v2/index.html"
+                    },
+                    {
+                        desc: "v2.0.1-添加首页引导手势",
+                        url: "/game/pao/v2/index.html"
+                    },
+                    {
+                        desc: "v3-boss现金版本",
+                        url: "/game/pao/v3/entry.html"
+                    },
+                    {
+                        desc: "v4.0-添加任务",
+                        url: "/game/pao/v4.0/index.html"
+                    },
+                    {
+                        desc: "v4.1-宝箱怪",
+                        url: "/game/pao/v4.1/entry.html"
+                    }
+                ]
+            },
+            {
+                name:"拼图",
+                version:[
+                    {
+                        desc: "拼图1.0",
+                        url: "/game/puzzle/v1.0/index.html"
+                    }
+                ]
+            },
+            {
+                name:"挤肥皂",
+                version:[
+                    {
+                        desc: "挤肥皂1.0",
+                        url: "/game/soap/v1.0/index.html"
+                    },
+                  {
+                    desc: "挤肥皂1.2",
+                    url: "/game/soap/v1.2/index.html"
+                  }
+                ]
+            }
+        ]
+
+        function dataTemplate(sid, data) {
+            var jtemp = new JTemp(sid);
+            var html = jtemp.build(data);
+            return html;
+        }
+
+        $(function(){
+            var html = dataTemplate("list", {list:list});
+            $(".list").html(html);
+        })
+    </script>
+</body>
+
+</html>

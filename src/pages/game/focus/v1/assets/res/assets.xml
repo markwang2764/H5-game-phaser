@@ -1,0 +1,23 @@
+<TextureAtlas imagePath="assets.png">
+	<SubTexture name="again_btn.png" x="0" y="1809" width="520" height="102"/>
+	<SubTexture name="close_btn.png" x="255" y="1913" width="34" height="33"/>
+	<SubTexture name="emoji_bubble.png" x="531" y="1894" width="90" height="81"/>
+	<SubTexture name="emoji_lost.png" x="531" y="1977" width="68" height="68"/>
+	<SubTexture name="emoji_win.png" x="623" y="1894" width="73" height="73"/>
+	<SubTexture name="giveup.png" x="0" y="1965" width="230" height="68"/>
+	<SubTexture name="level_slt.png" x="400" y="1913" width="129" height="126"/>
+	<SubTexture name="level_slt_bg.png" x="0" y="0" width="749" height="567"/>
+	<SubTexture name="level_slt_title.png" x="0" y="1913" width="253" height="50"/>
+	<SubTexture name="light_line.png" x="710" y="569" width="84" height="335"/>
+	<SubTexture name="lock.png" x="291" y="1913" width="31" height="39"/>
+	<SubTexture name="rank_icon.png" x="706" y="1146" width="171" height="182"/>
+	<SubTexture name="ret_lv_label.png" x="232" y="1965" width="166" height="60"/>
+	<SubTexture name="ret_my.png" x="706" y="930" width="393" height="214"/>
+	<SubTexture name="ret_rival.png" x="583" y="1432" width="393" height="214"/>
+	<SubTexture name="share_btn.png" x="0" y="1705" width="520" height="102"/>
+	<SubTexture name="start_btn.png" x="751" y="0" width="360" height="375"/>
+	<SubTexture name="title.png" x="0" y="930" width="704" height="500"/>
+	<SubTexture name="title_board.png" x="522" y="1705" width="402" height="187"/>
+	<SubTexture name="title_lost.png" x="0" y="1432" width="581" height="271"/>
+	<SubTexture name="title_win.png" x="0" y="569" width="708" height="359"/>
+</TextureAtlas>

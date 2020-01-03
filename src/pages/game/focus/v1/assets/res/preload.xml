@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="preload.png">
+	<SubTexture name="brain.png" x="0" y="145" width="165" height="103"/>
+	<SubTexture name="load_label.png" x="0" y="105" width="196" height="38"/>
+	<SubTexture name="loadline.png" x="0" y="0" width="243" height="103"/>
+	<SubTexture name="rocket.png" x="167" y="145" width="34" height="56"/>
+</TextureAtlas>

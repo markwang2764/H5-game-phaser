@@ -1,0 +1,13 @@
+{
+  "code": "string",
+  "data": {
+    "endTime": 0,
+    "participantNum": 0,
+    "participateStatus": 0,
+    "winnerHeadUrl": "string",
+    "winnerName": "string"
+  },
+  "desc": "string",
+  "success": true
+}
+

@@ -1,0 +1,737 @@
+@rem: 200rem;
+@path: "//yun.dui88.com/h5-mami/webgame/bet/v2/asset/";
+
+body{
+    font-size: 0;
+}
+
+
+.item(@l, @t, @w, @h, @url){
+    position: absolute;
+    left: @l;
+    top: @t;
+    width: @w;
+    height: @h;
+    background: url('@{path}@{url}') no-repeat center;
+    background-size: contain;
+}
+.img(@url){
+    background: url('@{path}@{url}') no-repeat center;
+    background-size: contain;
+}
+
+body{
+    background: #b3a48a;
+}
+
+.gameview{
+.ui{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.back{
+    .item(8px, 16px, 54px, 58px, "back.png");
+}
+.help{
+    .item(680px, 14px, 60px, 60px, "help.png");
+}
+.wait{
+    .item(100px, 16px, 193px, 56px, "waitbg.png");
+    line-height: 50px;
+    text-align: center;
+    border-radius: 12px;
+    color: #16b5fd;
+    font-size: 18px;
+}
+.wait-num{
+    color: #900;
+    display: inline-block;
+    width: 36px;
+    font-size: 24px;
+}
+
+.last{
+    position: absolute;
+    left: 330px;
+    top: 14px;
+    width: 324px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    background: #16b5fd;
+    border-radius: 28px;
+    font-size: 18px;
+    position: relative;
+    transition: height 300ms;
+    border: #fff solid 2px;
+}
+.last-tip{
+    color: #fff;
+    vertical-align: top;
+    display: inline-block;
+}
+.last-week{
+    display: inline-block;
+    position: relative;
+    color: #900;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 24px;
+    padding: 0 8px;
+    background: #fff;
+    top: -2px;
+}
+.last-top-box{
+    height: 54px;
+}
+.last-all{
+    position: relative;
+    display: block;
+    transition: all 300ms;
+    // &::after{
+    //     display: block;
+    //     content: "";
+    //     width: 100%;
+    //     height: 52px;
+    //     .img("wangqimask.png");
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-size: 100% 100%;
+    //     opacity: 0;
+    //     transition: opacity 400ms;
+    // }
+    height: 2px;
+}
+.last-all.show{
+    height: 200px;
+}
+.last-list{
+    display: block;
+    position: relative;
+    width: 280px;
+    margin: auto 20px;
+    background: #fff;
+    color: #900;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    border-radius: 16px;
+    overflow: auto;
+    transition: height 300ms;
+    vertical-align: top;
+    position: relative;
+    top: 0;
+}
+.last-content{
+    font-size: 0;
+}
+.last-item{
+    text-align: right;
+    padding-right: 24px;
+    font-size: 18px;
+    border-bottom: solid 1px #f5f5f5;
+    &::last-child{
+        border-bottom: none;
+    }
+}
+.drag{
+    .item(0, 0, 21px, 17px, "drag.png");
+    position: relative;
+    display: inline-block;
+    transition: transform 300ms;
+    vertical-align: top;
+    top: 20px;
+    margin-left: 8px;
+    transform-origin: 50% 36%;
+}
+
+
+.mask{
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.72);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.result-content{
+    width: 669px;
+    height: 673px;
+    .img("shuitan.png");
+    position: relative;
+    opacity: 0;
+    animation: fadeins 300ms;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeins{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.result-bg{
+    .item(32px, 196px, 600px, 300px, "xingdian-bai.png");
+    background-position: center bottom;
+    animation: shine 1800ms infinite;
+}
+@keyframes shine{
+    0%{opacity: 0.42;}
+    50%{opacity: 0.72;}
+    100%{opacity: 0.42;}
+}
+.result-light{
+    .item(240px, 120px, 429px, 429px, "yuanhuan-bai.png?v=2");
+    animation: rotate 20000ms infinite;
+    opacity: 0.54;
+    animation-timing-function: linear;
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.result-cat{
+    .item(254px, 222px, 160px, 160px, "mojie-one.png");
+    filter: drop-shadow(4px 8px rgba(0, 0, 0, 0.32));
+    opacity: 0;
+    // animation: showcat 800ms;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 20%;
+}
+@keyframes showcat{
+    0%{opacity: 1;transform: scale(1) translateX(0);}
+    60%{opacity: 1;transform: scale(1.42) translateX(100px);}
+    100%{opacity: 1;transform: scale(1.42) translateX(100px);}
+}
+
+.result-tip{
+    position: absolute;
+    left: 0;
+    top: 512px;
+    font-size: 28px;
+    color: #844d16;
+    padding: 28px;
+    line-height: 42px;
+}
+
+.result-list{
+    position: absolute;
+    left: 80px;
+    top: 200px;
+    width: 177px;
+    perspective: 1000;
+}
+.result-zhen{
+    .item(0, 0, 336px, 68px, "zhen.png");
+}
+.top-zhen{
+    top: 164px;
+    left: 180px;
+    transform: scaleY(-1);
+}
+.bottom-zhen{
+    top: 428px;
+    left: 182px;
+}
+.result-btn{
+    .item(0, 0, 177px, 67px, "tuc.png");
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    color: #fff;
+    animation: turnon 600ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+}
+@keyframes turnon{
+    0%{opacity: 0;transform: rotateX(120deg) translate(-160px, -80px) scale(3);}
+    100%{opacity: 1;transform: rotateX(12deg) translate(0px, 0px) scale(1);}
+}
+.result-sex{
+    animation-delay: 200ms;
+}
+.result-xiang{
+    animation-delay: 500ms;
+}
+.result-xing{
+    animation-delay: 800ms;
+}
+.result-red{
+    color: #900;
+}
+.red-num{
+    font-size: 32px;
+}
+.result-arrow{
+    .item(0, 0, 24px, 31px, "tujiant.png?v=2");
+    position: relative;
+    margin: 2px auto;
+    animation: jiantou 200ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes jiantou{
+    0%{opacity: 0;transform: translateY(-20px);}
+    100%{opacity: 1;transform: translateY(0px);}
+}
+.arrow1{
+    animation-delay: 500ms;
+}
+.arrow2{
+    animation-delay: 900ms;
+}
+
+
+.mask-content{
+    animation: scaleIn 300ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes scaleIn{
+    0%{transform: scale(0.9);opacity: 0;}
+    100%{transform: scale(1);opacity: 1;}
+}
+
+
+.jiuji-content{
+    width: 701px;
+    height: 682px;
+    .img("jiujijin.png");
+    position: relative;
+}
+.jiuji-content.shunt{
+    .img("jiujijin5.png");
+    &:after{
+        z-index: 4;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 701px;
+        height: 166px;
+        .img("jiuji-qian8.png");
+        left: 0;
+        bottom: 0.12rem;
+    }
+    .other-games-box{
+        display: block;
+        z-index: 3;
+    }
+}
+.other-games-box{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 1.68rem;
+    text-align: center;
+    .other-games-item{
+        display: inline-block;
+        width: 1.432rem;
+        height: 1rem;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: top center;
+        &:last-child{
+            margin-left: -0.06rem;
+        }
+    }
+}
+.jiuji-ads{
+    width: 507px;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: absolute;
+    left: 98px;
+    top: 210px;
+}
+.jiuji-btn{
+    .item(0, 0, 370px, 91px, "mianfei.png");
+    position: relative;
+    margin: 20px auto;
+    line-height: 91px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+.jiuji-close{
+    position: absolute;
+    right: 32px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+}
+.jiuji-tip{
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    top: 144px;
+    text-align: center;
+}
+
+
+.shenmi-guang{
+    .item(-42px, -200px, 750px, 750px, "guangxiao.png?v=2");
+    animation: rotate 6000ms infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+.shenmi-content{
+    .item(0, 0, 666px, 746px, "shenmi.png");
+    position: relative;
+}
+.shenmi-ads{
+    width: 522px;
+    height: 244px;
+    background: #16b5fd;
+    border-radius: 12px;
+    position: absolute;
+    left: 72px;
+    top: 224px;
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+}
+.shenmi-all{
+    width: 387px;
+    height: 60px;
+    line-height: 60px;
+    background: rgb(150, 81, 2);
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    left: 142px;
+    top: 508px;
+    border-radius: 8px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.shenmi-liqu{
+    .item(68px, 580px, 528px, 117px, "liji.png");
+}
+.shenmi-tip{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #844d16;
+    font-size: 22px;
+}
+.shenmi-close{
+    .item(600px, -120px, 62px, 62px, "close.png");
+}
+.shenmi-color{
+    .item(20px, 90px, 708px, 409px, "colorful.png");
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.rule-content{
+    position: relative;
+    width: 670px;
+    height: 730px;
+    background: #fff;
+    border: solid 4px #844d16;
+    border-radius: 24px;
+}
+.rule-close{
+    .item(600px, -120px, 62px, 62px, "close.png");
+}
+.rule-info{
+    font-size: 24px;
+    color: #900;
+    width: 586px;
+    height: 480px;
+    margin: 38px;
+    overflow: auto;
+    line-height: 54px;
+    overflow-y: auto;
+}
+.rule-know{
+    .item(100px, 560px, 462px, 128px, "know.png");
+}
+.rule-title{
+    text-align: center;
+    font-size: 32px;
+}
+.rule-txt{
+    font-size: 24px;
+}
+
+.result-step0{
+    .item(1px, 0px, 748px, 148px, "jiesu.png");
+    position: relative;
+    animation: leftshow 900ms;
+    animation-fill-mode: forwards;
+    transform: translateX(750px);
+}
+@keyframes leftshow{
+    0%{transform: translateX(750px);}
+    100%{transform: translateX(0);}
+}
+
+.result-step1{
+    left: 36px;
+    top: 200px;
+    width: 596px;
+    height: 250px;
+    position: absolute;
+    overflow-x: hidden; 
+}
+.result-zuos{
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: auto;
+    // height: 300px;
+    top: 40px;
+}
+.result-zuo{
+    width: 160px;
+    height: 160px;
+    margin-right: 30px;
+    display: inline-block;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // background-color: aqua;
+}
+.result-zuo:first-child{
+    margin-left: 30px;
+}
+.result-name{
+    font-size: 20px;
+    color: #844d16;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    width: 100%;
+}
+.result-song{
+    .item(27px, 2px, 615px, 194px, "song.png");
+    z-index: 2;
+}
+
+.hideimg{
+    position: fixed;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    .tu{
+        .img("tutan.png");
+    }
+    .feng{
+        .img("fengtan.png");
+    }
+    .shui{
+        .img("shuitan.png");
+    }
+    .huo{
+        .img("huotan.png");
+    }
+}
+
+.result-mask{
+    &.tu{
+        .result-content{
+            .img("tutan.png");
+        }
+        .result-btn{
+            .img("tuc.png");
+        }
+        .result-arrow{
+            .img("tujiant.png?v=2");
+        }
+    }
+    &.feng{
+        .result-content{
+            .img("fengtan.png");
+        }
+        .result-btn{
+            .img("fengc.png");
+        }
+        .result-arrow{
+            .img("fengjiant.png");
+        }
+    }
+    &.shui{
+        .result-content{
+            .img("shuitan.png");
+        }
+        .result-btn{
+            .img("shuic.png");
+        }
+        .result-arrow{
+            .img("shuijiant.png");
+        }
+    }
+    &.huo{
+        .result-content{
+            .img("huotan.png");
+        }
+        .result-btn{
+            .img("huoc.png");
+        }
+        .result-arrow{
+            .img("huojiant.png?v=2");
+        }
+    }
+}
+
+
+.float-ads{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom: -120px;
+    right: 20px;
+    width: 112px;
+    height: 112px;
+}
+.toast-mask{
+    pointer-events: none;
+    .toast{
+        display: inline-block;
+        padding: 32px 48px;
+        background: rgba(0, 0, 0, 0.72);
+        color: #fff;
+        border: solid 1px #111111;
+        border-radius: 4px;
+        font-size: 28px;
+        animation: toast 2s;
+        opacity: 0;
+        text-align: center;
+        line-height: 42px;
+    }
+}
+@keyframes toast{
+    0%{opacity: 0;transform: translateY(30px);}
+    20%{opacity: 1;transform: translateY(0px);}
+    80%{opacity: 1;transform: translateY(0px);}
+    100%{opacity: 0;transform: translateY(-30px);}
+}
+
+.border-txt{
+    -webkit-text-stroke: 10/@rem #4e1a01;
+}
+.receive-content{
+    position: relative;
+    font-size: 28px;
+    color: rgb(255, 233, 107);
+    text-align: center;
+}
+.receive-guang{
+    margin: 20px auto; 
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 240px;
+        height: 240px;
+        .img("guangxiao.png?v=2");
+        animation: rotates 3s linear infinite;
+    }
+}
+@keyframes rotates{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.receive-coin{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    .img("jinbidui.png");
+}
+.receive-border{
+    position: relative;
+    height: 30px;
+}
+.receive-top{
+    position: relative;
+    top: -80px;
+    font-size: 32px;
+}
+.receive-title,.receive-tip{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-weight: 400;
+}
+#game {
+    canvas {
+        width: 100%
+    }
+}
+
+.poor-content{
+    width: 480px;
+    padding: 30px;
+    border: solid 3px #844d16;
+    background: #fff5eb;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+.poor-title{
+    font-size: 28px;
+    color: #4e1a01;
+}
+.poor-tip{
+    font-size: 20px;
+    color: #844d16;
+    margin: 32px 0;
+}
+.poor-close{
+    .item(500px, -120px, 62px, 62px, "close.png");
+}
+.poor-get{
+    .item(0px, 0px, 360px, 80px, "get-coin.png");
+    position: relative;
+    margin: auto;
+}
+
+.qishu{
+    margin-right: 20px;
+}
+
+.guider-mask{
+    z-index: 9;
+    display: none;
+    .item(0px, 0px, 750px, 1206px, "guider-mask3.png");
+    background-size: 100% auto;
+    background-position: center top;
+    .guider-btn{
+        .item(225px, 1080px, 296px, 96px, "guider-btn.png");
+    }
+}
+}

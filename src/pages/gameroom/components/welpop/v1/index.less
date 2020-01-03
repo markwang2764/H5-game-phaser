@@ -1,0 +1,198 @@
+@import "../../../../../common/css/base";
+
+@env: 'prod'; // dev, prev, prod  开发生产环境定义 可通过gulp replace在打包时替换值
+@screen_width: 750; // 设计稿宽度
+@img_url_prod: ''; // 线上图片地址
+@img_url_dev: ''; // 本地图片地址
+
+.place-center(@top){
+  position: absolute;
+  top: @top/@rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bg(@img){
+  background-image: url("../../img/@{img}");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-pop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: none;
+
+  .welcome-pop-mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0, .7);
+  }
+
+  .welcome-pop-main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    .w-bg{
+      .positiona(255, 49);
+      .widhei(652,811);
+      .bg("wel_bg.png");
+
+
+      .w-avatar{
+        .place-center(-48);
+        .widhei(97,97);
+        .bg('wel_avatar.png');
+        border-radius: 97/@rem;
+      }
+
+      .w-close{
+        .positionb(-60, 8);
+        .widhei(58,58);
+        .bg('wel_close.png');
+      }
+      .w-name{
+        .place-center(65);
+        width: 540/@rem;
+        text-align: center;
+        color: #fff;
+        font-size: 20/@rem;
+
+        .enhanced{
+          color: #f8ea6e;
+          font-size: 26/@rem;
+        }
+      }
+
+      .w-farewell{
+        .place-center(122);
+        .widhei(160,29);
+        .bg('wel_farewell2.png');
+      }
+
+      .coin-wrap{
+        font-size: 0;
+        .place-center(176);
+        width: 540/@rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .coin-label{
+          display: inline-block;
+          .widhei(117,65);
+          .bg('wel_coin.png');
+        }
+        .coin-value{
+          //transform: scale(0.9);
+        }
+        @sf: 1;
+        .coin-num(@w, @left){
+          display: inline-block;
+          .bg('numberall2.png');
+          width: @w * @sf/@rem;
+          height: 104 * @sf/@rem;
+          background-repeat: no-repeat;
+          background-position: -@left *@sf/@rem 0;
+        }
+
+        .coin-num0{
+          .coin-num(82, 8)
+        }
+        .coin-num1{
+          .coin-num(36, 108)
+        }
+        .coin-num2{
+          .coin-num(78, 155)
+        }
+        .coin-num3{
+          .coin-num(72, 246)
+        }
+        .coin-num4{
+          .coin-num(82, 330)
+        }
+        .coin-num5{
+          .coin-num(74, 429)
+        }
+        .coin-num6{
+          .coin-num(82, 518)
+        }
+        .coin-num7{
+          .coin-num(75, 611)
+        }
+        .coin-num8{
+          .coin-num(82, 699)
+        }
+        .coin-num9{
+          .coin-num(82, 792)
+        }
+      }
+
+      .notify{
+        .place-center(425);
+        width: 520/@rem;
+        height: 100/@rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .notify-left{
+        flex: 1;
+        color: #666666;
+        font-size: 24/@rem;
+        line-height: 1.2;
+        .enhanced{
+          color: #df463b;
+          font-weight: 600;
+        }
+      }
+
+      .notify-right{
+        .widhei(72,82);
+        .bg('wel_rp.png');
+        margin-left: 10/@rem;
+      }
+
+      @keyframes btnGoScale{
+        50%{
+          transform: scale(0.94);
+        }
+      }
+      .btn-go{
+        position: absolute;
+        top: 525/@rem;
+        left: 208/@rem;
+        .widhei(238,243);
+        .bg('wel_btn_go.png');
+        transform-origin: center;
+        animation: btnGoScale 0.8s infinite;
+      }
+
+      .auto-go{
+        .place-center(772);
+        color: #efb952;
+        font-size: 18/@rem;
+        margin-left: 20/@rem;
+      }
+
+      .auto-set{
+        .place-center(840);
+        color: #fff;
+        font-size: 24/@rem;
+      }
+    }
+  }
+}

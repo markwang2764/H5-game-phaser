@@ -1,0 +1,522 @@
+@import "../../../../../common/css/base";
+
+@env: 'prod'; // dev, prev, prod  开发生产环境定义 可通过gulp replace在打包时替换值
+@screen_width: 750; // 设计稿宽度
+@img_url_prod: ''; // 线上图片地址
+@img_url_dev: ''; // 本地图片地址
+
+@int: 0.04s;
+
+.place-center(@top) {
+  position: absolute;
+  top: @top/@rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bg(@img) {
+  background-image: url("../../../img/@{img}");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  //display: none;
+
+  .welcome-pop-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .welcome-pop-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    .f1(@l, @t) {
+      transform: translate((@l - 320)/@rem, (@t - 525)/@rem) scale(1);
+    }
+
+    .f2() {
+      transform: translate((96 - 320 + 32)/@rem, (39 - 525 + 24)/@rem) scale(.45);
+    }
+
+    .f3() {
+      transform: translate((96 - 320 + 32)/@rem, (39 - 525 + 24)/@rem) scale(0);
+    }
+
+    @keyframes bgHide {
+      0% {
+        transform: translate(-50%) scale(1);
+      }
+      100% {
+        transform: translate(-50%) scale(0);
+      }
+    }
+
+    @keyframes flyCoin1 {
+      16% {
+        .f1(159, 521);
+      }
+      32%{
+        .f1(231,534);
+      }
+      54%{
+        .f1(231,534);
+      }
+      80%{
+        .f2;
+      }
+      81%{
+        .f3;
+      }
+      100%{
+        .f3;
+      }
+    }
+
+    @keyframes flyCoin2 {
+      16% {
+        .f1(272, 497);
+      }
+      32%{
+        .f1(306,527);
+      }
+      46%{
+        .f1(306,527);
+      }
+      70%{
+        .f2;
+      }
+      71%{
+        .f3;
+      }
+      100%{
+        .f3;
+      }
+    }
+
+    @keyframes flyCoin3 {
+      16% {
+        .f1(405, 486);
+      }
+      32%{
+        .f1(375,524);
+      }
+      34%{
+        .f1(375,524);
+      }
+      58%{
+        .f2;
+      }
+      51%{
+        .f3;
+      }
+      100%{
+        .f3;
+      }
+    }
+
+    @keyframes flyCoin4 {
+      16% {
+        .f1(491, 518);
+      }
+      32%{
+        .f1(438,537);
+      }
+      70%{
+        .f1(438,537);
+      }
+      71%{
+        .f3;
+      }
+      100%{
+        .f3;
+      }
+    }
+
+    @keyframes flyCoin5 {
+      16% {
+        .f1(554, 588);
+      }
+      32%{
+        .f1(480,582);
+      }
+      32%{
+        .f1(480,582);
+      }
+      56%{
+        .f2;
+      }
+      57%{
+        .f3;
+      }
+      100%{
+        .f3;
+      }
+    }
+
+    @keyframes flyCoin6 {
+      16% {
+        .f1(459, 620);
+      }
+      32%{
+        .f1(408,596);
+      }
+      42%{
+        .f1(408,596);
+      }
+      66%{
+        .f2;
+      }
+      67%{
+        .f3;
+      }
+      100%{
+        .f3;
+      }
+    }
+
+    @keyframes flyCoin7 {
+      16% {
+        .f1(346, 608);
+      }
+      32%{
+        .f1(347,585);
+      }
+      42%{
+        .f1(347,585);
+      }
+      66%{
+        .f2;
+      }
+      67%{
+        .f3;
+      }
+      100%{
+        .f3;
+      }
+    }
+
+    @keyframes flyCoin8 {
+      16% {
+        .f1(222, 630);
+      }
+      32%{
+        .f1(284,586);
+      }
+      42%{
+        .f1(284,586);
+      }
+      67%{
+        .f3;
+      }
+      100%{
+        .f3;
+      }
+    }
+
+    @keyframes notifyShow {
+      0% {
+        transform: translateX(-414/@rem);
+      }
+      100% {
+        transform: translateX(0/@rem);
+      }
+    }
+
+    @keyframes notifyHide {
+      0% {
+        transform: translateX(0/@rem);
+      }
+      100% {
+        transform: translateX(-414/@rem);
+      }
+    }
+
+    .w-coins-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &.active {
+
+        .fly-coin1 {
+          animation: flyCoin1 @int * 25 linear 1 forwards;
+        }
+
+        .fly-coin2 {
+          animation: flyCoin2 @int * 25 linear 1 forwards;
+        }
+
+        .fly-coin3 {
+          animation: flyCoin3 @int * 25 linear 1 forwards;
+        }
+
+        .fly-coin4 {
+          animation: flyCoin4 @int * 25 linear 1 forwards;
+        }
+
+        .fly-coin5 {
+          animation: flyCoin5 @int * 25 linear 1 forwards;
+        }
+
+        .fly-coin6 {
+          animation: flyCoin6 @int * 25 linear 1 forwards;
+        }
+
+        .fly-coin7 {
+          animation: flyCoin7 @int * 25 linear 1 forwards;
+        }
+
+        .fly-coin8 {
+          animation: flyCoin8 @int * 25 linear 1 forwards;
+        }
+      }
+
+      .fly-coin {
+        display: inline-block;
+        .bg('fly_coin.png');
+        .widhei(80, 83);
+        .positiona(525, 320);
+        transform: scale(0.01);
+
+      }
+
+      .fly-coin1 {
+        .fly-coin;
+      }
+      .fly-coin2 {
+        .fly-coin;
+      }
+      .fly-coin3 {
+        .fly-coin;
+      }
+      .fly-coin4 {
+        .fly-coin;
+      }
+      .fly-coin5 {
+        .fly-coin;
+      }
+      .fly-coin6 {
+        .fly-coin;
+      }
+      .fly-coin7 {
+        .fly-coin;
+      }
+      .fly-coin8 {
+        .fly-coin;
+      }
+    }
+
+    .w-bg {
+      .place-center(492);
+      .widhei(400, 180);
+      background-color: rgba(0, 0, 0, .7);
+      border-radius: 8/@rem;
+
+      &.active{
+        animation: bgHide @int*4 linear 1 forwards;
+      }
+      .w-amount-wrap {
+        justify-content: center;
+        margin-top: 10/@rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .w-coins {
+          .widhei(154, 113);
+          .bg('wel_coins.png');
+          margin-left: -20/@rem;
+        }
+        .w-x {
+          .widhei(42, 46);
+          .bg('wel_x.png');
+        }
+
+        .w-amount {
+
+        }
+
+        @sf: 0.5;
+        .coin-num(@w, @left) {
+          display: inline-block;
+          .bg('numberall2.png');
+          width: @w * @sf/@rem;
+          height: 104 * @sf/@rem;
+          background-repeat: no-repeat;
+          background-position: -@left *@sf/@rem 0;
+        }
+
+        .coin-num0 {
+          .coin-num(82, 8)
+        }
+        .coin-num1 {
+          .coin-num(36, 108)
+        }
+        .coin-num2 {
+          .coin-num(78, 155)
+        }
+        .coin-num3 {
+          .coin-num(72, 246)
+        }
+        .coin-num4 {
+          .coin-num(82, 330)
+        }
+        .coin-num5 {
+          .coin-num(74, 429)
+        }
+        .coin-num6 {
+          .coin-num(82, 518)
+        }
+        .coin-num7 {
+          .coin-num(75, 611)
+        }
+        .coin-num8 {
+          .coin-num(82, 699)
+        }
+        .coin-num9 {
+          .coin-num(82, 792)
+        }
+      }
+
+      .w-tip {
+        font-size: 22/@rem;
+        text-align: center;
+        color: #fff;
+        margin-top: 16/@rem;
+      }
+    }
+  }
+
+  // 光效
+  @lew: 80;
+  .light-effect {
+    .positiona(39 + 30, 96 + 30);
+    .widhei(@lew, @lew);
+    .bg('le_sprite.png');
+    display: none;
+    //.le07;
+    &.active {
+      display: block;
+      animation: leChange @int*10 steps(1) infinite;
+    }
+
+    @keyframes leChange {
+      0% {
+        .le01;
+      }
+      10% {
+        .le02;
+      }
+      20% {
+        .le03;
+      }
+      30% {
+        .le04;
+      }
+      40% {
+        .le05;
+      }
+      50% {
+        .le06;
+      }
+      60% {
+        .le07;
+      }
+      70% {
+        .le08;
+      }
+      80% {
+        .le09;
+      }
+      90% {
+        .le10;
+      }
+      100% {
+        .le10;
+      }
+
+    }
+  }
+
+  .le07 {
+    background-position: 0 0;
+  }
+  .le06 {
+    background-position: 0 -@lew/@rem;
+  }
+  .le08 {
+    background-position: 0 -@lew*2/@rem;
+  }
+  .le10 {
+    background-position: 0 -@lew*3/@rem;
+  }
+  .le09 {
+    background-position: 0 -@lew*4/@rem;
+  }
+  .le02 {
+    background-position: 0 -@lew*5/@rem;
+  }
+  .le01 {
+    background-position: 0 -@lew*6/@rem;
+  }
+  .le03 {
+    background-position: 0 -@lew*7/@rem;
+  }
+  .le05 {
+    background-position: 0 -@lew*8/@rem;
+  }
+  .le04 {
+    background-position: 0 -@lew*9/@rem;
+  }
+
+}
+
+.w-notify-wrap {
+  position: fixed;
+  top: 983/@rem;
+  left: -2/@rem;
+  .widhei(414, 93);
+  flex-direction: row;
+  align-items: center;
+  .bg('wel_bg_notify2.png');
+  display: none;
+  z-index: 1000;
+  &.active {
+    display: flex;
+    animation: notifyShow @int*10 linear 1 forwards , notifyHide @int*10 linear 1 3s forwards;
+  }
+  .w-avatar {
+    .widhei(54, 54);
+    .bg('avatar_super.png');
+    margin-left: 16/@rem;
+  }
+
+  .w-content {
+    line-height: 1.4;
+    color: #fff;
+    flex: 1;
+    font-size: 24/@rem;
+    margin-left: 16/@rem;
+    .enhanced {
+      color: #e3d46b;
+    }
+  }
+}

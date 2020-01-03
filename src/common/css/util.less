@@ -1,0 +1,172 @@
+.clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.hidden() {
+  display: none !important;
+  visibility: hidden;
+}
+
+.line0() {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.line1() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.line2() {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line3() {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.linex(@num) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @num;
+}
+
+.perspective(@value: 1000) {
+  -webkit-perspective: @value;
+  -moz-perspective: @value;
+  -ms-perspective: @value;
+  perspective: @value;
+}
+
+// user select 不允许用户选中页面中文字
+.user-select-none() {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+//数字 字体加粗 用Helvetica Neue字体
+.font-weight() {
+  font-family: 'Helvetica Neue', HeitiJ-Light, Helvetica, STHeiTi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+}
+
+.base64(@width, @height, @src) {
+  width: @width;
+  height: @height;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(@src);
+  display: inline-block;
+}
+
+//设置宽高
+.size(@width: 1, @height: 1) {
+  width: @width*1px;
+  height: @height*1px;
+} //设置背景图片
+.bgi(@src) {
+  background-image: url(@src);
+  background-repeat: no-repeat;
+  background-size: contain;
+} //设置段落
+.text(@fontsize, @height: @fontsize, @lineheight: @height) {
+  font-size: @fontsize*1px;
+  height: @height*1px;
+  line-height: @lineheight*1px;
+} //清除浮动
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+} //垂直水平居中
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} //水平居中
+.center {
+  margin-left: auto;
+  margin-right: auto;
+} //绝对定位
+.pos(@left: 1, @top: 1) {
+  position: absolute;
+  left: @left*1px;
+  top: @top*1px;
+}
+
+.posr(@right: 1, @top: 1) {
+  position: absolute;
+  top: @top*1px;
+  right: @right*1px;
+}
+
+.gray {
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.tooltip {
+  @width: 300;
+  @height: 80;
+  @border: 2;
+  @borderSize: 10;
+  display: inline-block;
+  .size(@width, @height);
+  background: #fffae1;
+  border: @border*1px solid #8b572a;
+  border-radius: 10px;
+  .text(30, @height);
+  color: #8b572a;
+  text-align: center;
+  position: absolute;
+  &:after,
+  &:before {
+    content: ' ';
+    .size(0, 0);
+  }
+  &:after {
+    position: absolute;
+    top: (@height - 2 * @border) * 1px;
+    left: (@width - @borderSize*2)/2 * 1px;
+    display: inline-block;
+    border: solid @borderSize*1px;
+    border-color: #fffae1 transparent transparent transparent;
+    z-index: 2;
+  }
+  &:before {
+    position: absolute;
+    top: (@height - 1.5 * @border) * 1px;
+    left: (@width - @borderSize*2 - @border*2)/2 * 1px;
+    display: inline-block;
+    border: solid (@borderSize+ @border) * 1px;
+    border-color: #8b572a transparent transparent transparent;
+    z-index: 1;
+  }
+} //h5容器
+.container {
+  width: 750px;
+  .center;
+}

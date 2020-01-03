@@ -1,0 +1,188 @@
+{
+  "code": "string",
+  "data": {
+    "coin_button_exposure": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "coin_button_click": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+
+    "odds_change_close_exposure": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "odds_change_close_click": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+
+    "odds_change_confirm_exposure": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "odds_change_confirm_click": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+
+    "odds_change_cancel_exposure": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "odds_change_cancel_click": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+
+    "guess_fail_close_button_exposure": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "guess_fail_close_button_click": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+
+    "treasure_box_exposure": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "treasure_box_click": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "treasure_box_close_exposure": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "treasure_box_close_click": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "confirm_guess_exposure": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": "//activity.tuiatest.cn",
+      "url": "/statistics/click",
+      "domain": null,
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    },
+    "confirm_guess_click": {
+      "dsm": "1.2035.0.0",
+      "dpm": "18643.115.4.1",
+      "dcm": "1018.64.0.0",
+      "domain4Web": null,
+      "url": null,
+      "domain": "//embedlog.dui88.com",
+      "consumerId": 11029009,
+      "appId": 18643,
+      "slotId": 2035
+    }
+  },
+  "msg": "string",
+  "success": true
+}

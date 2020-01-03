@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mintegral</title>
+  <script type="text/javascript" src="//vijs.rayjump.com/bin/vijs.js" onload="Vijs.init(this);"
+          sign="0517a453697c7c53f2bbb3cb53e1130f" appid="102909"></script>
+  </head>
+  <body>
+  <script type = "text/javascript" >
+  if (window.Vijs) {
+    window.myAd44420 = Vijs.setAD({
+      unitid: 44420,
+      autoplay: false,
+      loadedCallback: function () {
+        console.log('load success')
+        showAd44420();
+
+      },
+      videoEndedCallback: function () {
+        console.log('video end');
+      },
+      rewardedCallback: function (reward_name, reward_amount) {
+        console.log(reward_amount);
+      },
+      closeCallback: function (status) {
+        console.log('close video end =' + status);
+      },
+      errorCallback: function () {
+        console.log('error')
+      }
+    });
+  }
+
+  function showAd44420() {
+    window.myAd44420 && window.myAd44420.show();
+  }
+
+  </script>
+
+  </body>
+</html>

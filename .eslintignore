@@ -1,0 +1,12 @@
+/build/
+/config/
+/dist/
+/bin/
+/server/
+/*.js
+**/pao/
+/config/entry.js
+/src/common/js/
+**/lib/
+/src/pages/welcome/components/
+**/game/

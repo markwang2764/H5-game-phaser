@@ -1,0 +1,11 @@
+{
+    "code": "0000000",
+    "desc": "成功",
+    "data": {
+      "clickUrl": "string",
+      "desc": "111",
+      "picUrl": "333",
+      "title": "222"
+    },
+    "success": true
+  }

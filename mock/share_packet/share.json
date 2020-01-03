@@ -1,0 +1,12 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "hasAnswer": 0,
+    "unlockNum": 3,
+    "shareUrl": "http://localhost:17801/youtui/consumer/share?id=31&type=2&sourceToken=emyBkF63T7h",
+    "nickName": "vivi",
+    "userImg": "//yun.tuisnake.com/h5-mami/webgame/web-login/header/header1.png"
+  },
+  "success": true
+}

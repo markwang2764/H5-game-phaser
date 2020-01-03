@@ -1,0 +1,13 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "timeStamp": "1531279137",
+    "debug": true,
+    "jsApiList": [],
+    "signature": "2387728d2589e01287806321bf9c604e25a60ab1",
+    "appId": "wxf72640a6e689aed1",
+    "nonceStr": "c507d418-18c3-471c-81df-68cd9c76a792"
+  },
+  "success": true
+}

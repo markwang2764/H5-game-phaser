@@ -1,0 +1,15 @@
+{
+  "data": {
+    "materialUrl": "//yun.dui88.com/babi/img/tnknje71xm.png",
+    "materialId": 18340,
+    "clickUrl": "//pangu.tuiatest.cn/third/V1/redirect?url=http%3A%2F%2Fdown1.aw78.net%2Fapk%2F200070%2Ffish_20180409_200070.apk&orderId=PGW-116450510446&param=slotId%253D2035%2526gameId%253D68&consumerId=11041214&materialId=18340&advertId=3050&",
+    "advertId": 3050,
+    "advertName": "tyh",
+    "orderId": "PGW-116450510446",
+    "success": false,
+    "embed": "{\"img_victory_click\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain4Web\":\"//activity.tuiatest.cn\",\"dpm\":\"18643.115.2.5\",\"dsm\":\"\",\"slotId\":2035,\"url\":\"/statistics/click\"},\"btn_fail_click\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain4Web\":\"//activity.tuiatest.cn\",\"dpm\":\"18643.115.3.6\",\"dsm\":\"\",\"slotId\":2035,\"url\":\"/statistics/click\"},\"img_victory_exposure\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain\":\"//embedlog.dui88.com\",\"dpm\":\"18643.115.2.5\",\"dsm\":\"\",\"slotId\":2035},\"img_draw_click\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain4Web\":\"//activity.tuiatest.cn\",\"dpm\":\"18643.115.4.5\",\"dsm\":\"\",\"slotId\":2035,\"url\":\"/statistics/click\"},\"img_fail_click\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain4Web\":\"//activity.tuiatest.cn\",\"dpm\":\"18643.115.3.5\",\"dsm\":\"\",\"slotId\":2035,\"url\":\"/statistics/click\"},\"btn_victory_exposure\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain\":\"//embedlog.dui88.com\",\"dpm\":\"18643.115.2.6\",\"dsm\":\"\",\"slotId\":2035},\"btn_draw_click\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain4Web\":\"//activity.tuiatest.cn\",\"dpm\":\"18643.115.4.6\",\"dsm\":\"\",\"slotId\":2035,\"url\":\"/statistics/click\"},\"btn_draw_exposure\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain\":\"//embedlog.dui88.com\",\"dpm\":\"18643.115.4.6\",\"dsm\":\"\",\"slotId\":2035},\"img_draw_exposure\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain\":\"//embedlog.dui88.com\",\"dpm\":\"18643.115.4.5\",\"dsm\":\"\",\"slotId\":2035},\"btn_victory_click\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain4Web\":\"//activity.tuiatest.cn\",\"dpm\":\"18643.115.2.6\",\"dsm\":\"\",\"slotId\":2035,\"url\":\"/statistics/click\"},\"img_fail_exposure\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain\":\"//embedlog.dui88.com\",\"dpm\":\"18643.115.3.5\",\"dsm\":\"\",\"slotId\":2035},\"btn_fail_exposure\":{\"appId\":18643,\"consumerId\":11041214,\"dcm\":\"104.3050.6.1\",\"domain\":\"//embedlog.dui88.com\",\"dpm\":\"18643.115.3.6\",\"dsm\":\"\",\"slotId\":2035}}"
+  },
+  "success": true,
+  "code": "0000000",
+  "desc": "成功"
+}

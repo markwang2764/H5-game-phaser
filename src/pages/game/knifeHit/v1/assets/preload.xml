@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="preload.png">
+	<SubTexture name="loader_body.png" x="0" y="0" width="207" height="293"/>
+	<SubTexture name="loader_point.png" x="0" y="430" width="40" height="40"/>
+	<SubTexture name="sex_1.png" x="30" y="472" width="28" height="26"/>
+	<SubTexture name="sex_2.png" x="0" y="472" width="28" height="26"/>
+	<SubTexture name="vs.png" x="0" y="295" width="148" height="133"/>
+</TextureAtlas>

@@ -1,0 +1,17 @@
+{
+    "data": {
+        "userId": 11415777,
+        "nickName": "我叫高先森",
+        "photo": "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoUwwDibviayNeggkXhLdumlNArWjoN1ed7af0rkINiaE0qSt7TJKU9QUBWPFHL1vkgiathWDKrexI65g/132",
+        "prevail": 50,
+        "currentScore": 9585,
+        "bestScore": 9585,
+        "rank": 2,
+        "checkPointType": 4,
+        "bonus": 11.52,
+        "triggerRedPack": 1.24
+    },
+    "code": "200",
+    "msg": "请求成功",
+    "success": true
+}

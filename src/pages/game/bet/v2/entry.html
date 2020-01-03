@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>押注2</title>
+
+  #include('@layout/global/head.html')
+</head>
+<body>
+
+#include('@layout/global/footer.html')
+<div class="gameview">
+  <div class="ui">
+    <div class="back"></div>
+    <div class="wait">
+      等待开奖<span class="wait-num"></span>天
+    </div>
+    <div class="last">
+      <div class="last-top-box">
+        <div class="last-tip">近50期开奖</div>
+        <div class="last-week"></div>
+        <div class="drag"></div>
+      </div>
+      <div class="last-all">
+        <div class="last-list">
+          <div class="last-content">
+            <div class="last-item">公猫-土象-摩羯座</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="help"></div>
+  </div>
+  
+  <div id="game"></div>
+  <div class="guider-mask">
+    <div class="guider-btn"></div>
+  </div>
+  
+  <div class="mask result-mask">
+  
+    <div class="result-step result-step0"></div>
+    <div class="mask-content result-content">
+      <div class="result-zhen top-zhen"></div>
+      <div class="result-zhen bottom-zhen"></div>
+      <div class="result-song"></div>
+  
+      <div class="result-step result-step2">
+        <div class="result-bg"></div>
+        <div class="result-light"></div>
+        <div class="result-cat"></div>
+        <div class="result-tip">玩家<span class="result-red"></span>获得最高奖励<span class="result-red"></span>金币</div>
+        <div class="result-list">
+          <div class="result-sex result-btn"></div>
+          <div class="result-arrow arrow1"></div>
+          <div class="result-xiang result-btn"></div>
+          <div class="result-arrow arrow2"></div>
+          <div class="result-xing result-btn"></div>
+        </div>
+      </div>
+  
+      <div class="result-step result-step1">
+        <div class="result-zuos">
+          <!--列表-->
+        </div>
+      </div>
+  
+      <div class="float-ads"></div>
+  
+    </div>
+  </div>
+  
+  <div class="mask jiuji-mask">
+    <div class="mask-content">
+      <div class="jiuji-content">
+        <div class="jiuji-tip"></div>
+        <div class="jiuji-ads"></div>
+        <div class="jiuji-close"></div>
+
+        <!--引流-->
+        <div class="other-games-box">
+          <div class="other-games-item"></div>
+          <div class="other-games-item"></div>
+        </div>
+      </div>
+      <div class="jiuji-btn">免费获取</div>
+    </div>
+  </div>
+  
+  <div class="mask shenmi-mask">
+      <div class="mask-content">
+          <div class="shenmi-guang"></div>
+          <div class="shenmi-color"></div>
+          <div class="shenmi-content">
+            <div class="shenmi-close"></div>
+            <div class="shenmi-ads"></div>
+            <div class="shenmi-all"></div>
+            <div class="shenmi-liqu"></div>
+            <div class="shenmi-tip">点击后会在本局结束跳转领取</div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="mask rule-mask">
+    <div class="rule-content">
+      <div class="rule-close"></div>
+      <div class="rule-info">
+        <div class="rule-title">游戏规则</div>
+        <div class="rule-txt"></div>
+      </div>
+      <div class="rule-know"></div>
+    </div>
+  </div>
+  
+  <div class="mask poor-mask">
+      <div class="poor-content">
+        <div class="poor-close"></div>
+        <div class="poor-title">金币不足</div>
+        <div class="poor-tip">您的钱不够了，先去别处逛逛吧~</div>
+        <div class="poor-get"></div>
+      </div>
+  </div>
+  
+  
+  
+  <div class="mask toast-mask">
+    <div class="toast"></div>
+  </div>
+  
+  <div class="mask receive-mask">
+    <div class="receive-content">
+      <div class="receive-border">
+        <div class="receive-title border-txt">恭喜获得</div>
+        <div class="receive-title">恭喜获得</div>
+      </div>
+      <div class="receive-guang">
+        <div class="receive-coin"></div>
+      </div>
+        <div class="receive-border receive-top">
+          <div class="receive-tip border-txt"></div>
+          <div class="receive-tip"></div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="hideimg">
+    <div class="tu"></div>
+    <div class="huo"></div>
+    <div class="feng"></div>
+    <div class="shui"></div>
+  </div>
+</div>
+
+<!--游戏说明-->
+<script id="xingzuo" type="text/html">
+  <%= for(var i = 0; i < p.list.length; i++){ =%>
+  <div class="result-zuo" style="background-image:url(<%== p.list[i].img =%>)">
+    <div class="result-name"><%== p.list[i].name =%>座</div>
+  </div>
+  <%= } =%>
+</script>
+
+<!--游戏历史记录-->
+<script id="history" type="text/html">
+  <%= for(var i = 0; i < p.list.length; i++){ =%>
+    <div class="last-item"><%== "T" + (50 - i) + "期" =%> <span class="qishu"></span> <%== p.list[i].sex =%>-<%== p.list[i].xing =%>-<%== p.list[i].name =%>座</div>
+  <%= } =%>
+</script>
+
+<script type="text/javascript">
+  var CFG = {
+    nickName: '婀娜多姿的新宋', 
+
+    amount: '100',
+
+    
+    embed : '{"fire_signs_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.101","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Taurus_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1002","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"water_signs_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.104","dsm":"0.7845.0.0","slotId":7845},"betAmount_change_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.4","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"earth_signs_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.102","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Aries_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1001","dsm":"0.7845.0.0","slotId":7845},"gaming_box_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.3","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"alms_close_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.115.4.1","dsm":"0.7845.0.0","slotId":7845},"Libra_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1003","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Pisces_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1012","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"lotterying_box_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1","dsm":"0.7845.0.0","slotId":7845},"gold_low_get_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.115.4.11","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Aquarius_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1007","dsm":"0.7845.0.0","slotId":7845},"Aries_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1001","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"lottery_his_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.2","dsm":"0.7845.0.0","slotId":7845},"alms_close_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.115.4.1","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Lion_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1005","dsm":"0.7845.0.0","slotId":7845},"Cancer_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1004","dsm":"0.7845.0.0","slotId":7845},"lotterying_box_close_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.115.4.4","dsm":"0.7845.0.0","slotId":7845},"gold_low_close_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.115.4.10","dsm":"0.7845.0.0","slotId":7845},"betAmount_change_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.4","dsm":"0.7845.0.0","slotId":7845},"Scorpio_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1008","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"gaming_box_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.3","dsm":"0.7845.0.0","slotId":7845},"Sagittarius_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1009","dsm":"0.7845.0.0","slotId":7845},"Pisces_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1012","dsm":"0.7845.0.0","slotId":7845},"Libra_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1003","dsm":"0.7845.0.0","slotId":7845},"boy_cat_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.11","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"boy_cat_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.11","dsm":"0.7845.0.0","slotId":7845},"gold_low_get_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.115.4.11","dsm":"0.7845.0.0","slotId":7845},"gaming_box_close_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.115.4.7","dsm":"0.7845.0.0","slotId":7845},"Gemini_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1011","dsm":"0.7845.0.0","slotId":7845},"Virgo_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1006","dsm":"0.7845.0.0","slotId":7845},"game_rule_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"girl_cat_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.12","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Capricornus_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1010","dsm":"0.7845.0.0","slotId":7845},"Sagittarius_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1009","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"lotterying_box_close_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.115.4.4","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Gemini_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1011","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"gold_low_close_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.115.4.10","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"air_signs_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.103","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"girl_cat_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.12","dsm":"0.7845.0.0","slotId":7845},"earth_signs_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.102","dsm":"0.7845.0.0","slotId":7845},"Cancer_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1004","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"lotterying_box_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Aquarius_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1007","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Virgo_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1006","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"air_signs_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.103","dsm":"0.7845.0.0","slotId":7845},"Capricornus_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1010","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"gaming_box_close_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.115.4.7","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"fire_signs_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.101","dsm":"0.7845.0.0","slotId":7845},"Lion_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.1005","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"water_signs_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.104","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"lottery_his_click":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain4Web":"//act.tuiar.cn:17792","dpm":"22287.131.2.2","dsm":"0.7845.0.0","slotId":7845,"url":"/statistics/click"},"Taurus_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1002","dsm":"0.7845.0.0","slotId":7845},"game_rule_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1","dsm":"0.7845.0.0","slotId":7845},"Scorpio_exposure":{"appId":22287,"consumerId":10681000,"dcm":"1018.80.0.0","domain":"//embedlog.duibar.com","dpm":"22287.131.2.1008","dsm":"0.7845.0.0","slotId":7845}}',
+
+    headUrl:'//yun.tuisnake.com/h5-mami/webgame/web-login/header/header1.png',
+
+    boxImage:'//yun.tuisnake.com/h5-mami/webgame/web-login/header/header1.png',
+
+    sex:'1',
+
+    debug: true,
+
+    uskA : 'Zzd5VmtnWEFOSlZPTVp0dHpIa3ZhUT09' ,
+
+    host : '//yun.dui88.com' ,
+
+    thirdName:'',
+
+    thirdRate:'3',
+
+    returnTimes: {
+      lev1: 2,
+      lev2: 4.68,
+      lev3: 10.88
+    },
+    gameRule: '规则',
+
+    prizeEmbed: '{"st_info_sure_money_exposure":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain":"//embedlog.dui88.com","dpm":"18643.131.3.2","dsm":"1.2034.0.0","slotId":2034},"st_info_sure_money_click":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain4Web":"//activity.tuiatest.cn","dpm":"18643.131.3.2","dsm":"1.2034.0.0","slotId":2034,"url":"/statistics/click"},"st_info_click_normal_choose_game":{"appId":18643,"consumerId":"11137003","dcm":"18643.131.2.3","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.73","dsm":"1.2034.0.0","slotId":2034,"url":"/statistics/click"},"st_info_close_credits_click":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain4Web":"//activity.tuiatest.cn","dpm":"18643.131.3.5","dsm":"1.2034.0.0","slotId":2034,"url":"/statistics/click"},"st_info_love_credits_click":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain4Web":"//activity.tuiatest.cn","dpm":"18643.131.3.3","dsm":"1.2034.0.0","slotId":2034,"url":"/statistics/click"},"st_info_love_credits_exposure":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain":"//embedlog.dui88.com","dpm":"18643.131.3.3","dsm":"1.2034.0.0","slotId":2034},"st_info_exposure_first_choose_game":{"appId":18643,"consumerId":"11137003","dcm":"18643.131.2.1","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.73","dsm":"1.2034.0.0","slotId":2034,"url":"/activity/showLog"},"st_info_love_money_exposure":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain":"//embedlog.dui88.com","dpm":"18643.131.3.1","dsm":"1.2034.0.0","slotId":2034},"st_info_click_daily_choose_game":{"appId":18643,"consumerId":"11137003","dcm":"18643.131.2.2","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.73","dsm":"1.2034.0.0","slotId":2034,"url":"/statistics/click"},"st_info_click_first_choose_game":{"appId":18643,"consumerId":"11137003","dcm":"18643.131.2.1","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.73","dsm":"1.2034.0.0","slotId":2034,"url":"/statistics/click"},"st_info_exposure_normal_choose_game":{"appId":18643,"consumerId":"11137003","dcm":"18643.131.2.3","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.73","dsm":"1.2034.0.0","slotId":2034,"url":"/activity/showLog"},"st_info_sure_credits_exposure":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain":"//embedlog.dui88.com","dpm":"18643.131.3.4","dsm":"1.2034.0.0","slotId":2034},"st_info_sure_credits_click":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain4Web":"//activity.tuiatest.cn","dpm":"18643.131.3.4","dsm":"1.2034.0.0","slotId":2034,"url":"/statistics/click"},"st_info_love_money_click":{"appId":18643,"consumerId":11137003,"dcm":"1019.3.2.73","domain4Web":"//activity.tuiatest.cn","dpm":"18643.131.3.1","dsm":"1.2034.0.0","slotId":2034,"url":"/statistics/click"},"st_info_exposure_daily_choose_game":{"appId":18643,"consumerId":"11137003","dcm":"18643.131.2.2","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.73","dsm":"1.2034.0.0","slotId":2034,"url":"/activity/showLog"}}',
+    moreUrl: '',
+    
+    isPreview: 'false',
+    betAmount: '{"third":600,"first":400,"second":500}',
+
+  };
+</script>
+
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/anime.js" type="text/javascript"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/md5.js"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js" type="text/javascript"></script>
+<script src="//yun.dui88.com/h5-mami/adpages/gameroom/v1/showPop_develop.js" type="text/javascript"></script>
+<script src="//yun.dui88.com/h5-mami/webgame/gameroom/exchange-pop/entry-201805211706.js"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/phaser@2.6.2.min.js"></script>
+</body>
+</html>

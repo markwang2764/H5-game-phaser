@@ -1,0 +1,276 @@
+@rem: 200 / 640 * 750rem;
+@url: '//yun.dui88.com/h5-mami/layer/1.0/';
+
+@int: 0.04s;
+
+.wd(@w,@h) {
+  width: @w/@rem;
+  height: @h/@rem;
+}
+
+.bg(@img) {
+  background-image: url('@{url}@{img}');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pl(@top,@left) {
+  position: absolute;
+  left: @left/@rem;
+  top: @top/@rem;
+}
+.pr(@top,@right) {
+  position: absolute;
+  right: @right/@rem;
+  top: @top/@rem;
+}
+.pc() {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+@sf: 1.02;
+.coin-num(@w, @left) {
+  display: inline-block;
+  .bg('layer-rmb.png');
+  width: @w * @sf/@rem;
+  height: 104 * @sf/@rem;
+  background-repeat: no-repeat;
+  background-position: -@left *@sf/@rem 0;
+}
+
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 1000;
+
+  .layer-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+  }
+
+  .layer-close {
+    .pr(180,100);
+    .wd(129,49);
+    .bg('give_up.png');
+    background-size: contain;
+    z-index: 10;
+  }
+
+  .layer-body {
+    position: relative;
+
+    .layer-decorate {
+      .pl(380,0);
+      left: 50%;
+      margin-left: -759/2/@rem;
+      .wd(759,607);
+      .bg('layer-decorate.png');
+    }
+
+    .layer-light {
+      .pl(100,0);
+      left: 50%;
+      margin-left: -750/2/@rem;
+      .wd(736,736);
+      .bg('layer-light2.png');
+      //background-image: url('../img/layer-light2.png');
+      //background-size: cover;
+      //background-repeat: no-repeat;
+      animation: lightRotate 10s linear infinite;
+    }
+
+    .layer-main {
+      .pl(280,0);
+      left: 50%;
+      transform: translate(-50%);
+      .wd(544,704);
+      .bg('layer-bg3.png');
+    }
+
+    .layer-click-area{
+      .pl(280,0);
+      left: 50%;
+      transform: translate(-50%);
+      .wd(544,704);
+      z-index: 10;
+    }
+  }
+
+  .layer-main {
+
+    .layer-headimg {
+      .pc();
+      top: -106/2/@rem;
+      .wd(106,106);
+      .bg('headimg-bg.png');
+
+      img {
+        .wd(106,106);
+        border-radius: 50%;
+      }
+    }
+
+    .layer-name {
+      position: absolute;
+      top: 60/@rem;
+      color: #fff;
+      font-size: 20/@rem;
+      width: 100%;
+      text-align: center;
+      span {
+        color: #faeb53;
+        font-size: 28/@rem;
+
+      }
+    }
+
+    .layer-title {
+      .pc();
+      top: 100/@rem;
+      .wd(286,31);
+      .bg('layer_title_text.png');
+      background-size: contain;
+    }
+
+    .layer-intro {
+      position: absolute;
+      top: 180/@rem;
+      right: 20/@rem;
+      height: 38/@rem;
+      line-height: 38/@rem;
+      padding-left: 10/@rem;
+      padding-right: 10/@rem;
+      background-color: #bd2223;
+      border-top-left-radius: 19/@rem;
+      border-top-right-radius: 19/@rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 19/@rem;
+
+      white-space: nowrap;
+      color: #ffefa8;
+      font-size: 20/@rem;
+    }
+
+    .layer-money {
+      position: absolute;
+      top: 200/@rem;
+      right: 170/@rem;
+
+      .point {
+        .coin-num(28, 890);
+      }
+
+      .coin-num0 {
+        .coin-num(82, 8)
+      }
+      .coin-num1 {
+        .coin-num(36, 108)
+      }
+      .coin-num2 {
+        .coin-num(78, 155)
+      }
+      .coin-num3 {
+        .coin-num(72, 246)
+      }
+      .coin-num4 {
+        .coin-num(82, 330)
+      }
+      .coin-num5 {
+        .coin-num(74, 429)
+      }
+      .coin-num6 {
+        .coin-num(82, 518)
+      }
+      .coin-num7 {
+        .coin-num(75, 611)
+      }
+      .coin-num8 {
+        .coin-num(82, 699)
+      }
+      .coin-num9 {
+        .coin-num(82, 792)
+      }
+    }
+
+
+    .layer-btn {
+      .pc();
+      transform-origin: top center;
+      top: 340/@rem;
+      //.wd(300,5100/17);
+      width: 276/@rem;
+      height: 266/@rem;
+      .bg('btn_zhuan.png');
+      background-repeat: no-repeat;
+    }
+    @keyframes layerGestureChange{
+      0%{
+        .layer-gesture0;
+      }
+      14%{
+        .layer-gesture1;
+      }
+      28%{
+        .layer-gesture2;
+      }
+      42%{
+        .layer-gesture3;
+      }
+      56%{
+        .layer-gesture4;
+      }
+      70%{
+        .layer-gesture5;
+      }
+      84%{
+        .layer-gesture0;
+      }
+      100%{
+        .layer-gesture0;
+      }
+    }
+
+    // 手势
+    .layer-gesture{
+      .wd(400,400);
+      .pl(275, 100);
+      .bg('sprite_gesture2.png');
+      animation: layerGestureChange  steps(1) 0.6s infinite;
+      //.layer-gesture0;
+    }
+    .layer-gesture3{background-position:0 0;}
+    .layer-gesture4{background-position:0 -400/@rem;}
+    .layer-gesture5{background-position:0 -800/@rem;}
+    .layer-gesture0{background-position:0 -1200/@rem;}
+    .layer-gesture1{background-position:0 -1600/@rem;}
+    .layer-gesture2{background-position:0 -2000/@rem;}
+   
+
+    .layer-auto-jump{
+      opacity: .8;
+      .pr(10,20);
+      color: rgba(255,255,255, 0.8);
+      font-size: 30/@rem;
+    }
+  }
+
+  @keyframes lightRotate{
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+}
+

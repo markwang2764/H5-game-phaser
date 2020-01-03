@@ -1,0 +1,480 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "downloadUrl": "//www.baidu.com",
+    "introduce": "本测评能帮你了解自己的爱情性格，分析最适合你的异性类型，同时量身打造你们的相处之道。这样性格的你，遇上那样性格的Ta，才会擦出最美的火花。",
+    "questions": {
+      "1": {
+        "id": 1,
+        "title": "1. 你会想和哪种异性交往？",
+        "items": [
+          {
+            "id": 1,
+            "title": "看起来老实又内向的",
+            "forwardType": 0,
+            "forwardId": 2
+          },
+          {
+            "id": 2,
+            "title": "会玩又懂得打扮的",
+            "forwardType": 0,
+            "forwardId": 3
+          }
+        ]
+      },
+      "2": {
+        "id": 2,
+        "title": "2. 有个人边看表边跑，他迟到了5分钟，你觉得他心里怎么想？",
+        "items": [
+          {
+            "id": 1,
+            "title": "看起来老实又内向的222",
+            "forwardType": 0,
+            "forwardId": 4
+          },
+          {
+            "id": 2,
+            "title": "会玩又懂得打扮的222",
+            "forwardType": 0,
+            "forwardId": 5
+          }
+        ]
+      },
+      "3": {
+        "id": 3,
+        "title": "3. 有个家庭主妇正在打扫，你觉得她正在怎么想？",
+        "items": [
+          {
+            "id": 1,
+            "title": "我要扫得一尘不染",
+            "forwardType": 0,
+            "forwardId": 6
+          },
+          {
+            "id": 2,
+            "title": "差不多就行了，做完可以去看小说",
+            "forwardType": 0,
+            "forwardId": 4
+          }
+        ]
+      },
+      "4": {
+        "id": 4,
+        "title": "4. 有个女生从你身旁经过，飘来一阵很香的味道，你觉得是哪一种香味？",
+        "items": [
+          {
+            "id": 1,
+            "title": "甜甜的果香",
+            "forwardType": 0,
+            "forwardId": 7
+          },
+          {
+            "id": 2,
+            "title": "清淡的花香",
+            "forwardType": 0,
+            "forwardId": 9
+          }
+        ]
+      },
+      "5": {
+        "id": 5,
+        "title": "5. 你和朋友一起去吃饭，付了钱走出门才发现店员少找你10元，这时你会？",
+        "items": [
+          {
+            "id": 1,
+            "title": "折回去向他要",
+            "forwardType": 0,
+            "forwardId": 9
+          },
+          {
+            "id": 2,
+            "title": "才10元就算了",
+            "forwardType": 0,
+            "forwardId": 8
+          }
+        ]
+      },
+      "6": {
+        "id": 6,
+        "title": "6. 有一只鸟从鸟笼飞走了，你觉得？",
+        "items": [
+          {
+            "id": 1,
+            "title": "这只鸟一定会再回来",
+            "forwardType": 0,
+            "forwardId": 7
+          },
+          {
+            "id": 2,
+            "title": "不会回来了",
+            "forwardType": 0,
+            "forwardId": 10
+          }
+        ]
+      },
+      "7": {
+        "id": 7,
+        "title": "7. 看到有人顺手把垃圾丢在路上，你有什么感想？",
+        "items": [
+          {
+            "id": 1,
+            "title": "不能原谅这种人",
+            "forwardType": 0,
+            "forwardId": 12
+          },
+          {
+            "id": 2,
+            "title": "没什么感觉",
+            "forwardType": 0,
+            "forwardId": 10
+          }
+        ]
+      },
+      "8": {
+        "id": 8,
+        "title": "8. 朋友到你家作客，你喜欢收到哪一种礼物？",
+        "items": [
+          {
+            "id": 1,
+            "title": "鲜花或装饰品",
+            "forwardType": 0,
+            "forwardId": 16
+          },
+          {
+            "id": 2,
+            "title": "蛋糕或食物",
+            "forwardType": 0,
+            "forwardId": 11
+          }
+        ]
+      },
+      "9": {
+        "id": 9,
+        "title": "9. 你在半夜边看书边窝在床上中想事情，后来…？",
+        "items": [
+          {
+            "id": 1,
+            "title": "多半会睡著",
+            "forwardType": 0,
+            "forwardId": 12
+          },
+          {
+            "id": 2,
+            "title": "会愈来愈清醒",
+            "forwardType": 0,
+            "forwardId": 8
+          }
+        ]
+      },
+      "10": {
+        "id": 10,
+        "title": "10. 你现在正在逃命，你认为是什么东西在追你呢？",
+        "items": [
+          {
+            "id": 1,
+            "title": "狮子或老虎",
+            "forwardType": 0,
+            "forwardId": 13
+          },
+          {
+            "id": 2,
+            "title": "哥斯拉",
+            "forwardType": 0,
+            "forwardId": 14
+          }
+        ]
+      },
+      "11": {
+        "id": 11,
+        "title": "11. 你看到地面上有洞时你会怎么想？",
+        "items": [
+          {
+            "id": 1,
+            "title": "洞里有什么东西",
+            "forwardType": 0,
+            "forwardId": 15
+          },
+          {
+            "id": 2,
+            "title": "太危险了",
+            "forwardType": 1,
+            "forwardId": 1
+          }
+        ]
+      },
+      "12": {
+        "id": 12,
+        "title": "12. 书架上的书倒了，看起来乱七八糟，这时你会马上整理吗？",
+        "items": [
+          {
+            "id": 1,
+            "title": "会",
+            "forwardType": 0,
+            "forwardId": 16
+          },
+          {
+            "id": 2,
+            "title": "不会",
+            "forwardType": 0,
+            "forwardId": 13
+          }
+        ]
+      },
+      "13": {
+        "id": 13,
+        "title": "13. 有个人正对另一个人说悄悄话，你认为他听了之后的反应是？",
+        "items": [
+          {
+            "id": 1,
+            "title": "忍不住大笑出来",
+            "forwardType": 0,
+            "forwardId": 17
+          },
+          {
+            "id": 2,
+            "title": "皱起眉头一脸沉重",
+            "forwardType": 0,
+            "forwardId": 18
+          }
+        ]
+      },
+      "14": {
+        "id": 14,
+        "title": "14. 有个女子拿刀对著一名男子，这女子会对他说什么？",
+        "items": [
+          {
+            "id": 1,
+            "title": "我恨你，所以我要杀了你！",
+            "forwardType": 0,
+            "forwardId": 18
+          },
+          {
+            "id": 2,
+            "title": "再过来我要刺过去了！",
+            "forwardType": 1,
+            "forwardId": 2
+          }
+        ]
+      },
+      "15": {
+        "id": 15,
+        "title": "15. 你想找工作，下面两家公司你会选哪一家？",
+        "items": [
+          {
+            "id": 1,
+            "title": "能让人成长的公司",
+            "forwardType": 1,
+            "forwardId": 2
+          },
+          {
+            "id": 2,
+            "title": "稳定的公司",
+            "forwardType": 1,
+            "forwardId": 3
+          }
+        ]
+      },
+      "16": {
+        "id": 16,
+        "title": "16. 朋友请吃晚饭，你已经很饱了，他却一直劝你吃甜点，这时你会？",
+        "items": [
+          {
+            "id": 1,
+            "title": "再饱也会吃",
+            "forwardType": 0,
+            "forwardId": 17
+          },
+          {
+            "id": 2,
+            "title": "很果断的拒绝",
+            "forwardType": 0,
+            "forwardId": 15
+          }
+        ]
+      },
+      "17": {
+        "id": 17,
+        "title": "17. 买新电器时，关于说明书，你会？",
+        "items": [
+          {
+            "id": 1,
+            "title": "使用前一定先仔细看过",
+            "forwardType": 1,
+            "forwardId": 4
+          },
+          {
+            "id": 2,
+            "title": "根本很少看",
+            "forwardType": 1,
+            "forwardId": 3
+          }
+        ]
+      },
+      "18": {
+        "id": 18,
+        "title": "18. 下面哪一种人令你无法忍受？",
+        "items": [
+          {
+            "id": 1,
+            "title": "小气又罗嗦的人",
+            "forwardType": 1,
+            "forwardId": 2
+          },
+          {
+            "id": 2,
+            "title": "做事随便的人",
+            "forwardType": 1,
+            "forwardId": 4
+          }
+        ]
+      }
+    },
+    "answers": {
+      "1": [
+        {
+          "id": 1,
+          "title": "性格特征",
+          "context": "你安静，友好，善良，能与很多人相处地很好。在他人的眼中，你是一个可靠，尽责的人，在任何计划或团队中都是刻苦踏实的一员，只要人们委托于你的，你就会忠实于履行你的责任。\n\n你考虑周到，观察细致入微，非常懂得关心他人的感受，你会清楚的记住对个人有意义的事情的细节。这样的你在与人相处过程中，总是能够发现人们需要什么或想要些什么。\n\n你的友好善良和为人着想的性格总会为你赢来许多人的欣赏，而这样的你总是让身边的人感到亲近，所以你身边的人都很喜欢和你在一起。\n",
+          "image": null,
+          "keyWord": "友好、负责、为人着想",
+          "name": "薇"
+        },
+        {
+          "id": 2,
+          "title": "性格维度",
+          "context": "你是典型的内向型人，不喜与人交流，喜欢沉浸在自己的世界。\n你是一个典型情感型的人，非常关心他人的感受，而且是做事的指导原则。\n你是典型的直觉型的人，沉浸在思想中，富有远见，不喜欢具体实际的事情。\n你是一个偏原则的人，做事情大多数情况下都比较喜欢按照计划来行事。\n",
+          "image": "//cdn.miaokefu.com/img/chart1.png",
+          "keyWord": null
+        },
+        {
+          "id": 3,
+          "title": "恋爱风格",
+          "context": "你是典型的内向型人，不喜与人交流，喜欢沉浸在自己的世界。\n你是一个典型情感型的人，非常关心他人的感受，而且是做事的指导原则。\n你是典型的直觉型的人，沉浸在思想中，富有远见，不喜欢具体实际的事情。\n你是一个偏原则的人，做事情大多数情况下都比较喜欢按照计划来行事。\n",
+          "image": "//cdn.miaokefu.com/img/chart1.png",
+          "keyWord": null
+        },
+        {
+          "id": 4,
+          "title": "理想恋人",
+          "context": null,
+          "image": null,
+          "keyWord": null
+        }
+      ],
+      "2": [
+        {
+          "id": 1,
+          "title": "性格特征",
+          "context": "你其实很难被人所了解，你有着异常丰富的内涵，但矜持、不愿意与除你所信赖的人之外的其他人分享自己的感觉。\n\n另外，你有着很强的移情能力，极其富有同情心，你能够理解他人的情感和所做出的决定，并且总是尽可能地设身处地为他人着想。你就像是\"公益大使\"一样热心于公益服务事业，甚至投身于其中。更重要的是，你很乐意向他人展示自己的慈悲和照顾，并与你认为值得信赖的人分享自己的内心感受，与之一同进步，一同成长。\n\n你的坚毅、创新、富有同情心总会为你赢来许多的欣赏，而这样的你总是能为身边的人带去温暖、创意和价值，所以无论是在工作还是在宴会当中你都是受欢迎的一个。\n",
+          "image": null,
+          "keyWord": "个性关键词：矜持、同情心、执着",
+          "name": "薇"
+        },
+        {
+          "id": 2,
+          "title": "性格维度",
+          "context": "你是典型的内向型人，不喜与人交流，喜欢沉浸在自己的世界。\n你是一个典型情感型的人，非常关心他人的感受，而且是做事的指导原则。\n你是典型的直觉型的人，沉浸在思想中，富有远见，不喜欢具体实际的事情。\n你是一个偏原则的人，做事情大多数情况下都比较喜欢按照计划来行事。\n",
+          "image": "//cdn.miaokefu.com/img/chart1.png",
+          "keyWord": null
+        },
+        {
+          "id": 3,
+          "title": "恋爱风格",
+          "context": null,
+          "image": null,
+          "keyWord": null
+        },
+        {
+          "id": 4,
+          "title": "理想恋人",
+          "context": null,
+          "image": null,
+          "keyWord": null
+        }
+      ],
+      "3": [
+        {
+          "id": 1,
+          "title": "性格特征",
+          "context": "你是一个独立自主，意志力极强的人。你喜爱思考，喜爱创造，喜欢从整体来思考问题，对于别人是一堆眼花缭乱的信息，你却能够从大局出发看到关键的信息。\n\n你是聪明的，你能够在自己的领域中表现突出，当你坚持一件事情你甚至会不顾别人的看法一直坚持下去。因此，你从来不缺乏魅力，那些追随着你的眼光也从来不少。\n\n但是，你会用批评的眼光看待他人，这种眼光让别人感到不安，大概只有与你同等聪明的对象才能真正欣赏你的深沉。理性分析的你，并不擅长感性思考，你总是对别人的情绪不敏感，容易导致人际关系上面的冲突。\n",
+          "image": null,
+          "keyWord": "个性关键词：独立、思考、理性",
+          "name": "薇"
+        },
+        {
+          "id": 2,
+          "title": "性格维度",
+          "context": "你是典型的内向型人，不喜与人交流，喜欢沉浸在自己的世界。\n你是一个典型情感型的人，非常关心他人的感受，而且是做事的指导原则。\n你是典型的直觉型的人，沉浸在思想中，富有远见，不喜欢具体实际的事情。\n你是一个偏原则的人，做事情大多数情况下都比较喜欢按照计划来行事。\n",
+          "image": "//cdn.miaokefu.com/img/chart1.png",
+          "keyWord": null
+        },
+        {
+          "id": 3,
+          "title": "恋爱风格",
+          "context": null,
+          "image": null,
+          "keyWord": null
+        },
+        {
+          "id": 4,
+          "title": "理想恋人",
+          "context": null,
+          "image": null,
+          "keyWord": null
+        }
+      ],
+      "4": [
+        {
+          "id": 1,
+          "title": "性格特征",
+          "context": "你能够做几乎所有使你感兴趣的事。对待事情，你更喜欢依赖自己的能力临场发挥，而不是做提前准备。这可能也是因为生活对你来说就像是一场充满无限可能性和创造性的冒险。\n\n　　你富有想象力，并且讨厌惯例、规定和结构，甚至设法躲避它们。你就像是一位热情的革新者，你对周围的事物带有敏锐的洞察力，总是能够看到解决事情的新的可能性和新的方法，并有着冲动性的活力去执行它们。困难对你来说是一种激励，你为困难而鼓舞，并非常灵活地解决困难。\n\n　　作为同伴，你是热心友好的。只要有可能，你喜欢取悦他人，更愿意帮助有困难的人，适应他人的需要和希望，你常常给予他人尊重和支持，反过来，你也希望得到他人的肯定。有赖于你的活泼与热情，你非常有人缘，有一个很大的朋友圈子。\n",
+          "image": null,
+          "keyWord": "个性关键词：革新主义、热心、人缘好",
+          "name": "薇"
+        },
+        {
+          "id": 2,
+          "title": "性格维度",
+          "context": null,
+          "image": "//cdn.miaokefu.com/img/chart1.png",
+          "keyWord": null
+        },
+        {
+          "id": 3,
+          "title": "恋爱风格",
+          "context": null,
+          "image": null,
+          "keyWord": null
+        },
+        {
+          "id": 4,
+          "title": "理想恋人",
+          "context": null,
+          "image": null,
+          "keyWord": null
+        }
+      ]
+    },
+    "embed": {
+      "st_info_down2_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":11,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_unlock2_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":11,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_down_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":9,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_result_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":6,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"result_status\":0,\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_inter_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":1,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_me_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":2,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_request_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":7,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"result_status\":0,\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_start_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":3,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_unlock_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":10,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_end_done": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":5,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_success_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":8,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"result_status\":0,\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}",
+      "st_info_end_click": "{\"share_user_id\":10837002,\"device_id\":\"4b21c4512a8c6b6b038a62f596175a31-162b2e07271\",\"ip\":\"172.16.15.194\",\"domain4Web\":\"//192.168.70.138:17801\",\"type\":4,\"ua\":\"IOS\",\"innerGroup\":72,\"url\":\"/youtui/log/youtuiEmbedLog\",\"user_id\":10777001,\"appId\":46951,\"host\":\"192.168.70.138:17801\",\"context_type\":2,\"context_id\":30,\"slotId\":11164,\"directpage\":30,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\"}"
+    },
+    "hasAnswer": 0,
+    "unlockNum": 3,
+    "shareUrl": "http://localhost:17801/youtui/consumer/share?id=31&type=2&sourceToken=emyBkF63T7h",
+    "nickName": "vivi",
+    "userImg": "//yun.tuisnake.com/h5-mami/webgame/web-login/header/header1.png"
+  },
+  "success": true
+}

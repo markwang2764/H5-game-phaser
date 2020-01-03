@@ -1,0 +1,61 @@
+// 浮标、插件、主会场常用代码块
+
+// 变量                 是否必须      默认值        可选值               说明
+// @img_url_prod        是                                            生产环境图片地址
+// @img_url_dev         是                                            开发环境图片路径
+// @env                 否           'dev'        dev, prev, prod     环境定义，之后可通过gulp replace在打包时替换值
+// @screen_width        否           640                              设计稿尺寸
+@env: 'dev';
+@url_prod: @img_url_prod;
+@url_prev: @img_url_dev; // 本地手机端预览，在对应less文件所在文件夹下创建img文件夹放置本地测试图片
+@url_dev: @img_url_dev; //本地环境
+@url: `@{env} === 'dev' ? @{url_dev} :@{env} === 'prev' ? @{url_prev}: @{url_prod}`;
+
+@screen_width: 640;
+@rem_base_prod: 200rem * @screen_width / 640; // prod
+@rem_base_dev: 1px; //dev chrome中将屏幕宽度改为640 方便调整位置
+@str_rem_base_prod: 'rem_base_prod';
+@str_rem_base_dev: 'rem_base_dev';
+// js中不能识别1rem或者1px这种非字符串，通过@字符串值获取这两者
+@str_rem_base: `@{env} === 'dev' ? @{str_rem_base_dev} : @{str_rem_base_prod}`;
+@rem2: @@str_rem_base;
+// 开发过程中chrome中创建的750设备会被限制在640的body中
+//测试环境下，还未转为rem，在设计稿超出640时，需要解除body最大宽度限制
+body when(@env = 'dev') and (@screen_width > 640) {
+  max-width: none;
+}
+
+// 背景设置方法
+.publicBackground(@img, @repeat: no-repeat) {
+  background-size: cover;
+  background-repeat: @repeat;
+}
+
+// @img为''时不设置背景图片地址，主要用于活动工具中背景无初始值使用
+.publicBackground(@img, @repeat: no-repeat) when not (@img = '') {
+  background-image: url("@{url}@{img}");
+}
+
+// 定位设置方法 左上
+.positiona(@top, @left) {
+  position: absolute;
+  top: @top/@rem2;
+  left: @left/@rem2;
+}
+
+// 定位设置方法 右上
+.positionb(@top, @right) {
+  position: absolute;
+  top: @top/@rem2;
+  right: @right/@rem2;
+}
+
+//宽高设置方法
+.widhei(@width, @height) {
+  width: @width/@rem2;
+  height: @height/@rem2;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,34 @@
+<TextureAtlas imagePath="sprites.png">
+	<SubTexture name="bet_self.png" x="167" y="993" width="73" height="27"/>
+	<SubTexture name="bg_slide.png" x="0" y="942" width="245" height="49"/>
+	<SubTexture name="bg_tip.png" x="0" y="586" width="399" height="59"/>
+	<SubTexture name="box1.png" x="1419" y="329" width="107" height="57"/>
+	<SubTexture name="coin.png" x="354" y="981" width="28" height="30"/>
+	<SubTexture name="gift_box.png" x="1098" y="82" width="131" height="125"/>
+	<SubTexture name="heap1.png" x="247" y="981" width="105" height="31"/>
+	<SubTexture name="life.png" x="84" y="993" width="81" height="24"/>
+	<SubTexture name="life_2.png" x="0" y="993" width="82" height="24"/>
+	<SubTexture name="slide.png" x="647" y="239" width="87" height="45"/>
+	<SubTexture name="x_by.png" x="407" y="0" width="238" height="276"/>
+	<SubTexture name="x_cn.png" x="404" y="297" width="346" height="308"/>
+	<SubTexture name="x_dust.png" x="1098" y="209" width="114" height="90"/>
+	<SubTexture name="x_female.png" x="1231" y="82" width="111" height="119"/>
+	<SubTexture name="x_fire.png" x="647" y="0" width="99" height="108"/>
+	<SubTexture name="x_free_bubble.png" x="1419" y="388" width="107" height="50"/>
+	<SubTexture name="x_jn.png" x="752" y="320" width="324" height="324"/>
+	<SubTexture name="x_jx.png" x="752" y="0" width="344" height="318"/>
+	<SubTexture name="x_male.png" x="1231" y="203" width="111" height="114"/>
+	<SubTexture name="x_mj.png" x="1419" y="0" width="322" height="327"/>
+	<SubTexture name="x_shz.png" x="0" y="0" width="405" height="295"/>
+	<SubTexture name="x_sp.png" x="0" y="647" width="389" height="293"/>
+	<SubTexture name="x_ss.png" x="768" y="646" width="324" height="375"/>
+	<SubTexture name="x_sy.png" x="0" y="297" width="402" height="287"/>
+	<SubTexture name="x_sz.png" x="1094" y="320" width="323" height="348"/>
+	<SubTexture name="x_tips_bubble.png" x="1098" y="0" width="234" height="80"/>
+	<SubTexture name="x_tp.png" x="391" y="647" width="375" height="349"/>
+	<SubTexture name="x_tx.png" x="1094" y="670" width="323" height="329"/>
+	<SubTexture name="x_wind.png" x="647" y="110" width="98" height="127"/>
+	<SubTexture name="x_x12.png" x="401" y="607" width="85" height="37"/>
+	<SubTexture name="x_x2.png" x="247" y="942" width="116" height="37"/>
+	<SubTexture name="x_x4.png" x="488" y="607" width="79" height="37"/>
+</TextureAtlas>

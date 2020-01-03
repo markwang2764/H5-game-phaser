@@ -1,0 +1,17 @@
+{
+  "id": "123456789",
+  "st_info_click_get": "{\"dpm\":\"41881.115.2.2\",\"consumerId\":4239691209,\"appId\":41881,\"domain4Web\":\"//activity.tacota.cn\",\"host\":\"activity.tacota.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1002.904.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_click_introduce": "{\"dpm\":\"41881.115.2.1\",\"consumerId\":4239691209,\"appId\":41881,\"domain4Web\":\"//activity.tacota.cn\",\"host\":\"activity.tacota.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_exposure_get": "{\"dpm\":\"41881.115.2.2\",\"consumer_id\":4239691209,\"consumerId\":4239691209,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":41881,\"host\":\"activity.tacota.cn\",\"dcm\":\"1002.904.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_exposure_introduce": "{\"dpm\":\"41881.115.2.1\",\"consumer_id\":4239691209,\"consumerId\":4239691209,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":41881,\"host\":\"activity.tacota.cn\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_exposure_race": "{\"dpm\":\"41881.115.1.1\",\"consumer_id\":4239691209,\"consumerId\":4239691209,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":41881,\"host\":\"activity.tacota.cn\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_click_endless": "{\"dpm\":\"41881.115.1.2\",\"consumerId\":4239691209,\"appId\":41881,\"domain4Web\":\"//activity.tacota.cn\",\"host\":\"activity.tacota.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_click_race": "{\"dpm\":\"41881.115.1.1\",\"consumerId\":4239691209,\"appId\":41881,\"domain4Web\":\"//activity.tacota.cn\",\"host\":\"activity.tacota.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_click_amount_close": "{\"dpm\":\"41881.115.5.1\",\"consumerId\":4239691209,\"appId\":41881,\"domain4Web\":\"//activity.tacota.cn\",\"host\":\"activity.tacota.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_click_get_amount": "{\"dpm\":\"41881.115.5.2\",\"consumerId\":4239691209,\"appId\":41881,\"domain4Web\":\"//activity.tacota.cn\",\"host\":\"activity.tacota.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1002.904.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_click_rule_close": "{\"dpm\":\"41881.115.4.1\",\"consumerId\":4239691209,\"appId\":41881,\"domain4Web\":\"//activity.tacota.cn\",\"host\":\"activity.tacota.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_exposure_get_amount": "{\"dpm\":\"41881.115.5.2\",\"consumer_id\":4239691209,\"consumerId\":4239691209,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":41881,\"host\":\"activity.tacota.cn\",\"dcm\":\"1002.904.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_exposure_endless": "{\"dpm\":\"41881.115.1.2\",\"consumer_id\":4239691209,\"consumerId\":4239691209,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":41881,\"host\":\"activity.tacota.cn\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_exposure_rule_close": "{\"dpm\":\"41881.115.4.1\",\"consumer_id\":4239691209,\"consumerId\":4239691209,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":41881,\"host\":\"activity.tacota.cn\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}",
+  "st_info_exposure_amount_close": "{\"dpm\":\"41881.115.5.1\",\"consumer_id\":4239691209,\"consumerId\":4239691209,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":41881,\"host\":\"activity.tacota.cn\",\"dcm\":\"1018.13.0.0\",\"dsm\":\"1.7105.3.904\"}"
+}

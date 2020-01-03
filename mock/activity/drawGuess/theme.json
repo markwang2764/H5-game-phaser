@@ -1,0 +1,17 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "bonus": 0,
+    "contentId": 0,
+    "contentType": 0,
+    "paintTrail": "string",
+    "share_way": 0,
+    "sourceToken": "string",
+    "sourceUserId": 0,
+    "theme": "题目34",
+    "themeId": 0,
+    "prompt":["ad","23"]
+  },
+  "success": true
+}

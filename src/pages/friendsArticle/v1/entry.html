@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>朋友圈热文</title>
+    #include("@layout/global/head.html")
+
+    <script>
+        window.pageStartTime = +new Date();
+    </script>
+    <script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="page">
+    <div class="title"></div>
+    <div class="author-date">
+        <span class="author"></span>
+        <span class="date">今天</span>
+    </div>
+    <div class="tip">
+        <img class="label" src="img/redbag_small.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="content"></div>
+    <div class="tip">
+        <img class="label" src="img/redbag_small.png">
+        <span>分享这篇文章，即可获得现金收益</span>
+    </div>
+    <div class="button">
+       分享领红包
+    </div>
+    <div class="comment"></div>
+</div>
+#include("../layout/common.html")
+<!--toshare-page---------------------------------------------------------------------------------->
+<div class="toshare-page">
+    <div id="mask" class="mask">
+        <main class="main">
+            <div class="close">
+                <img src="imgnew/icon_close.png"/>
+            </div>
+            <section class="before">
+                <div class="coin">
+                    <img src="imgnew/button_open.png"/>
+                </div>
+            </section>
+            <section class="after">
+                <div class="card">
+                    <div class="ocontent">
+                        <span class="money-content"></span><span class="smaller">元</span>
+                    </div>
+                </div>
+                <div class="front">
+                    <div class="ocontent">
+                        恭喜您获得一个现金红包
+                    </div>
+                    <div class="ocontent large">
+                        分享给好友即可提现
+                    </div>
+                </div>
+                <div class="button">
+                    分享提现
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--bigbag-component---------------------------------------------------------------------------->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="imgnew/icon_close.png"/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent">
+                            恭喜您获得一个现金红包
+                        </div>
+                        <div class="ocontent large">
+                            分享给好友即可提现
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span>分享提现</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- sharetip-component----------------------------------------------------------------------------- -->
+    <div class="share-tip">
+        <main></main>
+    </div>
+</div>
+<!-- aftershare-page----------------------------------------------------------------------------- -->
+<div class="shared-page">
+    <!--<div class="code-content3"  data-clipboard-target="#code"></div>-->
+    <div class="big-bag">
+        <div class="omask">
+            <div class="main">
+                <div class="close">
+                    <img src="imgnew/icon_close.png"/>
+                </div>
+                <section class="after">
+                    <div class="card">
+                        <div class="ocontent">
+                            <span class="money-content"></span><span class="smaller">元</span>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="ocontent largest">
+                            分享成功
+                        </div>
+                    </div>
+                    <div class="button" data-clipboard-target="#code">
+                        <div>立即提现</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- downlooadtip-component----------------------------------------------------------------------------- -->
+    
+    <div class="download-tip">
+        <div class="code-content2" ></div>
+        <div class="mask">
+            <main class="main">
+                <div class="code-content">
+                    <div id="code" class="code"></div>
+                </div>
+                <div class="btn-content" data-clipboard-target="#code">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- smallbag-component----------------------------------------------------------------------------- -->
+<div class="small-bag">
+    <div class="main">
+    </div>
+</div>
+<!-- sharetip-component----------------------------------------------------------------------------- -->
+<!-- <div class="share-tip-outer">
+    <main></main>
+</div> -->
+
+</body>
+</html>

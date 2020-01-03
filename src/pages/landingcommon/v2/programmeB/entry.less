@@ -1,0 +1,65 @@
+@import "../../../../common/css/common";
+
+body {
+  font-size: 14px;
+  background-color: #fff;
+  color: #1e1515;
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.57);
+  main{
+    width: 630px;
+    height: 599px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("img/guide_bg.png");
+    background-size: contain;
+    .code {
+      padding: 10px;
+      width: 418px;
+      height: 70px;
+      line-height: 70px;
+      position: absolute;
+      top: 360px;
+      left: 120px;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      .label {
+        color: @font_color_black;
+      }
+      .ocontent {
+        padding: 0 5px;
+        font-weight: bold;
+        color: #ff8c80;
+        flex: 1;
+      }
+      .button {
+        color: white;
+      }
+    }
+    .content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 593px;
+      height: 510px;
+      background-size: contain;
+      font-size: 50px;
+      font-weight: bold;
+      padding-left: 160px;
+      padding-top: 280px;
+      color: rgb(255, 222, 3);
+    }
+  }
+
+}
+
+@font_color_black: rgb(41, 43, 46);

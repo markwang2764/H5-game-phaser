@@ -1,0 +1,141 @@
+@import "../../../../common/css/common";
+
+body {
+  font-size: 14px;
+  background-color: #fff;
+  color: #1e1515;
+}
+.bg(@url) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/@{url}");
+}
+i,span{
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.wrapper{
+  border-top: 1px solid rgb(217,138,54);
+  margin-top: -1px;
+  height:100vh;
+  .bg('bg.png');
+}
+.home-page{
+  margin-top:93px;
+  height: 946px;
+  .bg('hand-scan.png');
+}
+.page-1006{
+  margin-top:63px;
+  height: 1006px;
+  .bg('hand-1006.png');
+}
+
+.top-512{
+  width: 512px;
+  height: 97px;
+  .bg('top-512.png');
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-256px,0);
+}
+.top-title-text{
+  font-family: PingFang-SC-Bold;
+  font-weight: Bold;
+  color:#fff;
+  font-size: 36px;
+  line-height: 97px;
+}
+.title-bigger{
+  font-size:50px;
+  margin-right: 19px;
+  vertical-align: middle;
+}
+.title-smaller{
+  font-size: 36px;
+  vertical-align: middle;
+}
+.tip{
+  font-size:30px;
+  font-family: PingFang-SC-Bold;
+  color: #5D6DEE;
+  line-height:30px;
+  text-align: center;
+}
+.tip-grey{
+  font-size:26px;
+  font-family: PingFang-SC-Bold;
+  color: #999;
+  line-height:26px;
+  text-align: center;
+}
+.star{
+  vertical-align:-10px;
+  width: 56px;
+  height: 53px;
+}
+.star-3{
+  .bg('star-3.png')
+}
+.normal-btn,.small-btn{
+  font-family: PingFang-SC-Heavy;
+  width: 434px;
+  height: 115px;
+  margin-left: 50%;
+  transform: translate(-217px,0);
+  text-align: center;
+  line-height: 117px;
+  font-size: 36px;
+  color: #3A3732;
+  font-weight: bold;
+  .bg('btn-1.png')
+}
+.small-btn{
+  width: 318px;
+  height: 117px;
+  line-height: 115px;
+  margin-left: 50%;
+  transform: translate(-159px,0);
+  opacity: 0;
+  .bg('btn-2.png')
+}
+.desc{
+  font-family: PingFang-SC-Bold;
+  font-weight: Bold;
+  font-size: 31px;
+  color:#fff;
+  text-align: center;
+}
+.desc-first{
+  margin-top: 38px;
+}
+.desc-second{
+  margin-top: 17px;
+}
+@keyframes meter-an
+{
+  from {width: 0;}
+  to {width: 100%;}
+}
+@keyframes achieve-rich
+{
+  from {width: 0;}
+  to {width: 237px;}
+}
+@keyframes portrait-an
+{
+  0%   {transform: scale(0,0);}
+  15%  {transform: scale(.4,.4);}
+  30%  {transform: scale(.8,.8);}
+  55%  {transform: scale(1.2,1.2);}
+  100% {transform: scale(1,1);}
+}
+@keyframes button-an
+{
+  0%   {transform: translate(-159px,0) scale(0,0);}
+  15%  {transform: translate(-159px,0) scale(.4,.4);}
+  30%  {transform: translate(-159px,0) scale(.8,.8);}
+  55%  {transform: translate(-159px,0) scale(1.2,1.2);}
+  100% {transform: translate(-159px,0) scale(1,1);}
+}

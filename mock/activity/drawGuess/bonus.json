@@ -1,0 +1,18 @@
+{
+  "code": "0",
+  "data": {
+    "bonus": 10,
+    "answered":false,
+    "bonusType": 1,
+    "contentId": 0,
+    "contentType": 0,
+    "paintTrail": "string",
+    "share_way": 0,
+    "sourceToken": "string",
+    "sourceUserId": 0,
+    "theme": "string",
+    "themeId": 0
+  },
+  "desc": "string",
+  "success": true
+}

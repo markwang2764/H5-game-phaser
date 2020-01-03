@@ -1,0 +1,11 @@
+{
+  "code": "string",
+  "data": {
+    "bonus": 99,
+    "cdk": "string",
+    "rightOptionId": 1,
+    "nextBonus": 100
+  },
+  "desc": "string",
+  "success": true
+}

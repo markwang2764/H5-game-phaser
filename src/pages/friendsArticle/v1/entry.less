@@ -1,0 +1,202 @@
+@import "../../../common/css/common";
+
+body {
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+
+.bg(@url) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./img/@{url}");
+}
+
+i, span {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.page {
+  // text-align:center;
+  display: none;
+  padding: 0 24px;
+  .title {
+    margin-top: 38px;
+    font-family: PingFang-SC-Bold;
+    font-size: 38px;
+    color: rgb(51, 51, 51);
+    line-height: 60px;
+  }
+  .author-date {
+    font-family: PingFang-SC-Bold;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 40px;
+    .author {
+      color: rgb(57, 108, 196)
+    }
+    .date {
+      color: rgb(153, 153, 153);
+      margin-left: 10px;
+    }
+  }
+  .tip{
+    height: 78px;
+    .label{
+      width: 64px;
+      height: 78px;
+      margin-right: 20px;
+    }
+    span{
+      color: red;
+      font-size: 30px;
+      line-height: 78px;
+      font-weight: 600;
+    }
+  }
+  .content {
+    .first-section {
+      overflow: hidden;
+      font-family: PingFang-SC-Bold;
+      font-weight: bold;
+      font-size: 30px;
+      color: rgb(51, 51, 51);
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        .bg('xian.png');
+        position: absolute;
+        left: 0;
+        top: 12.5px;
+        bottom: 14px;
+        width: 6px;
+      }
+      padding-left: 30px;
+    }
+    & > div {
+      font-family: PingFang-SC-Medium, PingFang-SC-Bold;
+      font-size: 30px;
+      color: rgb(102, 102, 102);
+      line-height: 56px;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      span {
+        display: inline;
+        color: rgb(225, 46, 22)
+      }
+      .large {
+        font-family: PingFang-SC-Bold;
+        font-size: 38px;
+      }
+    }
+  }
+  .comment {
+    .label {
+      font-family: PingFang-SC-Medium;
+      font-size: 28px;
+      color: rgb(153, 153, 153);
+      margin: 92px 0 40px 0;
+    }
+    .portrait {
+      display: block;
+      width: 60px;
+      height: 60px;
+      flex: 0 0 60px;
+      background-size: 60px 60px;
+    }
+    .nickname-detail {
+      flex: 1;
+      padding-left: 28px;
+      .nickname {
+        font-family: PingFang-SC-Medium;
+        font-size: 26px;
+        color: #999;
+        position: relative;
+        height: 30px;
+        .thumb-1, .thumb-2 {
+          font-size: 28px;
+          display: inline-block;
+          color: rgb(87, 107, 149);
+          height: 30px;
+          position: absolute;
+          right: 0px;
+          background-image: url('img/thumb-1.png');
+          background-size: 30px 30px;
+          background-position: 0 0;
+          padding-left: 35px;
+          line-height: 30px;
+        }
+        .thumb-2 {
+          background-image: url('img/thumb-2.png');
+        }
+      }
+      .detail {
+        font-family: PingFang-SC-Medium;
+        font-size: 28px;
+        color: rgb(51, 51, 51);
+        line-height: 40px;
+        margin: 8px 0 0 0;
+      }
+    }
+  }
+  .button {
+    // position: fixed;
+    // left: 200px;
+    // bottom: 200px;
+    margin-top: 20px;
+    height: 100px;
+    background-color: #ffcf01;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    color: #4b2e06;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+}
+
+.download-pop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  .guide-pic {
+    position: absolute;
+    top: 0;
+    right: 23px;
+    width: 536px;
+    height: 353px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/download_guide.png");
+  }
+}
+
+// .download {
+//   background: url('img/b-download.png') no-repeat;
+//   background-size: 100% 100px;
+//   height: 100px;
+//   width: 100%;
+//   position: fixed;
+//   bottom: -1px;
+//   left: 0;
+// }
+
+.img {
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 8px;
+}
+
+// .img:nth-last-of-type(1){
+//   margin-bottom: 50px;
+// }
+.flex-box {
+  display: flex;
+  margin-bottom: 60px;
+}

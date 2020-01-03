@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title>停留时长打包专用html</title>
+  #include('@layout/global/head.html')
+
+</head>
+<body>
+#include('@layout/global/footer.html')
+<button id="start" type="button">开始</button>
+<button id="pause">暂停</button>
+<button id="resume" type="button">恢复</button>
+<button id="stop" type="button">停止</button>
+</body>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js"></script>
+<script >
+  var st = window.CREATE && new window.CREATE.StayTime({
+    type :3,
+    interval: 1e3,
+    cfg: window.CFG
+  });
+
+  $('#start').on('click', function () {
+    st.start();
+  })
+  $('#pause').on('click', function () {
+    st.pause();
+  })
+  $('#resume').on('click', function () {
+    st.resume();
+  })
+  $('#stop').on('click', function () {
+    st.stop();
+  })
+</script>
+</html>

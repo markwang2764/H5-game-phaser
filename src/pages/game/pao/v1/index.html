@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+  <title>糖果泡泡堂</title>
+  <!-- common plugins -->
+  <link rel="stylesheet/less" type="text/css" href="./css/all.less" />
+  <script src="//cdn.bootcss.com/less.js/1.7.0/less.min.js"></script>
+
+  <script>
+    ! function (e, i) {
+      var t = e.documentElement,
+        n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+        a = n ? Math.min(i.devicePixelRatio, 3) : 1,
+        m = "orientationchange" in window ? "orientationchange" : "resize";
+      t.dataset.dpr = a;
+      for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" == l.name &&
+        (c = !0, d = l);
+      if (c) d.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+      else {
+        var o = e.createElement("meta");
+        o.name = "viewport", o.content =
+          "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild
+          .appendChild(o)
+      }
+      var s = function () {
+        var e = t.clientWidth;
+        e / a > 750 && (e = 750 * a), window.remScale = e / 750, t.style.fontSize = 200 * (e / 750) + "px"
+      };
+      s(), e.addEventListener && i.addEventListener(m, s, !1)
+    }(document, window);
+  </script>
+
+  <script type="text/javascript">
+    var CFG = {
+      monsters: '[{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/hze3kkhls6.png","prizeAmount":120,"proportion":10,"level":1,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/0mo3b4k76i.png","prizeAmount":200,"proportion":20,"level":2,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/iehv4p27vn.png","prizeAmount":300,"proportion":20,"level":3,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/qc9b318y5d.png","prizeAmount":500,"proportion":20,"level":4,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/ffxacwcxkg.png","prizeAmount":700,"proportion":20,"level":5,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/zyizqhzswl.png","prizeAmount":1000,"proportion":10,"level":6,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/54ghqtos2q.png","prizeAmount":0,"proportion":1,"level":1000,"monsterType":1}]',//怪物列表
+      nick_name: 'tyh', //用户昵称
+      url: 'http://activity.tuiatest.cn/third',//获取更多金币链接
+      amount: '10',//用户金币数
+      rule: '<p>游戏规则</p>',//规则列表
+      imgList: '{"200":"http://yun.tuisnake.com/tuia-media/img/cw9gi1zo38.png","300":"http://yun.tuisnake.com/tuia-media/img/glm0qm8ilw.png","400":"http://yun.tuisnake.com/tuia-media/img/21ieiedp4w.png","301":"http://yun.tuisnake.com/tuia-media/img/9qqkj56rak.png","500":"http://yun.tuisnake.com/tuia-media/img/7dmytqccgw.png","302":"http://yun.tuisnake.com/tuia-media/img/s66wgobbra.png"}',//图片列表
+      guns: '[100,200,300,400,500,600,700,800,900,1000]',//炮筒规格
+      firstLogin: '0',//登陆类型
+      rewardAmount: '0',//金额
+      prizeEmbed: '{"st_info_sure_money_exposure":{"dpm":"18643.131.3.2","consumer_id":11131002,"consumerId":11131002,"domain":"//embedlog.dui88.com","appId":18643,"host":"//activity.tuiatest.cn","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_sure_money_click":{"dpm":"18643.131.3.2","consumerId":11131002,"appId":18643,"domain4Web":"////activity.tuiatest.cn","host":"//activity.tuiatest.cn","url":"/statistics/click","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_click_normal_choose_game":{"dpm":"18643.131.2.3","consumerId":11131002,"appId":18643,"domain4Web":"////activity.tuiatest.cn","host":"//activity.tuiatest.cn","url":"/statistics/click","dcm":"1019.2.2.62","dsm":"1.2035.3.745"},"st_info_close_credits_click":{"dpm":"18643.131.3.5","consumerId":11131002,"appId":18643,"domain4Web":"////activity.tuiatest.cn","host":"//activity.tuiatest.cn","url":"/statistics/click","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_love_credits_click":{"dpm":"18643.131.3.3","consumerId":11131002,"appId":18643,"domain4Web":"////activity.tuiatest.cn","host":"//activity.tuiatest.cn","url":"/statistics/click","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_love_credits_exposure":{"dpm":"18643.131.3.3","consumer_id":11131002,"consumerId":11131002,"domain":"//embedlog.dui88.com","appId":18643,"host":"//activity.tuiatest.cn","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_exposure_first_choose_game":{"dpm":"18643.131.2.1","consumer_id":11131002,"consumerId":11131002,"domain":"//embedlog.dui88.com","appId":18643,"host":"//activity.tuiatest.cn","dcm":"1019.2.2.62","dsm":"1.2035.3.745"},"st_info_love_money_exposure":{"dpm":"18643.131.3.1","consumer_id":11131002,"consumerId":11131002,"domain":"//embedlog.dui88.com","appId":18643,"host":"//activity.tuiatest.cn","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_click_daily_choose_game":{"dpm":"18643.131.2.2","consumerId":11131002,"appId":18643,"domain4Web":"////activity.tuiatest.cn","host":"//activity.tuiatest.cn","url":"/statistics/click","dcm":"1019.2.2.62","dsm":"1.2035.3.745"},"st_info_click_first_choose_game":{"dpm":"18643.131.2.1","consumerId":11131002,"appId":18643,"domain4Web":"////activity.tuiatest.cn","host":"//activity.tuiatest.cn","url":"/statistics/click","dcm":"1019.2.2.62","dsm":"1.2035.3.745"},"st_info_exposure_normal_choose_game":{"dpm":"18643.131.2.3","consumer_id":11131002,"consumerId":11131002,"domain":"//embedlog.dui88.com","appId":18643,"host":"//activity.tuiatest.cn","dcm":"1019.2.2.62","dsm":"1.2035.3.745"},"st_info_sure_credits_exposure":{"dpm":"18643.131.3.4","consumer_id":11131002,"consumerId":11131002,"domain":"//embedlog.dui88.com","appId":18643,"host":"//activity.tuiatest.cn","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_sure_credits_click":{"dpm":"18643.131.3.4","consumerId":11131002,"appId":18643,"domain4Web":"////activity.tuiatest.cn","host":"//activity.tuiatest.cn","url":"/statistics/click","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_love_money_click":{"dpm":"18643.131.3.1","consumerId":11131002,"appId":18643,"domain4Web":"////activity.tuiatest.cn","host":"//activity.tuiatest.cn","url":"/statistics/click","dcm":"1019.3.2.62","dsm":"1.2035.3.745"},"st_info_exposure_daily_choose_game":{"dpm":"18643.131.2.2","consumer_id":11131002,"consumerId":11131002,"domain":"//embedlog.dui88.com","appId":18643,"host":"//activity.tuiatest.cn","dcm":"1019.2.2.62","dsm":"1.2035.3.745"}}',//埋点
+      headUrl:'//yun.tuisnake.com/h5-mami/webgame/web-login/header/newhander1.png',//头像
+      sex:'1',//性别
+      thirdName:'趣闻币',//第三方积分名称
+      thirdRate:'10',//第三方积分汇率
+      isPreview: 'false'//是否预览
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="stage">
+    <div class="bg"></div>
+    <div class="container">
+      <div class="row1">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+      <div class="row2">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+      <div class="row3">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+    </div>
+
+    <div class="coins coins1">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins2">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins3">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins4">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+
+    <div class="tip">
+      <!--弹幕-->
+    </div>
+
+    <div class="guider">
+      <!--引导-->
+    </div>
+
+  </div>
+
+  <div class="ui">
+    <div class="top">
+      <div class="clock">
+        <div class="timer">0</div>
+      </div>
+    </div>
+    <div class="bomb"></div>
+    <div class="add-coin">
+      <div class="btxt"></div>
+      <div class="ftxt"></div>
+    </div>
+    <div class="bottom">
+      <div class="pao">
+        <div class="pao-num">100</div>
+        <div class="fire"></div>
+      </div>
+      <div class="get"></div>
+      <div class="cut"></div>
+      <div class="add"></div>
+      <div class="score"></div>
+    </div>
+    <div class="info-ico"></div>
+  </div>
+
+  <!--提示弹窗-->
+  <div class="toast-mask">
+    <div class="toast"></div>
+  </div>
+
+  <div class="mask countdown">
+    <div class="count-ico"></div>
+    <div class="count-num count-1"></div>
+    <div class="count-num count-2"></div>
+    <div class="count-num count-3"></div>
+    <div class="count-num count-go"></div>
+  </div>
+
+  <div class="mask info">
+    <div class="info-content">
+      <div class="info-scroll">
+        <!--游戏说明-->
+      </div>
+    </div>
+    <div class="info-close"></div>
+  </div>
+
+  <div class="mask modes">
+    <div class="mode arena"></div>
+    <div class="mode infinite"></div>
+
+    <!--方形按钮-->
+    <div class="start-btn-rect">
+      <div class="start-btn-rect-light new-startbtn">
+        <!--
+        <div class="btn-qifen"></div>
+        <div class="btn-guang">
+          <div class="guang-xian"></div>
+        </div>
+        -->
+      </div>
+    </div>
+  
+    <!--引导手势-->
+    <div class="room-gesture"></div>
+
+  </div>
+
+  <div class="mask none">
+    <div class="none-content">
+      <div class="none-close"></div>
+      <div class="none-get"></div>
+    </div>
+  </div>
+
+  <div class="mask rank">
+    <div class="rank-content">
+      <div class="rank-list">
+        <!--积分榜单-->
+      </div>
+      <div class="rank-gift">
+        <div class="rank-ico"></div><span class="rank-tip">别灰心，送你一份小礼物</span>
+      </div>
+      <div class="rank-pic"></div>
+
+      <!--引流-->
+      <div class="other-games-box">
+        <div class="other-games-tip">点击体验其他游戏</div>
+        <div class="other-games-list">
+            <div class="other-games-item"></div>
+            <div class="other-games-item"></div>
+        </div>
+      </div>
+
+      <div class="rank-close"></div>
+      <div class="rank-replay"></div>
+      <div class="rank-take"></div>
+    </div>
+  </div>
+
+  <div class="mask result">
+    <div class="result-content">
+      <!--结果统计-->
+    </div>
+  </div>
+
+<!--引导-->
+<script id="guider" type="text/html">
+  <div class="guider-word"></div>
+  <div class="guider-hander"></div>
+  <div class="guider-cir"></div>
+  <div class="guider-glow"></div>
+</script>
+
+<!--弹幕-->
+<script id="tip" type="text/html">
+  <span class="tip-name"><%== p.name =%></span>
+  <img class="tip-img" src="<%== p.url =%>">
+  <span class="tip-money"><%== p.word =%></span>
+</script>
+
+<!--结果统计-->
+<script id="result-content" type="text/html">
+  <div class="result-title"></div>
+  <div class="result-money"><%== p.money =%>枚</div>
+  <div class="result-total"><%== p.total =%>个</div>
+  <div class="result-items">
+  <%= for(var i = 0; i < p.list.length; i++){ =%>
+  <div class="result-item">
+    <div class="result-ico">
+      <img class="result-img" src="<%== p.list[i].url =%>">
+    </div>
+    <span class="result-item-num"><%== p.list[i].num =%></span>
+  </div>
+  <%= } =%>
+  </div>
+</script>
+
+<!--积分榜单-->
+<script id="rank-content" type="text/html">
+  <%= for(var i = 0, len = p.list.length; i < len; i++){ =%>
+  <div class="rank-item">
+    <div class="rank-id"><%== i + 1 =%></div>
+    <div class="rank-name"><%== p.list[i].name =%></div>
+    <div class="rank-coin"></div>
+    <div class="rank-money"><%== p.list[i].money =%></div>
+  </div>
+  <%= } =%>
+  <div class="rank-item rank-last">
+    <div class="rank-id"><%== p.userRank =%></div>
+    <div class="rank-name"><%== p.userName =%></div>
+    <div class="rank-coin"></div>
+    <div class="rank-money"><%== p.userGet =%></div>
+  </div>
+</script>
+
+<!--游戏说明-->
+<script id="info-content" type="text/html">
+  <div class="info-word"><%== p.desc =%></div>
+  <div class="info-items">
+    <%= for(var i = 0; i < p.list.length; i++){ =%>
+    <div class="info-item">
+      <img class="info-img" src="<%== p.list[i].url =%>">
+      <div class="info-life"><%== p.list[i].life =%>生命值</div>
+      <div class="info-money">最高返<%== p.list[i].money =%>金币</div>
+    </div>
+    <%= } =%>
+  </div>
+</script>
+
+<script src="//yun.dui88.com/h5-mami/webgame/components/stay-time/entry-201805281451.js"></script>
+
+<script type="text/javascript" src="//wq.360buyimg.com/fd/h5/wxsq_base/zepto.min.js"></script>
+<script src="//yun.dui88.com/h5-mami/adpages/gameroom/v1/showPop_develop.js" type="text/javascript"></script>
+<script src="//yun.dui88.com/h5-mami/webgame/gameroom/exchange-pop/entry-201805211706.js"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js"></script>
+<script type="text/javascript" src="./js/template.js"></script>
+<script type="text/javascript" src="./js/game.js"></script>
+<script type="text/javascript" src="./js/monster.js"></script>
+<script type="text/javascript" src="./js/row.js"></script>
+<script type="text/javascript" src="./js/bomb.js"></script>
+<script type="text/javascript" src="./js/gun.js"></script>
+<script type="text/javascript" src="./js/timer.js"></script>
+<script type="text/javascript" src="./js/score.js"></script>
+<script type="text/javascript" src="./js/countdown.js"></script>
+<script type="text/javascript" src="./js/result.js"></script>
+<script type="text/javascript" src="./js/coin.js"></script>
+<script type="text/javascript" src="./js/rank.js"></script>
+<script type="text/javascript" src="./js/info.js"></script>
+<script type="text/javascript" src="./js/tip.js"></script>
+<script type="text/javascript" src="./js/store.js"></script>
+<script type="text/javascript" src="./js/embed.js"></script>
+<script type="text/javascript" src="./js/effect.js"></script>
+<script type="text/javascript" src="./js/guider.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+</body>
+
+</html>

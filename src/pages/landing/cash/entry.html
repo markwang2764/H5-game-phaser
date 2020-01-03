@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>落地页v1</title>
+    #include('@layout/global/head.html')
+</head>
+
+<body>
+    <div class="page-container">
+            <div class="title">
+                待确认收款
+            </div>
+            <div class="money">
+                ￥0
+            </div>
+            <div class="code-wrap">
+                <span class="label">活动奖励码</span>
+                <!-- <span class="content code"></span> -->
+                <input id="code" type="text" readonly="readonly" value="xfg45vcbsd539fg">
+                <div class="code-copy" data-clipboard-target="#code">复制</div>
+                
+            </div>
+            <div class="footer">
+                <div class="button withdraw" data-clipboard-target="#code">
+                    复制奖励码去APP收款
+                </div>
+                <div class="tip">
+                    24小时为确认，经退还给对方
+                </div>
+            </div>
+            <div class="guide-container">
+                <div class="guide-mask"></div>
+                <div class="guide-main"></div>
+            </div>
+        </div>
+        
+    
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js"></script>
+    <script src="//yun.dui88.com/h5-mami/webgame/lib/statistics-3.js"></script> 
+    #include('@layout/global/footer.html')
+</body>
+
+</html>

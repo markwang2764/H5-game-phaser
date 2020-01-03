@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>见缝插针</title>
+  #include('@layout/global/head.html')
+</head>
+<body>
+
+<div class="game-view">
+
+    <div id="game"></div>
+
+    <div class="ui">
+        <!--结果弹层-->
+        <div class="mask-bg">
+            <div class="mask-content">
+                <div class="mask-bar">
+                    <div class="mask-compari">
+                        <div class="mask-user mask-left">
+                            <div class="mask-hander"></div>
+                            <div class="mask-name"></div>
+                            <div class="mask-qq"></div>
+                        </div>
+                        <div class="mask-vs"></div>
+                        <div class="mask-user mask-right">
+                            <div class="mask-hander"></div>
+                            <div class="mask-name"></div>
+                            <div class="mask-qq"></div>
+                        </div>
+                    </div>
+                    <div class="mask-gift">
+                        <div class="mask-tip">太棒了！送你一份小礼物</div>
+                    </div>
+                    <div class="mask-ads"></div>
+                    
+                    <!--引流-->
+                    <div class="other-games-box">
+                        <div class="other-games-tip">试试其他游戏吧！</div>
+                        <div class="other-games-list">
+                            <div class="other-games-item"></div>
+                            <div class="other-games-item"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mask-title"></div>
+                <div class="mask-btns">
+                    <div class="mask-again-btn mask-btn"></div>
+                    <div class="mask-get-btn mask-btn"></div>
+                </div>
+                <div class="mask-close-btn"></div>
+
+                <div class="mask-say-tip"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--胜利弹层-->
+<script id="win-btns" type="text/html">
+    <div class="sort-normal"><div class="btn-word">再虐一盘</div></div>
+    <div class="sort-normal"><div class="btn-word">立即领取</div></div>
+</script>
+
+<!--平局弹层-->
+<script id="draw-btns" type="text/html">
+    <div class="sort-normal"><div class="btn-word">再来一次</div></div>
+    <div class="sort-normal"><div class="btn-word">立即领取</div></div>
+</script>
+
+<!--失败弹层-->
+<script id="lost-btns" type="text/html">
+    <div class="sort-normal"><div class="btn-word">不服再战</div></div>
+    <div class="sort-normal"><div class="btn-word">立即领取</div></div>
+</script>
+
+<!--点击接受-->
+<script id="dianji-btn" type="text/html">
+    <div class="btn-more">
+        <div class="btn-word">点击接受</div>
+        <div class="btn-tip">（对方请求再来一次）</div>
+    </div>
+</script>
+
+<!--对方已离开-->
+<script id="likai-btn" type="text/html">
+    <div class="btn-more">
+        <div class="btn-word">换个对手吧</div>
+        <div class="btn-tip">（对方已离开）</div>
+    </div>
+</script>
+
+<!--对方不敢应战-->
+<script id="bugan-btn" type="text/html">
+    <div class="btn-more">
+        <div class="btn-word">换个对手吧</div>
+        <div class="btn-tip">（对方不敢应战）</div>
+    </div>
+</script>
+
+<!--已邀请对方3-->
+<script id="yaoqing-btn3" type="text/html">
+    <div class="btn-word">已邀请对方(3)</div>
+</script>
+
+<!--已邀请对方2-->
+<script id="yaoqing-btn2" type="text/html">
+    <div class="btn-word">已邀请对方(2)</div>
+</script>
+
+<!--已邀请对方3-->
+<script id="yaoqing-btn1" type="text/html">
+    <div class="btn-word">已邀请对方(1)</div>
+</script>
+
+
+<script type="text/javascript">
+    var CFG = {
+        debug: true,
+        pgHost: '//172.16.15.242:17800',
+        domain: 'knifeGame',
+        appId: '85',
+        
+        uskA: "MFlGQlFuMHpPUkovc3JuZTNtc0xOUT09",
+        sex: 1,
+    };
+    // uskA: "ZzVRVWdUOEVDeHNDRC9KckRTVzVUUT09",
+</script>
+
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js" type="text/javascript"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/anime.min.js" type="text/javascript"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/md5.js"></script>
+<script src="//yun.dui88.com/h5-mami/webgame/gameroom/exchange-pop/entry-201805211706.js" type="text/javascript"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js" type="text/javascript"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/phaser@2.6.2.min.js" type="text/javascript"></script>
+<!-- <script src="//yun.tuisnake.com/h5-mami/webgame/lib/stats.min.js" type="text/javascript"></script> -->
+<!-- <script src="//yun.tuisnake.com/h5-mami/webgame/lib/phaser@3.9.0.min.js" type="text/javascript"></script> -->
+
+</body>
+</html>

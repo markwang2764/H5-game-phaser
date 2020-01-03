@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "clickUrl": "http://www.baidu.com",
+      "orderId": "PGW-120003760881",
+      "advertId": 3096,
+      "advertName": "jyl测试专用8",
+      "isCache": false,
+      "packageId": 0,
+      "materialUrl": "//yun.dui88.com/mami-media/img/o9zswmh5s6.png",
+      "acgId": 67093978462004,
+      "materialId": null,
+      "buttonText": null,
+      "couponType": 0,
+      "codeContent": null,
+      "codePasswd": null,
+      "advertEmbedBase": {
+        "banner_adv_exposure": {
+          "dsm": "1.697.3.775",
+          "dpm": "18643.115.2.5",
+          "dcm": "104.3096.6.1",
+          "domain4Web": null,
+          "url": null,
+          "domain": "//embedlog.dui88.com",
+          "consumerId": 11014001,
+          "appId": 18643,
+          "slotId": 697,
+          "orderId": null,
+          "device_type": null,
+          "activityId": null,
+          "materialld": null,
+          "couponSource": null
+        },
+        "banner_adv_click": {
+          "dsm": "1.697.3.775",
+          "dpm": "18643.115.2.5",
+          "dcm": "104.3096.6.1",
+          "domain4Web": "//activity.tuiatest.cn",
+          "url": "/statistics/click",
+          "domain": null,
+          "consumerId": 11014001,
+          "appId": 18643,
+          "slotId": 697,
+          "orderId": null,
+          "device_type": null,
+          "activityId": null,
+          "materialld": null,
+          "couponSource": null
+        }
+      },
+      "customAd": true,
+      "success": true
+    },
+    {
+      "clickUrl": "http://www.tuia.cn",
+      "orderId": "PGW-120003770881",
+      "advertId": 3088,
+      "advertName": "lay了1",
+      "isCache": false,
+      "packageId": 0,
+      "materialUrl": "//yun.dui88.com/mami-media/img/tfupg39c12.jpg",
+      "acgId": 66667802979029,
+      "materialId": null,
+      "buttonText": null,
+      "couponType": 0,
+      "codeContent": null,
+      "codePasswd": null,
+      "advertEmbedBase": {
+        "banner_adv_exposure": {
+          "dsm": "1.697.3.775",
+          "dpm": "18643.115.2.6",
+          "dcm": "104.3088.6.1",
+          "domain4Web": null,
+          "url": null,
+          "domain": "//embedlog.dui88.com",
+          "consumerId": 11014001,
+          "appId": 18643,
+          "slotId": 697,
+          "orderId": null,
+          "device_type": null,
+          "activityId": null,
+          "materialld": null,
+          "couponSource": null
+        },
+        "banner_adv_click": {
+          "dsm": "1.697.3.775",
+          "dpm": "18643.115.2.6",
+          "dcm": "104.3088.6.1",
+          "domain4Web": "//activity.tuiatest.cn",
+          "url": "/statistics/click",
+          "domain": null,
+          "consumerId": 11014001,
+          "appId": 18643,
+          "slotId": 697,
+          "orderId": null,
+          "device_type": null,
+          "activityId": null,
+          "materialld": null,
+          "couponSource": null
+        }
+      },
+      "customAd": true,
+      "success": true
+    }
+  ],
+  "code": "200",
+  "msg": "请求成功",
+  "success": true
+}

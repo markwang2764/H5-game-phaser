@@ -1,0 +1,765 @@
+@rem: 200rem;
+@rem750: 200rem/640*750;
+
+.item(@left, @top, @w, @h, @z, @url){
+    .space(@left, @top, @w, @h, @z);
+    .img(@url);
+    //background:url("../asset/@{url}") no-repeat center;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.img(@url){
+    .onlyimg(@url);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.onlyimg(@url){
+    //background-image: url("../asset/@{url}");
+    //background-image: url("//yun.dui88.com/h5-mami/webgame/puzzle/@{url}");
+    background-image: url("//yun.tuisnake.com/h5-mami/webgame/puzzle/@{url}");
+}
+
+.space(@left, @top, @w, @h, @z){
+    left: @left/@rem;
+    top: @top/@rem;
+    width: @w/@rem;
+    height: @h/@rem;
+    z-index: @z;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.txt(@size, @height){
+    background: rgba(0, 0, 0, 0);
+    font-size: @size/@rem;
+    line-height: @height/@rem;
+}
+
+.mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.72);
+    z-index: 1;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 24/@rem;
+    color: #fff;
+    background: #f84f13;
+}
+
+.content{width: 750/@rem;height: 1206/@rem;.img("background0.png");overflow: hidden;position: relative;}
+
+//界面
+.ui{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.item-4203781{.item(28, 35.5, 158, 53, 2, "introIcon.png");}
+.item-4210189{.item(535.5, 35.5, 183, 53, 2, "prizeIcon.png");}
+
+
+//进度条
+.item-7323613{.item(176, 276, 386, 392, 1, "leadBanner.png");}
+.item-7350133{.item(0, 390.5, 750, 231, 10, "banner.png");}
+.item-7296133.loading{z-index: 12;}
+.item-7408901{
+    .item(0, -12, 43, 51, 1, "progressBar.png");
+    animation: barmove 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes barmove{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(532/@rem);}
+}
+.item-7357696{
+    .space(116, 694.5, 540, 24, 1);
+    border-radius: 12px;
+    display: flex;
+    padding: 2px;
+}
+.item-7357696-color{
+    background: #ffca33;
+    height: 100%;
+    width: 0;
+    border-radius: 12px;
+    animation: colormove 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colormove{
+    0%{width: 0;}
+    100%{width: 100%;}
+}
+.item-7296133{.item(0, 0, 750, 1206, 1, "background0.png");}
+
+
+//用完弹窗
+.item-0863989{.item(74, 553, 462, 128, 1, "ruleBtn.png");}
+.item-0876749{.item(613, 11, 48, 48, 1, "ruleClose.png");}
+.item-0850708{.item(48, 179, 667, 734, 1, "noneBg.png");}
+
+//游戏进行
+.item-4221005{.item(0, 66.5, 750, 231, 1, "banner.png");}
+.item-5076197{
+    .space(0, 4, 709, 60, 1);
+    color: #ffffff;
+    text-align: center;
+    .txt(24, 60);
+    font-weight: 900;
+}
+.item-4865701{
+    .item(0, -26.5, 709, 68, 1, "tip1.png");
+}
+.item-4865701.long{
+    .img("longTip.png");
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0);
+}
+.item-4877349{
+    .item(27.5, 98.5, 642, 302, 1, "coupon.png");
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+}
+.item-shine{
+    .item(27.5, 98.5, 642, 302, 2, "light.png");
+    background-size: 100% 100%;
+    animation: shine 500ms;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    user-select: none;
+    display: none;
+}
+@keyframes shine{
+    0%{background-position: 0/@rem -302/@rem};
+    100%{background-position: 0/@rem 302/@rem};
+}
+.result-btns{
+    position: absolute;
+    left: 119.5/@rem;
+    top: 482/@rem;
+    width: 462/@rem;
+    display: none;
+}
+.item-4914956{
+    .item(0, 0, 462, 122, 1, "receiveDisabled.png");
+    margin-bottom: 30/@rem;
+    position: relative;
+}
+.item-4914956.open{
+    .onlyimg("receive.png");
+}
+.next-level{
+    .item(0, 0, 462, 122, 1, "next.png");
+    position: relative;
+}
+.item-4927445{
+    .space(108.5, 410, 480, 60, 1);
+    color: #842606;
+    text-align: center;
+    .txt(28, 60);
+}
+.item-4976119{
+    .space(26.5, 45.5, 240, 48, 1);
+    color: #ffffff;
+    text-align: left;
+    .txt(24, 48);
+    font-weight: 900;
+}
+.item-5052796{
+    .space(428.5, 45.5, 240, 48, 1);
+    color: #ffffff;
+    text-align: right;
+    .txt(24, 48);
+    font-weight: 900;
+}
+.item-4229749{.item(20.5, 356.5, 709, 655, 1, "couponBg.png");}
+.has-right{
+    height: 805/@rem;
+    .img("longBg.png");
+    background-size: contain;
+}
+.item-6831365{
+    .space(100, 40, 600, 120, 1);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+}
+.item-4260037{.item(16, 1006.5, 709, 175, 1, "names.png");}
+.item-4563981{
+    .space(227, 282, 300, 42, 1);
+    color: #842606;
+    text-align: center;
+    .txt(24, 42);
+    font-weight: 900;
+}
+.tip-cast{
+    width: 100%;
+    line-height: 40/@rem;
+    height: 40/@rem;
+    color: #842606;
+    font-size: 24/@rem;
+    padding: 0 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.border-txt{
+    -webkit-text-stroke: 10/@rem #a73f0f;
+}
+
+//游戏规则
+.item-8643543{
+    .item(80, 200.5, 98, 95, 1, "ruleIcon1.png");
+    transform: scaleX(-1);
+}
+.item-8741438{.item(81.5, 530.5, 462, 128, 1, "ruleBtn.png");}
+.item-8752582{
+    .space(87.5, 52.5, 462, 80, 1);
+    .txt(48, 80);
+    text-align: center;
+    color: #842606;
+    font-weight: 600;
+}
+.item-8761886{
+    .space(49.5, 174.5, 540, 320, 1);
+    .txt(32, 60);
+    overflow-y: scroll;
+    color: #842606;
+}
+.item-8649222{
+    .item(58.5, 255.5, 640, 720, 1, "longBg.png");
+    background: #ffffff;
+    border-radius: 24/@rem;
+}
+.item-8713566{.item(466, 58.5, 98, 95, 1, "ruleIcon1.png");}
+.item-8719238{.item(641, 166, 48, 48, 1, "ruleClose.png");}
+.item-8724224{.item(34.5, 365.5, 61, 61, 1, "ruleIcon2.png");}
+.item-8727958{.item(669, 798, 48, 48, 1, "ruleIcon4.png");}
+.item-8733175{.item(704.5, 482.5, 33, 35, 1, "ruleIcon3.png");}
+
+//掉线弹窗
+.item-7738638{.item(130.5, 39, 260, 235, 1, "image.png");}
+.item-7747726{.item(451.5, -86.5, 58, 58, 1, "close.png");}
+.item-7776742{
+    .space(55.5, 291.5, 400, 64, 1);
+    .txt(28, 64);
+    text-align: center;
+    color: #2c2c2c;
+}
+.item-7796390{
+    .space(55.5, 372.5, 400, 48, 1);
+    .txt(18, 48);
+    text-align: center;
+    color: #7e7e7e;
+}
+.item-7815254{
+    .space(135.5, 448.5, 240, 80, 1);
+    color: #f2f2f2;
+    background: #a73f0f;
+    height: 80/@rem;
+    line-height: 80/@rem;
+    text-align: center;
+    font-size: 32/@rem;
+    border-radius: 24/@rem;
+
+}
+.item-7623247{.item(122.5, 271.5, 510, 600, 1, "longBg.png");}
+
+//游戏开始
+.item-2153862{.item(0, 0, 750, 1206, 1, "background.png");}
+.item-2172574{.item(0, 424.5, 750, 231, 1, "banner.png");}
+.item-2180542{.item(135, 854, 462, 128, 1, "startBtn.png");}
+.starting{
+    transition: all 400ms;
+    background: rgba(0, 0, 0, 0);
+}
+
+
+//我的奖品
+.my-prize{background: #fff;overflow-y: scroll;}
+.nav-bar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    width: 300/@rem;
+    height: 72/@rem;
+    line-height: 72/@rem;
+    text-align: center;
+    font-size: 36/@rem;
+    background: #fff;
+    border: solid rgb(248,86,22) 1px;
+    color: rgb(248,86,22);
+}
+.nav-item.selected{
+    background: rgb(248,86,22);
+    color: #fff;
+}
+.prize-item{
+
+}
+
+//权益
+.item-1578137{
+    .item(638, -1, 63, 45, 1, "subscript.png");
+    display: none;
+}
+.item-1189465{
+    .item(27, 22, 700, 200, 1, "content.png");
+    background-size: 100% 100%;
+}
+.item-1347345{
+    .space(46, 38, 325, 166, 1);
+    background-size: cover;
+    background-position: center;
+}
+.item-1411865{
+    .space(411.5, 44, 250, 48, 1);
+    .txt(32, 48);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 300;
+    color: #2c2c2c;
+}
+.item-1426691{
+    .space(411.5, 83, 250, 36, 1);
+    .txt(24, 36);
+    color: #646464;
+    display: none;
+}
+.item-1438825{
+    .space(411.5, 120, 250, 80, 1);
+    text-align: center;
+    color: #fff;
+    font-size: 32/@rem;
+    line-height: 80/@rem;
+    background: rgb(248,86,22);
+    border-radius: 36/@rem;
+}
+.item-1176513{
+    .space(0, 0, 750, 228, 1);position: relative;background: #f2f2f2;
+}
+.prize-item:last-child .item-1176513{
+    height: 248/@rem;
+}
+
+.item-8772157{
+    .space(18, 18, 120, 40, 1);
+    .txt(28, 40);
+    color: #fff;
+}
+
+.item-8697565{.item(0, 0, 750, 290, 1, "balanceHeader.png");position: relative;}
+.xuanzhe{
+    padding: 24/@rem;
+    color: #161616;
+    font-size: 25/@rem;
+    text-align: center;
+}
+.xuanzhe-tip{
+    color: #b9b9b9
+}
+.jine-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jine-item{
+    width: 200/@rem;
+    margin: 12/@rem;
+}
+.jine-num{
+    height: 108/@rem;
+    line-height: 108/@rem;
+    border-radius: 16/@rem;
+    color: #f85616;
+    background: #ffffff;
+    border: #f85616 solid 1px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 36/@rem;
+}
+.selected .jine-num{
+    color: #ffffff;
+    background: #f85616;
+}
+.jine-tip{
+    text-align: center;
+    color: #b9b9b9;
+    font-size: 24/@rem;
+    margin-top: 10/@rem;
+}
+.tixian-btn{
+    width: 600/@rem;
+    margin: 200/@rem auto 10/@rem;
+    height: 80/@rem;
+    line-height: 80/@rem;
+    border-radius: 40/@rem;
+    color: #ffffff;
+    background: #a7a6a5;
+    text-align: center;
+    font-size: 32/@rem;
+}
+.tixian-tip{
+    text-align: center;
+    color: #b9b9b9;
+    font-size: 24/@rem;
+    padding-bottom: 40/@rem;
+}
+
+//交易明细
+.mingxi{
+    padding: 24/@rem 36/@rem;
+    color: #646464;
+    font-size: 32/@rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.mingxi-line{
+    width: 2px;
+    height: 28/@rem;
+    background: #f85616;
+    margin-right: 12/@rem;
+}
+.mingxi-list{
+    padding: 24/@rem 36/@rem;
+}
+.mingxi-item{
+    position: relative;
+    height: 75/@rem;
+    margin-bottom: 30/@rem;
+}
+.mingxi-t1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #646464;
+    font-size: 30/@rem;
+}
+.mingxi-t2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #b9b9b9;
+    font-size: 24/@rem;
+}
+.mingxi-t3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #049929;
+    font-size: 36/@rem;
+    height: 60/@rem;
+    line-height: 60/@rem;
+}
+
+//碎片
+.piece-item{
+    background-size: 640/@rem 300/@rem;
+    width: 320/@rem;
+    height: 150/@rem;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-position: -50% 0;
+    background-image: url("../asset/coupon.png");
+    transition: all 200ms;
+}
+.piece-item.selected{
+    //box-sizing: border-box;
+    //border: solid 3px #e44709;
+    box-shadow: 1px 0 #e44709, 0 1px #e44709, 
+    0 -1px #e44709, -1px 0 #e44709;
+}
+
+.complete{
+    animation: scaleimg 600ms;
+    animation-delay: 400ms;
+}
+@keyframes scaleimg{
+    0%{transform: scale(1);}
+    40%{transform: scale(1.12);}
+    60%{transform: scale(1.12);}
+    100%{transform: scale(1);}
+}
+
+
+//引导手势
+.guider{
+    display: none;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.hander{
+    .item(0, 0, 113, 99, 1, "hand.png");
+    transition: all 300ms;
+    transform: translate(750/@rem, 400/@rem);
+    pointer-events: none;
+}
+.hander-img{
+    .item(-2, -2, 113, 99, 1, "hand.png");
+    z-index: 1;
+}
+.hander-cir{
+    margin-left: -25/@rem;
+    margin-top: -25/@rem;
+    width: 50/@rem;
+    height: 50/@rem;
+    border: #f2f2f2 solid 8px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: sizeCir 200ms;
+}
+@keyframes sizeCir{
+    0%{opacity: 0;transform: scale(0.3);}
+    100%{opacity: 1;transform: scale(1.2);}
+}
+.guider-txt{
+    width: 750/@rem;
+    text-align: center;
+    font-size: 36/@rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 900;
+    color: #ffffff;
+    opacity: 0;
+    pointer-events: none;
+}
+.guider-tip1{
+    text-align: right;
+    animation: gtip1 300ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    display: none;
+}
+@keyframes gtip1{
+    0%{transform: translate(750/@rem, 486/@rem);opacity: 0;}
+    20%{transform: translate(-68/@rem, 486/@rem);opacity: 1;}
+    100%{transform: translate(-68/@rem, 486/@rem);opacity: 1;}
+}
+.guider-tip2{
+    animation: gtip2 300ms;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    display: none;
+}
+@keyframes gtip2{
+    0%{transform: translate(750/@rem, 578/@rem);opacity: 0;}
+    20%{transform: translate(0/@rem, 578/@rem);opacity: 1;}
+    100%{transform: translate(0/@rem, 578/@rem);opacity: 1;}
+}
+.guider-tip3{
+    animation: gtip3 300ms;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    display: none;
+}
+@keyframes gtip3{
+    0%{transform: translate(750/@rem, 540/@rem);opacity: 0;}
+    100%{transform: translate(0/@rem, 540/@rem);opacity: 1;}
+}
+.guider-btn{
+    .item(157.5, 616, 441, 100, 1, "continue.png");
+    animation: gbtn 300ms;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    display: none;
+}
+@keyframes gbtn{
+    0%{transform: translateX(-750/@rem);opacity: 0;}
+    100%{transform: translateX(0/@rem);opacity: 1;}
+}
+
+
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+//余额金币
+.my-dongxi{
+    display: flex;
+}
+.my-yue,.my-jinbi{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+//我的余额
+.item-8703173{
+    margin-top: 44/@rem;
+    height: 42/@rem;
+    .txt(32, 42);
+    color: #fff;
+    text-align: center;
+}
+.item-8725317{
+    margin-top: 3/@rem;
+    height: 54/@rem;
+    .txt(24, 54);
+    color: #fff;
+    text-align: center;
+}
+.my-money-tip,.my-jinbi-tip{
+    font-size: 48/@rem;
+    margin-right: 4px;
+    font-weight: 600;
+}
+.item-8755957{
+    margin: 24/@rem auto 0;
+    width: 222/@rem;
+    height: 72/@rem;
+    .txt(32, 72);
+    background: #ffffff;
+    color: #a73f0f;
+    text-align: center;
+    border-radius: 32/@rem;
+}
+.my-yue,.my-jinbi{
+    position: relative;
+}
+.my-jinbi::after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 40/@rem;
+    left: 0;
+    top: 120/@rem;
+    background: #ffffff;
+}
+
+.disabled{
+    background: #888787;
+    color: #a0a0a0;
+    pointer-events: none;
+}
+
+.notimes{
+    .onlyimg("couponDefault.png");
+    animation: none;
+}
+
+.scroll-bar{
+    .space(600, 180, 16, 120, 1);
+    border-radius: 8px;
+}
+.topcenter{
+    .item-8703173{
+        margin-top: 80/@rem;
+    }
+    .my-money-tip{
+        font-size: 54/@rem;
+    }
+}
+
+.red{
+    color: #e00606;
+}
+.no-prize{
+    .img("noprize.png");
+    height: 1206/@rem;
+    background-position: 50% 40/@rem;
+    background-color: #f2f2f2;
+    background-size: 54% auto;
+}
+
+canvas{
+    width: 100%;
+    display: block;
+}
+
+.next-cant{
+    .onlyimg("xiayghui.png");
+}
+
+
+.wait-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .img("couponDefault.png");
+    background-size: cover;
+}
+
+.item-8755957.my-kaiwan{
+    display: none;
+}
+
+// 手势
+.room-gesture{
+    width: 400/@rem750;
+    height: 400/@rem750;
+    position: absolute;
+    background-image: url(//yun.dui88.com/h5-mami/webgame/gameroom/img/sprite_gesture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    animation: roomGestureChange steps(1) 0.7s infinite;
+    left: 300/@rem;
+    top: 720/@rem;
+    display: none;
+    pointer-events: none;
+  }
+  
+  @keyframes roomGestureChange{
+    0%{
+      .room-gesture0;
+    }
+    10%{
+      .room-gesture1;
+    }
+    20%{
+      .room-gesture2;
+    }
+    30%{
+      .room-gesture3;
+    }
+    40%{
+      .room-gesture4;
+    }
+    50%{
+      .room-gesture5;
+    }
+    60%{
+      .room-gesture6;
+    }
+    100%{
+      .room-gesture6;
+    }
+  }
+  
+  .room-gesture4{background-position:0 0;}
+  .room-gesture5{background-position:0 -400/@rem750;}
+  .room-gesture6{background-position:0 -800/@rem750;}
+  .room-gesture3{background-position:0 -1200/@rem750;}
+  .room-gesture0{background-position:0 -1600/@rem750;}
+  .room-gesture1{background-position:0 -2000/@rem750;}
+  .room-gesture2{background-position:0 -2400/@rem750;}

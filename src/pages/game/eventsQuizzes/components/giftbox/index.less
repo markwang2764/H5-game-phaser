@@ -1,0 +1,138 @@
+.bg( @url) {
+  background-repeat: no-repeat;
+  background-image: url("../../img/@{url}");
+  background-size: cover;
+}
+
+.pl(@top , @left) {
+  position: absolute;
+  top: @top;
+  left: @left;
+}
+
+.pr(@top , @right) {
+  position: absolute;
+  top: @top;
+  right: @right;
+}
+
+.mkf-gift-box {
+  //display: none;
+  position: fixed;
+  right: 0px;
+  bottom: 20px;
+  width: 270px;
+  height: 272px;
+  z-index: 11;
+
+  .gift-box {
+    .pl(72px, 73px);
+    width: 131px;
+    height: 125px;
+    .bg('gift_box.png');
+    z-index: 2;
+  }
+
+  @step1: 0.2s;
+  @step2: 0.06s;
+  @step3: 0.06s;
+  animation: giftStep1 @step1 ease-in 1 forwards, giftStep2 @step2 1 @step1 forwards, giftStep3 @step3 1 @step1+@step2 forwards, giftShake 2s infinite @step1+@step2+@step3 forwards;
+  .box-effect {
+    .pl(0, 0);
+    width: 270px;
+    height: 272px;
+    .bg('saber.png');
+    z-index: 1;
+    background-size: 270px*5 272px*2;
+    animation: boxEffectChange 1.2s steps(1) infinite;
+  }
+
+  @keyframes giftStep1 {
+    0% {
+      transform: translateY(-1200px);
+    }
+    100% {
+      transform: translateY(-150px);
+    }
+  }
+
+  @keyframes giftStep2 {
+    0% {
+      transform: translateY(-150px) scaleY(1);
+    }
+    100% {
+      transform: translateY(0px) scaleY(0.6);
+    }
+  }
+
+  @keyframes giftStep3 {
+    0% {
+      transform: translateY(0px) scaleY(0.6);
+    }
+    100% {
+      transform: translateY(-150px) scaleY(1);
+    }
+  }
+
+  @keyframes giftShake {
+    0% {
+      transform: translateY(-150px) scaleY(1);
+    }
+    5% {
+      transform: translateY(-150px) scaleY(0.8);
+    }
+    10% {
+      transform: translateY(-35px) scaleY(1.02);
+    }
+    15% {
+      transform: translateY(0px) scaleY(0.9);
+    }
+    20% {
+      transform: translateY(0px) scaleY(1);
+    }
+    100% {
+      transform: translateY(0px) scaleY(1);
+    }
+  }
+
+  @keyframes boxEffectChange {
+    0% {
+      background-position: 0 0;
+    }
+    10% {
+      background-position: -270px 0;
+    }
+    20% {
+      background-position: -270px*2  0;
+    }
+    30% {
+      background-position: -270px*3 0;
+    }
+    40% {
+      background-position: -270px*4 0;
+    }
+    50% {
+      background-position: 0 -272px;
+    }
+    60% {
+      background-position: -270px*1 -272px;
+
+    }
+    70% {
+      background-position: -270px*2 -272px;
+
+    }
+    80% {
+      background-position: -270px*3 -272px;
+
+    }
+    90% {
+      background-position: -270px*4  -272px;
+
+    }
+    100% {
+      background-position: -270px*4 -272px;
+
+    }
+  }
+}

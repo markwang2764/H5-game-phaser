@@ -1,0 +1,34 @@
+{
+  "monsters": [
+    {
+      "url": "asset/gui1.png",
+      "width": 257,
+      "height": 219
+    },
+    {
+      "url": "asset/gui2.png",
+      "width": 117,
+      "height": 127
+    },
+    {
+      "url": "asset/gui3.png",
+      "width": 161,
+      "height": 184
+    },
+    {
+      "url": "asset/gui4.png",
+      "width": 84,
+      "height": 107
+    },
+    {
+      "url": "asset/gui5.png",
+      "width": 134,
+      "height": 155
+    },
+    {
+      "url": "asset/gui6.png",
+      "width": 116,
+      "height": 145
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+"frames": {
+	"body.png": {
+		"frame": {"x":0, "y":484, "w":499, "h":501},
+		"spriteSourceSize": {"x":0,"y":0,"w":499,"h":501},
+		"sourceSize": {"w":499,"h":501}
+	},
+	"clock.png": {
+		"frame": {"x":500, "y":581, "w":81, "h":91},
+		"spriteSourceSize": {"x":0,"y":0,"w":81,"h":92},
+		"sourceSize": {"w":81,"h":92}
+	},
+	"coin.png": {
+		"frame": {"x":500, "y":673, "w":73, "h":78},
+		"spriteSourceSize": {"x":0,"y":0,"w":73,"h":78},
+		"sourceSize": {"w":73,"h":78}
+	},
+	"diebody.png": {
+		"frame": {"x":0, "y":0, "w":499, "h":483},
+		"spriteSourceSize": {"x":0,"y":0,"w":499,"h":483},
+		"sourceSize": {"w":499,"h":483}
+	},
+	"erduo.png": {
+		"frame": {"x":500, "y":486, "w":88, "h":94},
+		"spriteSourceSize": {"x":0,"y":0,"w":88,"h":94},
+		"sourceSize": {"w":88,"h":94}
+	},
+	"fire-tip.png": {
+		"frame": {"x":500, "y":334, "w":128, "h":49},
+		"spriteSourceSize": {"x":0,"y":0,"w":128,"h":49},
+		"sourceSize": {"w":128,"h":49}
+	},
+	"hander.png": {
+		"frame": {"x":500, "y":384, "w":114, "h":101},
+		"spriteSourceSize": {"x":0,"y":0,"w":114,"h":101},
+		"sourceSize": {"w":114,"h":101}
+	},
+	"huxu.png": {
+		"frame": {"x":500, "y":261, "w":160, "h":72},
+		"spriteSourceSize": {"x":0,"y":0,"w":160,"h":72},
+		"sourceSize": {"w":160,"h":72}
+	},
+	"leftleg.png": {
+		"frame": {"x":500, "y":817, "w":49, "h":80},
+		"spriteSourceSize": {"x":0,"y":0,"w":49,"h":80},
+		"sourceSize": {"w":49,"h":80}
+	},
+	"mojing.png": {
+		"frame": {"x":500, "y":0, "w":431, "h":174},
+		"spriteSourceSize": {"x":0,"y":0,"w":431,"h":174},
+		"sourceSize": {"w":431,"h":174}
+	},
+	"rightleg.png": {
+		"frame": {"x":500, "y":752, "w":60, "h":64},
+		"spriteSourceSize": {"x":0,"y":0,"w":60,"h":64},
+		"sourceSize": {"w":60,"h":64}
+	},
+	"tape.png": {
+		"frame": {"x":500, "y":898, "w":38, "h":38},
+		"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
+		"sourceSize": {"w":38,"h":38}
+	},
+	"xiangyan.png": {
+		"frame": {"x":500, "y":175, "w":220, "h":85},
+		"spriteSourceSize": {"x":0,"y":0,"w":220,"h":85},
+		"sourceSize": {"w":220,"h":85}
+	}
+
+},
+"meta": {
+	"image": "sprites.png",
+	"size": {"w": 932, "h": 986},
+	"scale": "1"
+}
+}

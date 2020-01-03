@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="preload.png">
+	<SubTexture name="begin.png" x="0" y="396" width="509" height="125"/>
+	<SubTexture name="bubble.png" x="0" y="523" width="346" height="117"/>
+	<SubTexture name="module.png" x="0" y="0" width="625" height="394"/>
+	<SubTexture name="sex_1.png" x="0" y="771" width="30" height="30"/>
+	<SubTexture name="sex_2.png" x="0" y="739" width="30" height="30"/>
+	<SubTexture name="vs.png" x="0" y="642" width="117" height="95"/>
+</TextureAtlas>

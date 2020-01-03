@@ -1,0 +1,21 @@
+{
+  "data": [{
+    "usk": "11503030",
+    "nickName": "华为",
+    "score": 2955,
+    "headUrl": "http://thirdwx.qlogo.cn/mmopen/vi_32/5ETPqf7iaQ5LKeaFZvhEckwrWZS5ohFjAaVw9VyUQM53xohHU0F8O0qGFrnW7DpxhVgK0NHT275HYZMwwbzQwLQ/132"
+  }, {
+    "usk": "11473067",
+    "nickName": "华为",
+    "score": 3941,
+    "headUrl": "http://thirdwx.qlogo.cn/mmopen/vi_32/5ETPqf7iaQ5LKeaFZvhEckwrWZS5ohFjAaVw9VyUQM53xohHU0F8O0qGFrnW7DpxhVgK0NHT275HYZMwwbzQwLQ/132"
+  }, {
+    "usk": "11415777",
+    "nickName": "我",
+    "score": 9007,
+    "headUrl": "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoUwwDibviayNeggkXhLdumlNArWjoN1ed7af0rkINiaE0qSt7TJKU9QUBWPFHL1vkgiathWDKrexI65g/132"
+  }],
+  "code": "200",
+  "msg": "请求成功",
+  "success": true
+}

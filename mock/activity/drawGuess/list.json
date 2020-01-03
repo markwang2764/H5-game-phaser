@@ -1,0 +1,27 @@
+{
+  "code": "0",
+  "desc": "string",
+  "success": true,
+  "data": {
+    "record": [
+      {
+        "nickName": "sd",
+        "answerList": "1、撒的、十大",
+        "time": 23,
+        "bonus": 1
+      },
+      {
+        "nickName": "sd",
+        "answerList": "1、撒的、十大",
+        "time": 23,
+        "bonus": 1
+      },
+      {
+        "nickName": "sd",
+        "answerList": "1、撒的、十大",
+        "time": 23,
+        "bonus": 1
+      }
+    ]
+  }
+}

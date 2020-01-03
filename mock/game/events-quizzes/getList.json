@@ -1,0 +1,175 @@
+{
+  "code": "0000000",
+  "msg": "成功",
+  "data": {
+    "current": 0,
+    "guessList": [
+      {
+        "day": "2018-06-14",
+        "dayDesc": "星期六",
+        "perGuesses": [
+          {
+            "id": 1,
+            "guessStatus": 0,
+            "hotTitle": "世界杯小组赛A",
+            "homeTeamName": "德国",
+            "homeTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "visitingTeamName": "法国",
+            "visitingTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "startGameTime": "2018-06-14 11:00:00",
+            "stopGuessTime": "2018-06-14 10:50:00",
+            "draw": true,
+            "result": 0,
+            "homeScore": 3,
+            "visitingScore": 2,
+            "options": [
+              {
+                "id": 1,
+                "optionDesc": "主胜",
+                "odds": 1.94
+              },
+              {
+                "id": 3,
+                "optionDesc": "客胜",
+                "odds": 1.94
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "guessStatus": 1,
+            "hotTitle": "世界杯小组赛A",
+            "homeTeamName": "德国",
+            "homeTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "visitingTeamName": "法国",
+            "visitingTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "startGameTime": "2018-06-14 11:00:00",
+            "stopGuessTime": "2018-06-14 10:50:00",
+            "draw": true,
+            "result": 0,
+            "homeScore": 3,
+            "visitingScore": 2,
+            "options": [
+              {
+                "id": 1,
+                "optionDesc": "主胜",
+                "odds": 1.94
+              },
+              {
+                "id": 2,
+                "optionDesc": "平",
+                "odds": 1.94
+              },
+              {
+                "id": 3,
+                "optionDesc": "客胜",
+                "odds": 1.94
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": "2018-06-14",
+        "dayDesc": "星期六",
+        "perGuesses": [
+          {
+            "id": 3,
+            "guessStatus": 2,
+            "hotTitle": "世界杯小组赛A",
+            "homeTeamName": "德国",
+            "homeTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "visitingTeamName": "法国",
+            "visitingTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "startGameTime": "2018-06-14 11:00:00",
+            "stopGuessTime": "2018-06-14 10:50:00",
+            "draw": true,
+            "result": 0,
+            "homeScore": 3,
+            "visitingScore": 2,
+            "options": [
+              {
+                "id": 1,
+                "optionDesc": "主胜",
+                "odds": 1.94
+              },
+              {
+                "id": 2,
+                "optionDesc": "平",
+                "odds": 1.94
+              },
+              {
+                "id": 3,
+                "optionDesc": "客胜",
+                "odds": 1.94
+              }
+            ]
+          },{
+            "id": 3,
+            "guessStatus": 0,
+            "hotTitle": "世界杯小组赛A",
+            "homeTeamName": "德国",
+            "homeTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "visitingTeamName": "法国",
+            "visitingTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "startGameTime": "2018-06-14 11:00:00",
+            "stopGuessTime": "2018-06-14 10:50:00",
+            "draw": true,
+            "result": 0,
+            "homeScore": 3,
+            "visitingScore": 2,
+            "options": [
+              {
+                "id": 1,
+                "optionDesc": "主胜",
+                "odds": 1.94
+              },
+              {
+                "id": 2,
+                "optionDesc": "平",
+                "odds": 1.94
+              },
+              {
+                "id": 3,
+                "optionDesc": "客胜",
+                "odds": 1.94
+              }
+            ]
+          },{
+            "id": 3,
+            "guessStatus": 0,
+            "hotTitle": "世界杯小组赛A",
+            "homeTeamName": "德国",
+            "homeTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "visitingTeamName": "法国",
+            "visitingTeamLogoUrl": "/game/eventsQuizzes/img/bg_mask.png",
+            "startGameTime": "2018-06-14 11:00:00",
+            "stopGuessTime": "2018-06-14 10:50:00",
+            "draw": true,
+            "result": 0,
+            "homeScore": 3,
+            "visitingScore": 2,
+            "options": [
+              {
+                "id": 1,
+                "optionDesc": "主胜",
+                "odds": 1.94
+              },
+              {
+                "id": 2,
+                "optionDesc": "平",
+                "odds": 1.94
+              },
+              {
+                "id": 3,
+                "optionDesc": "客胜",
+                "odds": 1.94
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "success": true
+}

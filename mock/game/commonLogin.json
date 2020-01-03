@@ -1,0 +1,12 @@
+{
+  "sex": 0,
+  "nickName": "",
+  "img": "//yun.tuisnake.com/h5-mami/webgame/web-login/header/newhander2.png",
+  "loginType": 0,
+  "embed": {
+    "confirm_submission_click": "{\"dpm\":\"23251.131.1.2\",\"consumerId\":5060531035,\"appId\":23251,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1019.1.0.0\",\"dsm\":\"\"}",
+    "confirm_submission_exposure": "{\"dpm\":\"23251.131.1.2\",\"consumerId\":5060531035,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"dcm\":\"1019.1.0.0\",\"dsm\":\"\"}",
+    "exposure": "{\"dpm\":\"23251.131.1.1\",\"consumerId\":5060531035,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":23251,\"host\":\"activity.tuia.cn\",\"dcm\":\"1019.1.0.0\",\"dsm\":\"\"}",
+    "click": "{\"dpm\":\"23251.131.1.1\",\"consumerId\":5060531035,\"appId\":23251,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1019.1.0.0\",\"dsm\":\"\"}"
+  }
+}

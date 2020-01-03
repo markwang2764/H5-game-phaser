@@ -1,0 +1,10 @@
+{
+  "code": "200",
+  "data": {
+    "betNum": 18,
+    "prizeNum": 200,
+    "totalEarn": 1000
+  },
+  "msg": "string",
+  "success": true
+}

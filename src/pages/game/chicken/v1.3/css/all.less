@@ -1,0 +1,791 @@
+@rem: 200rem;
+@url: '//yun.dui88.com/h5-mami/webgame/chicken/pop/';
+
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img(@w, @h, @pic){
+    width: @w/@rem;
+    height: @h/@rem;
+    background: url("@{url}@{pic}") no-repeat center;
+    background-size: contain;
+}
+
+.mask-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask-content{
+    width: 620/@rem;
+    height: 800/@rem;
+    position: relative;
+
+    .other-games-box{
+        position: absolute;
+        left: 0;
+        top: 360/@rem;
+        width: 100%;
+        .other-games-tip{
+            text-align: center;
+            font-size: 0.12rem;
+            margin-bottom: 32/@rem;
+            color: rgb(103, 41, 21);
+            font-weight: 600;
+        }
+        .other-games-list{
+            text-align: center;
+            font-size: 0;
+        }
+        .other-games-item{
+            display: inline-block;
+            width: 282/@rem;
+            height: 198/@rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top center;
+            &:last-child{
+                margin-left: -0.04rem;
+            }
+        }
+    }
+}
+
+
+.mask-title{
+    .img(421, 148, "shengli.png");
+    position: absolute;
+    z-index: 1;
+    left: 92/@rem;
+    top: -60/@rem;
+}
+.mask-bar{
+    .img(618, 678, "shengli-l.png");
+}
+
+.mask-no-ticket{
+    .mask-ads, .mask-gift{
+        display: none;
+    }
+    .mask-gift-item{
+        display: none;
+    }
+}
+
+.mask-no-btns{
+    .sort-normal:nth-child(1){
+        .img(491, 112, "long-normal.png");
+    }
+    .sort-normal:nth-child(2){
+        display: none;
+    }
+}
+
+.mask-win{
+    .mask-bar{
+        .img(618, 678, "shengli-l.png");
+    }
+    .mask-no-ticket{
+        .img(618, 438, "shengli-s.png");
+    }
+}
+
+.mask-lost{
+    .mask-bar{
+        .img(618, 678, "shibai-l.png");
+    }
+    .mask-no-ticket{
+        .img(618, 438, "shibai-s.png");
+    }
+    .mask-title{
+        .img(401, 130, "shibai.png");
+        left: 112/@rem;
+    }
+}
+
+.mask-draw{
+    .mask-bar{
+        .img(618, 678, "shibai-l.png");
+    }
+    .mask-no-ticket{
+        .img(618, 438, "shibai-s.png");
+        .mask-title{
+            .img(401, 130, "shibai.png");
+        }
+    }
+    .mask-title{
+        .img(215, 128, "pingju.png");
+        left: 200/@rem;
+    }
+}
+
+
+.mask-btns{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mask-btn{
+    margin: 20/@rem 8/@rem;
+}
+.mask-again-btn{
+    .img(260, 112, "zailai.png");
+}
+.mask-get-btn{
+    .img(330, 112, "liji.png");
+}
+
+.mask-compari{
+    position: relative;
+    display: flex;
+    padding-top: 120/@rem;
+    justify-content: center;
+    align-items: center;
+}
+.mask-user{
+    width: 150/@rem;
+    position: relative;
+}
+.mask-vs{
+    .img(148, 133, "vs.png");
+    margin: 0 18/@rem;
+}
+.mask-hander{
+    width: 120/@rem;
+    height: 120/@rem;
+    background: #555555;
+    border-radius: 50%;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+}
+.mask-name{
+    font-size: 24/@rem;
+    color: #924a0e;
+    text-align: center;
+    margin: 10/@rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1rem;
+    left: -0.1rem;
+}
+.mask-qq{
+    position: absolute;
+    .img(94, 85, "xiaolian.png");
+    top: -20/@rem;
+}
+.mask-qq.mask-xiaolian{
+    .img(94, 85, "xiaolian.png");
+}
+.mask-qq.mask-kulian{
+    .img(94, 85, "kulian.png");
+}
+.mask-qq.mask-shengqi{
+    .img(94, 85, "shengqi.png");
+}
+.mask-left{
+    .mask-qq{
+        left: -30/@rem;
+    }
+}
+.mask-right{
+    .mask-qq{
+        right: -30/@rem;
+        transform: scale(-1, 1);
+    }
+}
+.mask-scale{
+    transform: scale(0.84);
+}
+.mask-boy::before{
+    content: "";
+    display: inline-block;
+    .img(38, 36, "nan.png");
+    margin-right: 8/@rem;
+}
+.mask-girl::before{
+    content: "";
+    display: inline-block;
+    .img(38, 36, "nv.png");
+    margin-right: 8/@rem;
+}
+.mask-gift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30/@rem 0 8/@rem;
+}
+.mask-tip{
+    font-size: 24/@rem;
+    color: #924a0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mask-tip::before{
+    content: "";
+    display: inline-block;
+    .img(46, 51, "lihe.png");
+    margin-right: 8/@rem;
+    text-align: center;
+}
+.mask-ads{
+    .img(500, 250, "shibai-s.png");
+    background-size: cover;
+    border-radius: 12/@rem;
+    margin: auto;
+}
+.mask-close-btn{
+    .img(58, 58, "close.png");
+    margin: 12/@rem auto;
+    &.guide {
+        .img(225, 54, "changegame.png");
+    }
+}
+
+
+
+//不服再战
+.mask-btn-bufu{
+    .img(260, 112, "bufu.png");
+}
+
+//再来一次
+.mask-btn-zailai{
+    .img(260, 112, "zailai.png");
+}
+
+//在虐一盘
+.mask-btn-zainue{
+    .img(260, 112, "zainue.png");
+}
+
+//换个对手
+.mask-btn-huange{
+    .img(260, 112, "huange.png");
+}
+
+//对方不敢应战
+.mask-btn-bugan{
+    .img(260, 112, "bugan.png");
+}
+
+//对方已离开
+.mask-btn-likai{
+    .img(260, 112, "likai.png");
+}
+
+//点击接受
+.mask-btn-dianji{
+    .img(260, 112, "dianji.png");
+}
+
+//对方已离开
+.mask-btn-likai{
+    .img(260, 112, "likai.png");
+}
+
+//已邀请1
+.mask-btn-yaoqing1{
+    .img(260, 112, "yaoqing1.png");
+}
+
+//已邀请2
+.mask-btn-yaoqing2{
+    .img(260, 112, "yaoqing2.png");
+}
+
+//已邀请3
+.mask-btn-yaoqing3{
+    .img(260, 112, "yaoqing3.png");
+}
+
+//再来一次大按钮
+.mask-btn-chongwan{
+    .img(491, 112, "bufu-l.png");
+}
+
+
+.match-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f0d332;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match-title{
+    font-size: 32/@rem;
+    color: #924a0e;
+    text-align: center;
+    margin-bottom: 32/@rem;
+}
+.match-user{
+    text-align: center;
+}
+.match-header{
+    width: 240/@rem;
+    height: 240/@rem;
+    background: #555555;
+    border-radius: 50%;
+    border: solid #ffffff 4/@rem;
+    margin: auto;
+}
+.match-name{
+    margin-top: 20/@rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match-sex{
+    display: inline-block;
+    .img(38, 36, "nan.png");
+    margin-right: 8/@rem;
+}
+.match-name-word{
+    font-size: 16/@rem;
+    color: #924a0e;
+}
+
+
+.btn-word{
+    position: relative;
+    top: -8/@rem;
+    width: 100%;
+    font-size: 36/@rem;
+}
+.sort-normal{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    color: #924a0e;
+    text-align: center;
+    .img(260, 112, "sort-normal.png");
+    margin: 16/@rem;
+}
+.btn-tip{
+    font-size: 20/@rem;
+    position: relative;
+    top: -8/@rem;
+}
+.long-normal{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    color: #924a0e;
+    text-align: center;
+    .img(491, 112, "long-normal.png");
+}
+
+.mask-gift-item {
+    display: none;
+    position: absolute;
+    left: 1.1rem;
+    top: 3.1rem;
+    .img(442, 70, "gift_1.png");
+    &.gift2{
+        .img(442, 70, "gift_2.png");
+    }
+}
+
+.qs-share-tip {
+    display: none;
+    position: absolute;
+    left: 1.1rem;
+    top: 3.1rem;
+    .img(641, 70, "qs_tip_win.png");
+    &.qs-lost{
+        .img(439, 70, "qs_tip_lost.png");
+    }
+}
+.qs-share-words {
+    font-size: 12px;
+    position: absolute;
+    left: 1.1rem;
+    top: 3.17rem;
+    width: 2.21rem;
+    text-align: center;
+    font-size: 0.12rem;
+}
+.qs-dl {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 0.6rem;
+    bottom: 0%;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.qs-icon{
+    display: flex;
+    position: absolute;
+    .img(96, 96, 'qs_icon.png');
+    left: 0.2rem;
+    top: 0.06rem;
+}
+.qs-desc{
+    display: flex;
+    position: absolute;
+    left: 0.7rem;
+}
+.qs-des-12 {
+    position: absolute;
+    left: 0.07rem;
+    top: 0.1rem;
+    font-size: 0.0rem;
+    width: 2rem;
+}
+.qs-des-1 {
+    display: inline-block;
+    color: #D1B84E;
+    font-size: 0.16rem;
+}
+.qs-des-2 {
+    display: inline-block;
+    color: #D1B84E;
+    font-size: 0.12rem;
+    position: relative;
+    top: 0.003rem;
+    margin-bottom: 0.6rem;
+}
+.qs-des-3 {
+    color: #B3B2A7;
+    font-size: 0.12rem;
+    position: absolute;
+    width: 2rem;
+    top: 0.32rem;
+    left: 0.07rem;
+}
+.qs-btn{
+    display: flex;
+    position: absolute;
+    width: 0.7rem;
+    height: 0.26rem;
+    right: 0.1rem;
+    border-radius: 0.2rem;
+    background-color: #f0d332;
+    top: 0.16rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.qs-share-guide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 6;
+}
+.qs-share-img {
+    .img(631, 433, 'qs_share.png');
+}
+
+.qs-share-btn {
+    position: absolute;
+    top: 2.8rem;
+    .img(273, 96, 'qs_btn_share.png');
+}
+
+.qs-dl-guide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 7;
+}
+.qs-dl-img {
+    .img(536, 353, 'qs_dl_guide.png ');
+}
+
+.toast-mask{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.toast-word {
+    display: flex;
+    width: 60%;
+    font-size: 32/@rem;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    animation: pops 2000ms;
+    animation-fill-mode: forwards;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    &.center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@keyframes pops{
+    0%{opacity: 0; transform: translateY(30px);};
+    20%{opacity: 1; transform: translateY(0px);};
+    70%{opacity: 1; transform: translateY(0px);};
+    100%{opacity: 0; transform: translateY(-30px);};
+}
+
+@keyframes keeppops {
+    0%{opacity: 0; transform: translateY(30px);};
+    20%{opacity: 1; transform: translateY(0px);};
+    70%{opacity: 1; transform: translateY(0px);};
+    100%{opacity: 1; transform: translateY(-30px);};
+}
+// 任务-进行中
+.task-ongoing {
+    
+    display: none;
+    top: 0.9rem;
+    left: 0.65rem;
+    position: fixed;
+    background-color: rgba(221 , 229, 236 , 0.9);
+    width: 2.4rem;
+    height: .46rem;
+    border-radius: 12px;
+    align-items: center;
+    animation: taskshow 2000ms;
+}
+
+@keyframes taskshow {
+    0%{opacity: 0; transform: translateY(-330px);};
+    20%{opacity: 1; transform: translateY(0px);};
+    100%{opacity: 1; transform: translateY(0px);};
+    // 100%{opacity: 0; transform: translateY(-30px);};
+}
+// 任务红包图标
+.go-img {
+    .img(51, 64, 'hongbao.png');
+    margin-left: 0.15rem;
+    // margin-top: 0.04rem;
+}
+// 任务进度信息内容
+.go-content {
+    display: flex;
+    width: 1.8rem;
+    height: .4rem;
+    margin-left: .1rem;
+    margin-top: 0.0rem;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+// 进度条容器
+.go-progress {
+    // display: flex;
+    margin-top: 0.04rem;
+    width: 100%;
+    height: 0.2rem;
+    background-color: rgba(128, 67, 27, 1);
+    border-radius: 0.2rem;
+    // align-content: center;
+    position: relative;
+}
+// 进度条进度值
+.go-thumb {
+    margin-top: 0.01rem;
+    margin-left: 0.015rem;
+    height: 0.18rem;
+    background-color: rgba(247, 199, 68, 1);
+    width: 98%;
+    border-radius: 0.18rem;
+}
+// 进度文本
+.go-prog-text {
+    top: 0.01rem;
+    text-align: center;
+    font-size: 0.12rem;
+    margin-bottom: 0.01rem;
+    width: 100%;
+    position: absolute;
+    color: #ffffff;
+}
+// 进度文本描边背景
+.go-border {
+    -webkit-text-stroke: 4/@rem #552200;
+}
+// 任务目标奖励提示
+.go-tips {
+    text-align: center;
+    font-size: 0.12rem;
+    margin-bottom: 0.01rem;
+    width: 100%;
+    color: #80431B;
+}
+
+.task-complete {
+    display: none;
+    top: 0.9rem;
+    left: 0.5rem;
+    position: fixed;
+    width: 2.8rem;
+    height: .46rem;
+    align-items: center;
+    animation: taskshow 2000ms;
+}
+.task-oncomp{
+    display: flex;
+    top: 0.9rem;
+    left: 0.55rem;
+    background-color: rgba(221,  229, 236 , 0.9);
+    width: 2.0rem;
+    height: .46rem;
+    border-radius: 12px;
+    align-items: center;
+}
+.comp-text {
+    text-align: center;
+    font-size: 0.12rem;
+    // margin-bottom: 0.01rem;
+    width: 100%;
+    color: #80431B;
+    margin-left: 0.04rem;
+}
+
+#comp-tips {
+    // text-align: left;
+    margin-left: 0.04rem;
+}
+
+.comp-btn {
+    width: .64rem;
+    height: 0.27rem;
+    background-color: rgba(248, 204, 74, 1);
+    border-radius: 0.25rem;
+    top: 0.105rem;
+    right: 0.02rem;
+    position: absolute;
+}
+
+#cont-comp {
+    margin-left: 0rem;
+}
+
+.comp-btn-label {
+    text-align: center;
+    font-size: 0.12rem;
+    margin-bottom: 0.01rem;
+    width: 100%;
+    color: #80431B;
+    margin-top: 0.05rem;
+}
+
+
+
+
+// ----------------
+.receive-mask{
+  font-size: 36/@rem;
+  display: "none";
+  justify-content: center;
+  align-items: center;
+  .border-txt{
+      -webkit-text-stroke: 10/@rem #4e1a01;
+  }
+  .receive-content{
+      position: relative;
+      font-size: 28/@rem;
+      color: rgb(255, 233, 107);
+      text-align: center;
+  }
+  .receive-guang{
+      margin: 20/@rem auto; 
+      width: 240/@rem;
+      height: 240/@rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &::after{
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 240/@rem;
+          height: 240/@rem;
+          .img1("index/light6.png");
+          animation: rotates 3s linear infinite;
+      }
+  }
+  @keyframes rotates{
+      0%{transform: rotate(0deg);}
+      100%{transform: rotate(360deg);}
+  }
+  .receive-coin{
+      width: 100/@rem;
+      height: 100/@rem;
+      position: relative;
+      z-index: 1;
+      .img1("index/coin5.png");
+  }
+  .receive-border{
+      position: relative;
+      height: 30/@rem;
+  }
+  .receive-top{
+      position: relative;
+      top: -80/@rem;
+      font-size: 32/@rem;
+  }
+  .receive-title,.receive-tip{
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      font-weight: 400;
+  }
+}
+
+.img1(@link) {
+  background: url("//yun.tuisnake.com/h5-mami/webgame/fish/@{link}") no-repeat center;
+  background-size: contain;
+}
+
+.mask {
+    display: none;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+

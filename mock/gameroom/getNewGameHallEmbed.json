@@ -1,0 +1,41 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "st_info_exposure_btn_credit":"{\"dpm\":\"1.64.4.1\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_click_btn_credit":"{\"dpm\":\"1.64.4.1\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_exposure_btn_more_4":
+      "{\"dpm\":\"1.64.4.1\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_exposure_btn_more_2":
+      "{\"dpm\":\"1.64.2.1\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_exposure_btn_more_3":
+      "{\"dpm\":\"1.64.3.1\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_click_btn_more_4":
+      "{\"dpm\":\"1.64.4.1\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"\"}",
+    "st_info_click_btn_more_3":
+      "{\"dpm\":\"1.64.3.1\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"\"}",
+    "st_info_click_btn_more_2":
+      "{\"dpm\":\"1.64.2.1\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"\"}",
+    "st_info_click_btn_more_1":
+      "{\"dpm\":\"1.64.1.1\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"\"}",
+    "st_info_exposure_btn_do_2":
+      "{\"dpm\":\"1.64.2.2\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_exposure_btn_do_3":
+      "{\"dpm\":\"1.64.3.2\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_exposure_btn_do_1":
+      "{\"dpm\":\"1.64.1.2\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_click_btn_do_1":
+      "{\"dpm\":\"1.64.1.2\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"\"}",
+    "st_info_exposure_btn_more_1":
+      "{\"dpm\":\"1.64.1.1\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_click_btn_do_2":
+      "{\"dpm\":\"1.64.2.2\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"\"}",
+    "st_info_click_btn_do_3":
+      "{\"dpm\":\"1.64.3.2\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"\"}",
+    "st_info_exposure_btn_do_4":
+      "{\"dpm\":\"1.64.4.2\",\"consumer_id\":4307542682,\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"host\":\"activity.tuia.cn\",\"dsm\":\"\"}",
+    "st_info_click_btn_do_4":
+      "{\"dpm\":\"1.64.4.2\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"\"}"
+  },
+  "success": true
+}

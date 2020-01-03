@@ -1,0 +1,21 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "shareUrl":
+      "http://youtui.tuiatest.cn/youtui/consumer/share?id=42&type=null&sourceToken=en1nFW9zQTv&share_way=null",
+    "wxShareImg":
+      "http://yun.tuisnake.com/h5-youtui/images/pengyouquan/2/2.jpg",
+    "wxShareTitle": "答题王者",
+    "wxShareInfo": "我正在参加答题王者，求帮我复活！赢得钱有你一半功劳~",
+    "contentType": null,
+    "contentId": 42,
+    "shareJoin": 0,
+    "qRCodePoint": null,
+    "previewUrl":
+      "http://youtui.tuiatest.cn&sourceToken=en1nFW9zQTv&sessionKey=nFjHSVYDWnUjxUPCFJG7QCYMkTfts1J2VfWZgY4WT&appPreview=1&is_client=1&tenter=SYW",
+    "wxSnapshotImg": null,
+    "shareContentType": 1
+  },
+  "success": true
+}

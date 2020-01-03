@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  #include('@layout/global/eruda.html')
+  #include('@layout/global/head.html')
+</head>
+<body>
+
+    <div class="game-view">
+        <div id="game"></div>
+    </div>
+
+
+    <!--翻倍成功-->
+    <div class="mask-pop success-mask">
+        <div class="success-pop">
+            <div class="success-add">为好友增加<span class="red-tip">0</span>元</div>
+            <div class="success-all">Ta已经赚了<span class="red-tip">0</span>元</div>
+            <div class="success-btn">我也要赚</div>
+        </div>
+    </div>
+
+    <!--翻倍失败-->
+    <div class="mask-pop fail-mask">
+        <div class="fail-pop">
+            <div class="fail-had">您已经为Ta翻倍过了</div>
+            <div class="fail-btn">我也要赚</div>
+        </div>
+    </div>
+
+
+    <!--分享弹层-->
+    <div class="mask-pop share-mask">
+        <div class="share-pop">
+            <div class="share-word">分享</div>
+            <div class="share-close"></div>
+        </div>
+    </div>
+
+    <!--下载弹层-->
+    <div class="mask-pop download-mask">
+        <div class="download-pop"></div>
+    </div>
+        
+    <!--余额明细-->
+    <div class="mask-pop detail-mask">
+        <div class="detail-pop">
+            <div class="detail-close"></div>
+            <div class="detail-title">余额明细</div> 
+            <div class="detail-content">
+                <div class="detail-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--余额提现-->
+    <div class="fecth-mask">
+        <div class="fetch-mask-main"></div>
+        <div class="fecth-pop">
+            <div class="fecth-close"></div>
+            <div class="fecth-title">余额提现</div>
+            <div class="fecth-content">
+                <div class="fecth-img"></div>
+                <div class="fecth-my">我的余额</div>
+                <div class="fecth-money"><span class="fecth-hao">￥</span><span class="fecth-num">0.24</span></div>
+                <div class="fecth-code">
+                    <div class="fecth-code-word">
+                        <span class="code-word-label">活动奖励码：</span>
+                        <!-- <span class="code-word-content">xfg45vcbsd539fg</span> -->
+                        <div id="code" class="code-word-content" type="text" readonly="readonly" value="xfg45vcbsd539fg"></div>
+                    </div>
+                    <div class="code-copy" data-clipboard-target="#code">复制</div>
+                </div>
+                <div class="fecth-btn" data-clipboard-target="#code">下载趣晒APP提现（秒到账）</div>
+            </div>
+        </div>
+    </div>
+
+    <!--排行榜-->
+    <div class="mask-pop rank-mask">
+        <div class="rank-pop">
+            <div class="rank-nav">
+                <div class="rank-haoyou rank-nav-btn"></div>
+                <div class="rank-quanqiu rank-nav-btn"></div>
+                <div class="rank-geren rank-nav-btn"></div>
+            </div>
+
+            <div class="rank-scroll">
+                <div class="rank-box">
+                    <div class="haoyou-box">
+                        <div class="haoyou-nav">
+                            <div class="size-nav">3x3</div>
+                            <div class="size-nav">4x4</div>
+                            <div class="size-nav">5x5</div>
+                            <div class="size-nav">6x6</div>
+                            <div class="size-nav">7x7</div>
+                            <div class="size-nav">8x8</div>
+                            <div class="size-nav">9x9</div>
+                        </div>
+                        <div class="haoyou-list">
+                            <div class="haoyou-item">
+                                <div class="item-num">1</div>
+                                <div class="item-header"></div>
+                                <div class="item-name">好友</div>
+                                <div class="item-time">12.24”</div>
+                                <div class="item-pk">PK</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="haoyou-box">
+                        <div class="haoyou-nav">
+                            <div class="size-nav">3x3</div>
+                            <div class="size-nav">4x4</div>
+                            <div class="size-nav">5x5</div>
+                            <div class="size-nav">6x6</div>
+                            <div class="size-nav">7x7</div>
+                            <div class="size-nav">8x8</div>
+                            <div class="size-nav">9x9</div>
+                        </div>
+                        <div class="haoyou-list">
+                            <div class="haoyou-item">
+                                <div class="item-num">1</div>
+                                <div class="item-header"></div>
+                                <div class="item-name">全球</div>
+                                <div class="item-time">32.24”</div>
+                                <div class="item-pk">PK</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="haoyou-box">
+                        <div class="haoyou-list">
+                            <div class="haoyou-item">
+                                <div class="item-icon"></div>
+                                <div class="item-name">3x3 简单</div>
+                                <div class="item-shijian">10.24”</div>
+                                <div class="item-fenxiang">分享</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rank-close"></div>
+        </div>
+    </div>
+    
+    <!--结果-->
+    <div class="mask-pop result-mask">
+        <div class="result-pop">
+            <div class="result-box">
+                <div class="result-close"></div>
+                <div class="space"></div>
+                <div class="result-score">
+                    <div class="result-now">您的成绩：<span class="score-now">10.23”</span></div>
+                    <div class="result-history">历史记录：<span class="score-history">10.23”</span></div>
+                    <div class="result-jilu"></div>
+                </div>
+                <div class="result-rank">
+                    <div class="rank-item">
+                        <div class="rank-top rank-per">86.1%</div>
+                        <div class="rank-bottom">今日战胜用户</div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-top rank-number">1344</div>
+                        <div class="rank-bottom">一小时全球排名</div>
+                    </div>
+                    <div class="rank-see"></div>
+                </div>
+                <div class="result-chaoyue">恭喜您，您的手速超越了<span class="mingren">爱因斯坦、牛顿</span>！</div>
+                <div class="result-kexuejia">
+                    <img src="//yun.dui88.com/h5-mami/webgame/game/focus/v1/assets/headers.png" class="kexuejia-img">
+                </div>
+            </div>
+            <div class="result-btns">
+                <div class="again-btn"></div>
+                <div class="shared-btn"></div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <!--用户账户信息-->
+    <div class="result-money">
+        <div class="hongbao"></div>
+        <span class="yuer">￥30.12元</span>
+        <span class="mingxi">明细</span>
+        <div class="tixian">提现</div>
+    </div>
+
+    <!--提示弹窗-->
+    <div class="toast-mask">
+        <div class="toast"></div>
+    </div>
+
+    <div class="pages">
+        <!--自己打开分享链接-->
+        <div class="share-my page-item">
+            <div class="my-banner">
+                <div class="my-jilu-tip">40%</div>
+                <div class="my-jilu-num">10.23”</div>
+            </div>
+            <div class="my-total">共有1位挑战者向你发出了挑战</div>
+            <div class="my-list"></div>
+        </div>
+
+        <!--好友打开分享链接-->
+        <div class="share-other page-item">
+            <div class="other-header"></div>
+            <div class="other-pop">
+                <div class="other-top">ta的手速击败了全国58%的人</div>
+                <div class="other-time">10.23”</div>    
+                <div class="other-pk">
+                    <div class="other-btn"></div>
+                    <div class="other-dian dian1"></div>
+                    <div class="other-dian dian2"></div>
+                </div>
+                <div class="other-jieshou">点击接受pk挑战！</div>
+                <div class="other-reshare"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--游戏说明-->
+    <script id="my-list" type="text/html">
+        <%= for(var i = 0; i < p.list.length; i++){ =%>
+            <div class="my-item">
+                <div class="my-header-img"></div>
+                <div class="my-word-left">
+                    <div class="my-top">jay</div>
+                    <div class="my-bottom">10:24</div>
+                </div>
+                <div class="my-word-right">
+                    <div class="my-top">2012-12-30</div>
+                    <div class="my-bottom">挑战失败</div>
+                </div>
+            </div>
+        <%= } =%>
+    </script>
+
+    <!--游戏榜单-->
+    <script id="rank-list" type="text/html">
+        <%= for(var i = 0; i < p.list.length; i++){ =%>
+            <div class="haoyou-item">
+                <div class="item-num"><%== i + 1 =%></div>
+                <div class="item-header" style="background-image:url(<%== p.list[i].headUrl =%>)"></div>
+                <div class="item-name"><%== p.list[i].nickName =%></div>
+                <div class="item-time"><%== changeTime(p.list[i].score) =%></div>
+                <div class="item-pk" data-id="<%== i =%>">PK</div>
+            </div>
+        <%= } =%>
+    </script>
+
+    <!--榜单无数据-->
+    <script id="rank-none" type="text/html">
+        <div class="rank-none"></div>
+        <div class="rank-none-tip">暂无数据</div>
+    </script>
+
+    <!--记录榜单-->
+    <script id="history-list" type="text/html">
+        <%= for(var i = 0; i < p.list.length; i++){ =%>
+            <div class="haoyou-item">
+                <div class="item-icon"></div>
+                <div class="item-name"><%== p.list[i].name =%></div>
+                <div class="item-shijian <%== p.list[i].cls =%>"><%== p.list[i].score =%></div>
+                <div class="item-fenxiang <%== p.list[i].cls =%>" data-time="<%== p.list[i].time =%>">分享</div>
+            </div>
+        <%= } =%>
+    </script>
+    
+    <script type="text/javascript">
+        var CFG = {
+            // 是否是debug
+            debug: true,
+            // host
+            pgHost: '//172.16.15.242:17800',
+            // domain
+            domain: 'extremeSpeedHand',
+            // 埋点数据
+            embed: '{}',
+            // 零钱
+            bonus: 0,
+            // 关卡类型1-7
+            checkPointType: 7,
+            // 当前用户id
+            sessionKey: "nFgB8f3kzKHQL4YZd2okEK5e5LCnUUBDNGr2ggiAK",
+            // 进入游戏方式 1pk 2红包 3趣晒
+            enterGameSource: 1,
+            
+        };
+    </script>
+
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js" type="text/javascript"></script>
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/anime.min.js" type="text/javascript"></script>
+    <script src="//yun.dui88.com/h5-mami/webgame/lib/clipboard.min.js" type="text/javascript"></script>
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/md5.js"></script>
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="//yun.dui88.com/h5-mami/webgame/gameroom/exchange-pop/entry-201805211706.js" type="text/javascript"></script>
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js" type="text/javascript"></script>
+    <script src="//yun.tuisnake.com/h5-mami/webgame/lib/phaser@2.10.6.min.js" type="text/javascript"></script>
+</body>
+</html>

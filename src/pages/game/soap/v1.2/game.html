@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no"/>
+  <title>CreateJS</title>
+
+  <link rel="stylesheet/less" type="text/css" href="./css/all.less"/>
+  <script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js" type="text/javascript"></script>
+  <script src="//cdn.bootcss.com/less.js/1.7.0/less.min.js"></script>
+
+  <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <script src="//yun.tuisnake.com/h5-mami/webgame/lib/easeljs-0.6.0.min.js"></script>
+  <script src="//yun.tuisnake.com/h5-mami/webgame/lib/tweenjs-0.4.0.min.js"></script>
+  <script src="//yun.tuisnake.com/h5-mami/webgame/lib/movieclip-0.6.0.min.js"></script>
+  <script src="//yun.tuisnake.com/h5-mami/webgame/lib/preloadjs-0.3.0.min.js"></script>
+  <script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js"></script>
+
+  <!--<script src="flash/scene1_a.js"></script>-->
+  <!--<script src="flash/scene1_b.js"></script>-->
+  <script src="./newflash/allview.js"></script>
+  <script src="./newflash/pass.js"></script>
+  <script src="./js/guider.js"></script>
+  <script src="./js/power.js"></script>
+  <script src="./js/rule.js"></script>
+  <script src="./js/score.js"></script>
+  <script src="./js/result.js"></script>
+  <script src="./js/scene.js"></script>
+  <script src="./js/template.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/board.js"></script>
+  <script src="./js/trick.js"></script>
+  <script src="./js/shared.js"></script>
+  <script src="./js/sendchallenge.js"></script>
+  <script src="./js/readchallenge.js"></script>
+  <script src="./js/compete.js"></script>
+  <script src="./js/over.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/prize.js"></script>
+  <script src="./js/embed.js"></script>
+  <script src="./js/loading.js"></script>
+  <script src="./js/cache.js"></script>
+  <script src="./js/passeffect.js"></script>
+  <script src="./js/game.js"></script>
+  <script src="./js/shunt.js"></script>
+
+  <script>
+    !function (e, i) {
+      var t = e.documentElement,
+        n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+        a = n ? Math.min(i.devicePixelRatio, 3) : 1,
+        m = "orientationchange" in window ? "orientationchange" : "resize";
+      t.dataset.dpr = a;
+      for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" == l.name &&
+      (c = !0, d = l);
+      if (c) d.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+      else {
+        var o = e.createElement("meta");
+        o.name = "viewport", o.content =
+          "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild
+          .appendChild(o)
+      }
+      var s = function () {
+        var e = t.clientWidth;
+        e / a > 750 && (e = 750 * a), window.remScale = e / 750, t.style.fontSize = 200 * (e / 750) + "px"
+      };
+      s(), e.addEventListener && i.addEventListener(m, s, !1)
+    }(document, window);
+  </script>
+
+  <script type="text/javascript">
+    var CFG = '{"gameId":21,"pgHost":"//play.tacota.cn","isPreview":false,"difficultyConfigList":[{"orangeArea":40,"greenArea":50,"isMove":false,"redArea":10},{"orangeArea":60,"greenArea":30,"isMove":false,"redArea":10},{"orangeArea":50,"greenArea":20,"isMove":false,"redArea":30},{"moveSpeed":1,"orangeArea":50,"greenArea":20,"isMove":true,"redArea":30},{"moveSpeed":2,"orangeArea":50,"greenArea":30,"isMove":true,"redArea":20},{"moveSpeed":2,"orangeArea":40,"greenArea":30,"isMove":true,"redArea":30},{"moveSpeed":3,"orangeArea":50,"greenArea":20,"isMove":true,"redArea":30},{"moveSpeed":1,"orangeArea":40,"greenArea":10,"isMove":true,"redArea":50},{"moveSpeed":3,"orangeArea":40,"greenArea":40,"isMove":true,"redArea":20},{"moveSpeed":3,"orangeArea":30,"greenArea":40,"isMove":true,"redArea":30},{"moveSpeed":3,"orangeArea":20,"greenArea":30,"isMove":true,"redArea":50},{"moveSpeed":3,"orangeArea":60,"greenArea":20,"isMove":true,"redArea":20},{"moveSpeed":4,"orangeArea":40,"greenArea":40,"isMove":true,"redArea":20},{"moveSpeed":4,"orangeArea":60,"greenArea":30,"isMove":true,"redArea":10},{"moveSpeed":4,"orangeArea":50,"greenArea":30,"isMove":true,"redArea":20},{"moveSpeed":4,"orangeArea":60,"greenArea":20,"isMove":true,"redArea":20},{"moveSpeed":4,"orangeArea":60,"greenArea":10,"isMove":true,"redArea":30},{"moveSpeed":4,"orangeArea":30,"greenArea":20,"isMove":true,"redArea":50},{"moveSpeed":4,"orangeArea":20,"greenArea":20,"isMove":true,"redArea":60},{"moveSpeed":4,"orangeArea":40,"greenArea":10,"isMove":true,"redArea":50},{"moveSpeed":4,"orangeArea":30,"greenArea":10,"isMove":true,"redArea":60},{"moveSpeed":4,"orangeArea":20,"greenArea":10,"isMove":true,"redArea":70},{"moveSpeed":4,"orangeArea":35,"greenArea":5,"isMove":true,"redArea":60}],"levels":"0,1,2","propsRuleType":1,"firstLogin":0,"nickName":"啊伍","consumerId":5653865011,"gameVersion":"1.2","rewardAmount":0,"usk":"VWluT3BpN0tsQWEyVlN4RUFUVFhhUT09"}';
+    var HOST = '${host}';
+  </script>
+
+  <script type="text/javascript">
+    var mintegralLoaded = false;
+
+    function onVijsLoad() {
+      Vijs.init(this);
+      setVideoAD();
+    }
+
+    function setVideoAD() {
+      console.log('start=' + (+new Date()));
+      if (window.Vijs) {
+        window.myAd44420 = Vijs.setAD({
+          unitid: 44420,
+          autoplay: false,
+          loadedCallback: function () {
+            console.log('end=' + (+new Date()));
+            mintegralLoaded = true;
+          },
+          videoEndedCallback: function () {
+            console.log('video end');
+          },
+          rewardedCallback: function (reward_name, reward_amount) {
+            console.log(reward_amount);
+          },
+          closeCallback: function (status) {
+            console.log('close video end =' + status);
+            game.useTrick();
+            game.over.hide();
+          },
+          errorCallback: function () {
+            console.log('error')
+          }
+        });
+      }
+
+    }
+
+    function loadVijs() {
+      var head = document.querySelector('head');
+      var script = document.createElement('script');
+      script.src = '//vijs.rayjump.com/bin/vijs.js';
+      script.onload = onVijsLoad;
+      script.setAttribute('appid', '102909');
+      script.setAttribute('sign', '0517a453697c7c53f2bbb3cb53e1130f');
+
+      head.appendChild(script);
+    }
+
+    if (JSON.parse(CFG).gameVersion === '1.2') {
+      loadVijs();
+    }
+
+  </script>
+</head>
+
+<body>
+<!--首页-->
+<div class="item-1828222">
+  <div class="item-1870366"></div>
+  <div class="item-1882671"></div>
+</div>
+<!--游戏介绍-->
+<div class="item-1847430"></div>
+<!--我的奖品-->
+<div class="item-1852575"></div>
+<!--积分-->
+<div class="my-score">
+  <div class="border-txt score-txt"></div>
+  <div class="score-txt"></div>
+</div>
+
+
+<!--游戏舞台-->
+<canvas id="canvas" width="750" height="1206"></canvas>
+<!--引导动画-->
+<canvas id="guider" width="750" height="1206"></canvas>
+<!--引导提示-->
+<div id="guider-tip" class="item-9994087"></div>
+<!--道具广告牌-->
+<div class="board-content">
+  <div class="board">
+    <div class="item-1690088"></div>
+  </div>
+</div>
+
+<!--关卡记录-->
+<div class="level-info">
+  <div class="item-4351355">
+    <div class="item-4472404"></div>
+    <div class="item-4490619"></div>
+    <div class="item-4494451"></div>
+    <div class="item-4498403"></div>
+    <div class="item-4780435"></div>
+  </div>
+</div>
+
+<!--规则弹窗-->
+<div class="mask rule-mask">
+  <div class="item-0590311">
+    <div class="item-1168486"></div>
+    <div class="item-1195639"></div>
+    <div class="item-1207358"></div>
+  </div>
+</div>
+
+<!--道具弹窗-->
+<div class="mask tooler-mask">
+  <div class="item-5272592">
+    <div class="jixu-ma">
+      <div class="score-word div-num">
+        <div class="snum num0"></div>
+        <div class="snum num1"></div>
+        <div class="snum num2"></div>
+      </div>
+    </div>
+    <div class="item-5458182"></div>
+    <div class="item-5502382"></div>
+    <div class="item-5517198">
+      <div class="score-word div-num">
+        <div class="snum numlf"></div>
+        <div class="snum num1"></div>
+        <div class="snum numrt"></div>
+      </div>
+    </div>
+    <div class="item-5528583"></div>
+    <div class="item-wenzi-jump">广告将在此局游戏结束后自动跳转</div>
+  </div>
+  <div class="now-score">
+    <div class="score-word div-num">
+      <div class="snum num0"></div>
+      <div class="snum num1"></div>
+      <div class="snum num2"></div>
+    </div>
+  </div>
+  <div class="fangqi"></div>
+</div>
+
+<!--游戏结束-->
+<div class="mask over-mask">
+  <div class="item-6637991">
+    <div class="item-5458182"></div>
+    <div class="item-5502382"></div>
+    <div class="item-5528583"></div>
+    <div class="item-6971870"></div>
+    <div class="item-6979558"></div>
+    <div class="item-7036863"></div>
+    <!--引流-->
+    <div class="other-games-box">
+      <div class="other-games-list">
+        <div class="other-games-item"></div>
+        <div class="other-games-item"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--成绩单-->
+<div class="mask score-mask">
+  <div class="item-8334815"></div>
+  <div class="item-8352615"></div>
+  <div class="item-8375527"></div>
+  <div class="item-8381327"></div>
+  <div class="normal-score">
+    <div class="item-8428407"></div>
+    <div class="item-8475431"></div>
+    <div class="item-8508406">
+      <div class="item-0079162"></div>
+    </div>
+  </div>
+  <div class="new-score"></div>
+</div>
+
+<!--分享挑战-->
+<div class="mask create-mask">
+  <div class="item-0671396">
+    <div class="item-0717906"></div>
+    <div class="item-0761682"></div>
+  </div>
+</div>
+
+<!--我的奖品-->
+<div class="quanyi-list"></div>
+
+<!--接受挑战-->
+<div class="item-3036114">
+  <div class="item-3059842"></div>
+  <div class="item-3102490"></div>
+  <div class="item-3135554"></div>
+  <div class="item-3392050"></div>
+  <div class="item-3416882"></div>
+  <div class="item-3446714"></div>
+</div>
+
+<!--查看挑战列表-->
+<div class="read-page">
+  <div class="item-4741611">
+    <div class="item-4764594"></div>
+    <div class="item-4803594"></div>
+  </div>
+  <div class="tiaozhan-tip"></div>
+  <div class="tiaozhan-list"></div>
+</div>
+
+<!--挑战成功-->
+<div class="mask win-mask">
+  <div class="item-6968074">
+
+    <!--旧头像-->
+    <!--
+    <div class="item-7211234"></div>
+    <div class="item-7255842"></div>
+    -->
+
+    <!--记录-->
+    <div class="item-7003937"></div>
+
+    <!--按钮-->
+    <div class="item-7167418"></div>
+    <div class="item-7172058"></div>
+
+    <!--分数-->
+    <div class="item-7280946"></div>
+    <div class="item-7316666"></div>
+
+    <!--名字-->
+    <div class="item-7368803"></div>
+    <div class="item-7395179"></div>
+
+    <!--动画-->
+    <div class="item-9721898"></div>
+    <div class="item-9728443"></div>
+    <div class="item-9734001"></div>
+
+    <!--进度条-->
+    <div class="item-progress">
+      <div class="progress-color"></div>
+    </div>
+
+    <!--激光-->
+    <div class="item-9748113"></div>
+
+    <!--头像-->
+    <div class="item-9946714"></div>
+    <div class="item-9995801"></div>
+  </div>
+</div>
+
+<!--挑战失败-->
+<div class="mask lost-mask">
+  <div class="item-7772714">
+
+    <!--旧头像-->
+    <!--
+    <div class="item-7211234"></div>
+    <div class="item-7255842"></div>
+    -->
+
+    <!--记录-->
+    <div class="item-7003937"></div>
+
+    <!--按钮-->
+    <div class="item-7117987"></div>
+    <div class="item-7126082"></div>
+
+    <!--分数-->
+    <div class="item-7280946"></div>
+    <div class="item-7316666"></div>
+
+    <!--名字-->
+    <div class="item-7368803"></div>
+    <div class="item-7395179"></div>
+
+    <!--动画-->
+    <div class="item-0563561"></div>
+    <div class="item-0566553"></div>
+    <div class="item-0570865"></div>
+    <div class="item-0574345"></div>
+    <div class="item-0597787"></div>
+    <div class="item-0609009"></div>
+    <div class="item-3104554"></div>
+    <div class="item-3107105"></div>
+    <div class="item-3128697"></div>
+    <div class="item-3132761"></div>
+    <div class="item-3135849"></div>
+
+    <!--进度条-->
+    <div class="item-progress">
+      <div class="progress-color"></div>
+    </div>
+
+    <!--激光-->
+    <div class="item-9748113"></div>
+
+    <!--头像-->
+    <div class="item-9946714"></div>
+    <div class="item-9995801"></div>
+  </div>
+</div>
+
+
+<!--我的奖品-->
+<script id="quanyi-list" type="text/html">
+  <%= for(var i = 0; i < p.list.length; i++){ =%>
+  <div class="quanyi-item">
+    <div class="item-8754031">
+      <div class="item-8776255" style="background-image:url(<%== p.list[i].thumbnailPng =%>)"></div>
+      <div class="item-8824535"><%== p.list[i].title =%></div>
+      <div class="item-8859911">立即领取</div>
+    </div>
+  </div>
+  <%= } =%>
+</script>
+
+<!--关卡记录-->
+<script id="level-info" type="text/html">
+  <div class="item-4472404">x<%== p.checkpointNum =%></div>
+  <div class="item-4490619">x<%== p.perfectNum =%></div>
+  <div class="item-4494451">x<%== p.greatNum =%></div>
+  <div class="item-4498403">x<%== p.goodNum =%></div>
+  <div class="item-4780435">x<%== p.badNum =%></div>
+</script>
+
+<!--查看挑战列表-->
+<script id="tiaozhan-list" type="text/html">
+  <%= for(var i = 0; i < p.list.length; i++){ =%>
+  <div class="item-5631266">
+    <div class="item-5472195"></div>
+    <div class="item-5513634"></div>
+    <div class="item-5545266"></div>
+    <div class="item-5588746"></div>
+    <div class="item-5594899"></div>
+  </div>
+  <%= } =%>
+</script>
+
+</body>
+</html>

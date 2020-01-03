@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>糖果泡泡堂3</title>
+  #include('@layout/global/head.html')
+
+  <script type="text/javascript">
+  //monsterType字段 1代表大boss，这个时候proportion代表数量
+  var CFG = {
+          monsters: '[{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/hze3kkhls6.png","prizeAmount":120,"proportion":10,"level":1,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/0mo3b4k76i.png","prizeAmount":200,"proportion":20,"level":2,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/iehv4p27vn.png","prizeAmount":300,"proportion":20,"level":3,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/qc9b318y5d.png","prizeAmount":500,"proportion":20,"level":4,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/ffxacwcxkg.png","prizeAmount":700,"proportion":20,"level":5,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/zyizqhzswl.png","prizeAmount":1000,"proportion":10,"level":6,"monsterType":0},{"imgUrl":"http://yun.tuisnake.com/tuia-media/img/54ghqtos2q.png","prizeAmount":9999,"proportion":1,"level":1000,"monsterType":1}]',//怪物列表
+          nick_name: '游客77f6j4', //用户昵称
+          facialExpression:'http://yun.tuisnake.com/tuia-media/img/7dmytqccgw.png',//怪物表情
+          url: '//null/direct/index?id=200&login=null&appKey=H4WCbgHo1yBckhqJtQ7GxWs8nTt&dcm=401.2077.0.0&dsm=1.2077.7.63&towId=ffbdc8c5-1062-4da0-9aca-4212aaf1851a&wu=bo',//获取更多金币链接
+          amount: '7747',//用户金币数
+          rule: '<p>游戏规则</p>',//规则列表
+          imgList: '{"200":"http://yun.tuisnake.com/tuia-media/img/cw9gi1zo38.png","300":"http://yun.tuisnake.com/tuia-media/img/glm0qm8ilw.png","400":"http://yun.tuisnake.com/tuia-media/img/21ieiedp4w.png","301":"http://yun.tuisnake.com/tuia-media/img/9qqkj56rak.png","302":"http://yun.tuisnake.com/tuia-media/img/s66wgobbra.png"}',//图片列表
+          guns: '[100,200,300,400,500,600,700,800,900,1000]',//炮筒规格
+          firstLogin: '0',//登陆类型
+          rewardAmount: '0',//金额
+          prizeEmbed: '{"st_info_click_daily_choose_game":{"appId":18743,"consumerId":"11035007","dcm":"18743.131.2.2","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.63","dsm":"1.2077.0.0","slotId":2077,"url":"/statistics/click"},"st_info_click_first_choose_game":{"appId":18743,"consumerId":"11035007","dcm":"18743.131.2.1","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.63","dsm":"1.2077.0.0","slotId":2077,"url":"/statistics/click"},"st_info_exposure_normal_choose_game":{"appId":18743,"consumerId":"11035007","dcm":"18743.131.2.3","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.63","dsm":"1.2077.0.0","slotId":2077,"url":"/activity/showLog"},"st_info_click_normal_choose_game":{"appId":18743,"consumerId":"11035007","dcm":"18743.131.2.3","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.63","dsm":"1.2077.0.0","slotId":2077,"url":"/statistics/click"},"st_info_exposure_first_choose_game":{"appId":18743,"consumerId":"11035007","dcm":"18743.131.2.1","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.63","dsm":"1.2077.0.0","slotId":2077,"url":"/activity/showLog"},"st_info_exposure_daily_choose_game":{"appId":18743,"consumerId":"11035007","dcm":"18743.131.2.2","domain":"//embedlog.dui88.com","domain4Web":"//activity.tuiatest.cn","dpm":"1019.2.2.63","dsm":"1.2077.0.0","slotId":2077,"url":"/activity/showLog"}}',//埋点
+          headUrl:'//yun.tuisnake.com/h5-mami/webgame/web-login/header/header1.png',//头像
+          sex:'0',//性别
+          isPreview: 'false'//是否预览
+      }
+  </script>
+
+</head>
+
+<body>
+<div class="game-page">
+  <div class="stage">
+    <div class="bg"></div>
+    <div class="container">
+      <div class="row1">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+      <div class="row2">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+      <div class="row3">
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+        <div class="monster"></div>
+      </div>
+    </div>
+
+    <div class="coins coins1">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins2">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins3">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+    <div class="coins coins4">
+      <div class="coin coin-1"></div>
+      <div class="coin coin-2"></div>
+      <div class="coin coin-3"></div>
+      <div class="coin coin-4"></div>
+      <div class="coin coin-5"></div>
+    </div>
+
+    <div class="guider">
+      <!--引导-->
+    </div>
+
+  </div>
+
+  <div class="tip">
+    <!--弹幕-->
+  </div>
+
+  <!--警报-->
+  <div class="warning">
+    <div class="warning-mask"></div>
+    <div class="waring-tip"></div>
+    <div class="warning-clock left">
+      <div class="warning-light"></div>
+    </div>
+    <div class="warning-clock right">
+      <div class="warning-light"></div>
+    </div>
+  </div>
+
+
+
+  <!--游戏舞台-->
+  <div id="phaser"></div>
+
+  <div class="ui">
+    <div class="top">
+      <div class="player-info">
+        <img class="avatar" src="" alt="avatar">
+        <div class="player-info-right">
+          <div class="name-wrap">
+            <div class="name"></div>
+            <div class="gender"></div>
+          </div>
+          <div class="amount-wrap">
+            <div class="coin-label"></div>
+            <div class="amount"></div>
+            <div class="new-add"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="bomb"></div>
+    <div class="add-coin">
+      <div class="btxt"></div>
+      <div class="ftxt"></div>
+    </div>
+    <div class="bottom">
+      <div class="pao">
+        <div class="pao-num">100</div>
+        <div class="fire"></div>
+      </div>
+      <!--<div class="get"></div>-->
+      <div class="cut"></div>
+      <div class="add"></div>
+      <div class="score"></div>
+    </div>
+    <div class="info-ico"></div>
+  </div>
+
+  <!--结果特效-->
+  <div class="result-pop">
+    <div id="result-canvas"></div>
+  </div>
+
+
+  <!--提示弹窗-->
+  <div class="toast-mask">
+    <div class="toast"></div>
+  </div>
+
+
+  <div class="mask countdown">
+    <div class="count-ico"></div>
+    <div class="count-num count-1"></div>
+    <div class="count-num count-2"></div>
+    <div class="count-num count-3"></div>
+    <div class="count-num count-go"></div>
+  </div>
+
+  <div class="mask modes">
+    <div class="mode arena"></div>
+    <div class="mode infinite"></div>
+  </div>
+
+  <div class="mask none">
+    <div class="none-content">
+      <div class="none-close"></div>
+      <div class="none-get"></div>
+    </div>
+  </div>
+
+  <div class="mask rank">
+    <div class="rank-content">
+      <div class="rank-list">
+        <!--积分榜单-->
+      </div>
+      <div class="rank-gift">
+        <div class="rank-ico"></div>
+        <span class="rank-tip">别灰心，送你一份小礼物</span>
+      </div>
+      <div class="rank-pic"></div>
+
+      <!--引流-->
+      <div class="other-games-box">
+        <div class="other-games-tip">点击体验其他游戏</div>
+        <div class="other-games-list">
+            <div class="other-games-item"></div>
+            <div class="other-games-item"></div>
+        </div>
+      </div>
+
+      <div class="rank-close"></div>
+      <div class="rank-replay"></div>
+      <div class="rank-take"></div>
+    </div>
+  </div>
+
+  <div class="mask result">
+    <div class="result-content">
+      <!--结果统计-->
+    </div>
+  </div>
+</div>
+
+<div class="mask info">
+  <div class="info-content">
+    <div class="info-scroll">
+      <!--游戏说明-->
+    </div>
+  </div>
+  <div class="info-close"></div>
+</div>
+
+<div class="index-page">
+  <div class="index-size-bg">
+    <div class="new-tell">
+      <div class="wall-ico-box">
+        <div class="wall-ico"></div>
+      </div>
+
+      <div class="new-wall">
+        <div class="word-container">
+          <div class="wall-word">
+          </div>
+        </div>
+      </div>
+      <div class="new-wall">
+        <div class="word-container">
+          <div class="wall-word">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="title-name"></div>
+  </div>
+  <div class="btn-start">
+  </div>
+  <div class="btn-rank"></div>
+  <div class="btn-rank2"></div>
+  <div class="btn-rule2"></div>
+
+  <div class="mask indexrank">
+    <div class="indexrank-content">
+      <div class="indexrank-list-wrap">
+        <div class="indexrank-list">
+          <!--积分榜单-->
+        </div>
+      </div>
+      <div class="indexrank-item me">
+        <div class="item-rank">
+          <div class="rank-empty-text"></div>
+        </div>
+        <div class="item-right-container">
+          <img class="item-avatar" alt="avatar">
+          <div class="item-right">
+            <div class="item-name-wrap">
+              <div class="item-name"></div>
+              <div class="item-gender"></div>
+            </div>
+            <div class="item-amount-wrap">
+              <div class="item-coin"></div>
+              <div class="item-amount"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indexrank-close"></div>
+      <div class="indexrank-coin-decr"></div>
+      <div class="indexrank-title"></div>
+    </div>
+  </div>
+</div>
+
+
+<!--引导-->
+<script id="guider" type="text/html">
+  <div class="guider-word"></div>
+  <div class="guider-hander"></div>
+  <div class="guider-cir"></div>
+  <div class="guider-glow"></div>
+</script>
+
+<!--弹幕-->
+<script id="tip" type="text/html">
+  <span class="tip-name"><%== p.name =%></span>
+  <img class="tip-img" src="<%== p.url =%>">
+  <span class="tip-money"><%== p.word =%></span>
+</script>
+
+<!--结果统计-->
+<script id="result-content" type="text/html">
+  <div class="result-title"></div>
+  <div class="result-money"><%== p.money =%>枚</div>
+  <div class="result-total"><%== p.total =%>个</div>
+  <div class="result-items">
+    <%= for(var i = 0; i < p.list.length; i++){ =%>
+    <div class="result-item">
+      <div class="result-ico">
+        <img class="result-img" src="<%== p.list[i].url =%>">
+      </div>
+      <span class="result-item-num"><%== p.list[i].num =%></span>
+    </div>
+    <%= } =%>
+  </div>
+</script>
+
+<!--积分榜单-->
+<script id="rank-content" type="text/html">
+  <%= for(var i = 0, len = p.list.length; i < len; i++){ =%>
+  <div class="indexrank-item <%== p.list[i].rankClass =%>">
+    <div class="item-rank "><%== p.list[i].rankStr =%></div>
+    <div class="item-right-container">
+      <img class="item-avatar" src="<%== p.list[i].avatar =%>">
+      <div class="item-right">
+        <div class="item-name-wrap">
+          <div class="item-name"><%== p.list[i].name =%></div>
+          <div class="item-gender <%== p.list[i].gender  =%>"></div>
+        </div>
+        <div class="item-amount-wrap">
+          <div class="item-coin"></div>
+          <div class="item-amount"><%== changeMoney(p.list[i].money) =%>元</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= } =%>
+  <div class="indexrank-item me <%== p.userRankClass =%>">
+    <div class="item-rank ">
+      <%== p.userRankStr =%>
+    </div>
+    <div class="item-right-container">
+      <img class="item-avatar" alt="avatar" src="<%== p.userAvatar =%>">
+      <div class="item-right">
+        <div class="item-name-wrap">
+          <div class="item-name"><%== p.userName =%></div>
+          <div class="item-gender <%== p.userGender =%>"></div>
+        </div>
+        <div class="item-amount-wrap">
+          <div class="item-coin"></div>
+          <div class="item-amount"><%== changeMoney(p.userGet) =%>元</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<!--游戏说明-->
+<script id="info-content" type="text/html">
+  <div class="info-word"><%== p.desc =%></div>
+  <div class="info-items">
+    <%= for(var i = 0; i < p.list.length; i++){ =%>
+    <div class="info-item">
+      <img class="info-img" src="<%== p.list[i].url =%>">
+      <div class="info-life"><%== p.list[i].life =%>生命值</div>
+      <div class="info-money">最高返<%== changeMoney(p.list[i].money) =%>元</div>
+    </div>
+    <%= } =%>
+  </div>
+</script>
+
+<script src="//yun.dui88.com/h5-mami/webgame/components/stay-time/entry-201805281451.js"></script>
+<script type="text/javascript" src="//wq.360buyimg.com/fd/h5/wxsq_base/zepto.min.js"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/statistics_201710271800.js"></script>
+<script src="//yun.dui88.com/h5-mami/webgame/gameroom/exchange-pop/entry-201805211706.js"></script>
+<script type="text/javascript" src="./js/template.js"></script>
+<script type="text/javascript" src="./js/game.js"></script>
+<script type="text/javascript" src="./js/monster.js"></script>
+<script type="text/javascript" src="./js/row.js"></script>
+<script type="text/javascript" src="./js/bomb.js"></script>
+<script type="text/javascript" src="./js/gun.js"></script>
+<script type="text/javascript" src="./js/timer.js"></script>
+<script type="text/javascript" src="./js/amount.js"></script>
+<script type="text/javascript" src="./js/score.js"></script>
+<script type="text/javascript" src="./js/countdown.js"></script>
+<script type="text/javascript" src="./js/result.js"></script>
+<script type="text/javascript" src="./js/coin.js"></script>
+<script type="text/javascript" src="./js/rank.js"></script>
+<script type="text/javascript" src="./js/info.js"></script>
+<script type="text/javascript" src="./js/tip.js"></script>
+<script type="text/javascript" src="./js/store.js"></script>
+<script type="text/javascript" src="./js/embed.js"></script>
+<script type="text/javascript" src="./js/effect.js"></script>
+<script type="text/javascript" src="./js/guider.js"></script>
+<script type="text/javascript" src="./js/shunt.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+<script src="//yun.dui88.com/h5-mami/adpages/gameroom/v1/showPop_develop.js" type="text/javascript"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/phaser@2.6.2.min.js"></script>
+<script type="text/javascript" src="./newjs/phgame.js"></script>
+<script type="text/javascript" src="./newjs/phmonster.js"></script>
+<script type="text/javascript" src="./newjs/phboss.js"></script>
+<script type="text/javascript" src="./newjs/phcoin.js"></script>
+<script type="text/javascript" src="./newjs/pheffect.js"></script>
+<script type="text/javascript" src="./newjs/phcombo.js"></script>
+<script type="text/javascript" src="./newjs/phboom.js"></script>
+<script type="text/javascript" src="./newjs/phguider.js"></script>
+<script type="text/javascript" src="./newjs/phrow.js"></script>
+<script type="text/javascript" src="./newjs/phbossfire.js"></script>
+<script type="text/javascript" src="./newjs/phclock.js"></script>
+<script type="text/javascript" src="./newjs/phmoreHit.js"></script>
+<script type="text/javascript" src="./newjs/phbosscoin.js"></script>
+<script type="text/javascript" src="./newjs/phmoveItem.js"></script>
+
+<script type="text/javascript" src="./newjs/main.js"></script>
+<script type="text/javascript" src="./newjs/coinManager.js"></script>
+<script type="text/javascript" src="./newjs/config.js"></script>
+<script type="text/javascript" src="./newjs/loader.js"></script>
+<script type="text/javascript" src="./newjs/overpage.js"></script>
+<script type="text/javascript" src="./newjs/coin.js"></script>
+
+</body>
+
+</html>

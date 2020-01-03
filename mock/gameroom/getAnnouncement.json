@@ -1,0 +1,222 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": [
+    {
+      "announcement": "%s每天签到获得的金币已经绕游戏大厅%s圈",
+      "values": [
+        "聪明伶俐的机器岛",
+        "15"
+      ],
+      "type": 1,
+      "time": {
+        "dayOfMonth": 15,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 135,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 12,
+        "minute": 56,
+        "nano": 52000000,
+        "second": 19,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    },
+    {
+      "announcement": "%s在泡泡堂单场获得了%s金币奖励，糖果王国对其发起通缉",
+      "values": [
+        "头没杯案的洛野",
+        "19186"
+      ],
+      "type": 1,
+      "time": {
+        "dayOfMonth": 15,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 135,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 12,
+        "minute": 56,
+        "nano": 110000000,
+        "second": 19,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    },
+    {
+      "announcement": "%s兑换了%s奖品",
+      "values": [
+        "心头撞鹿的神探",
+        "10元话费"
+      ],
+      "type": 2,
+      "time": {
+        "dayOfMonth": 15,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 135,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 14,
+        "minute": 56,
+        "nano": 247000000,
+        "second": 19,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    },
+    {
+      "announcement": "今天已经成功兑换了%s件【%s】！",
+      "values": [
+        "2",
+        "10元话费"
+      ],
+      "type": 2,
+      "time": {
+        "dayOfMonth": 15,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 135,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 14,
+        "minute": 56,
+        "nano": 378000000,
+        "second": 19,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    },
+    {
+      "announcement": "%s运筹帷幄在猜猜乐中获得7倍金币奖励",
+      "values": [
+        "城北徐公的白清羽"
+      ],
+      "type": 1,
+      "time": {
+        "dayOfMonth": 15,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 135,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 12,
+        "minute": 56,
+        "nano": 433000000,
+        "second": 19,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    },
+    {
+      "announcement": "皂滑弄人，%s的肥皂飞了%s米，击败了全网%s的用户",
+      "values": [
+        "不栉进士的澜州",
+        "82175",
+        "96"
+      ],
+      "type": 1,
+      "time": {
+        "dayOfMonth": 15,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 135,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 12,
+        "minute": 56,
+        "nano": 493000000,
+        "second": 19,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    },
+    {
+      "announcement": "%s手速快的飞起，仅用1s达成了拼图成就，领取%s元随机值的现金",
+      "values": [
+        "履险如夷的风残衣",
+        "0.7999999999999999"
+      ],
+      "type": 1,
+      "time": {
+        "dayOfMonth": 15,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 135,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 12,
+        "minute": 56,
+        "nano": 537000000,
+        "second": 19,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    },
+    {
+      "announcement": "%s连续击杀糖果怪物%s只，拿到了“怪兽收割机”的称号",
+      "values": [
+        "丰采高雅的黑籍",
+        "50"
+      ],
+      "type": 1,
+      "time": {
+        "dayOfMonth": 15,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 135,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 12,
+        "minute": 56,
+        "nano": 579000000,
+        "second": 19,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    },
+    {
+      "announcement": "本周新增%s款金币奖品，可直接兑换，数量有限先到先得",
+      "values": [
+        "3"
+      ],
+      "type": 3,
+      "time": {
+        "dayOfMonth": 21,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 141,
+        "month": "MAY",
+        "year": 2018,
+        "hour": 0,
+        "minute": 0,
+        "nano": 0,
+        "second": 0,
+        "monthValue": 5,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      }
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>涂鸦</title>
+    <style>
+        #canvas1{
+            box-shadow: 0 5px 40px black;
+            background: #adadad;
+        }
+        .btn{
+            display: inline-block;
+            padding: 8px 16px;
+            background: #adadad;
+            color: black;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas1" width="500" height="500"></canvas>
+
+    <div class="btns">
+        <div class="draw btn">绘制</div>
+        <div class="ease btn">擦除</div>
+        <div class="play btn">播放</div>
+    </div>
+
+</body>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/zepto-1.1.4.min.js" type="text/javascript"></script>
+<script>
+
+    var canvas = document.getElementById('canvas1');
+    var context = canvas.getContext('2d');
+    var lines = [];
+    var line;
+
+
+    $(".draw").click(function(){
+        context.globalCompositeOperation = 'source-over';
+    })
+
+    $(".ease").click(function(){
+        context.globalCompositeOperation = 'destination-out';
+    })
+
+    $(".play").click(function(){
+        var drawing = new Drawing();
+        // drawing.play(context, lines);
+        // var lines = drawing.setData(`[{"moveTo":true,"type":"source-over","color":"#f4df37","size":3,"points":[136,224,136,224,136,225,136,248,138,266,141,283,146,298,151,309,154,315,156,319,158,321]},{"moveTo":true,"type":"source-over","color":"#7e6d77","size":5,"points":[184,311,184,317,184,330,184,346,184,364,184,370,184,372,184,373,185,373]},{"moveTo":true,"type":"source-over","color":"#12dfa7","size":4,"points":[307,358,307,359,307,364,307,369,307,374,307,380,306,387,302,392,298,396,296,399]}]`);
+        // drawing.play(context, lines);
+        var str = unzip(`H4sIAAAAAAAAA5VWy27cSAz8F+21AzQf/fJ35Bbk4BnPAAZ2dwLbWWAT5N9TRQqxD3PRQSh1i1LzUSzqy8/tn9t/l8+37eHt5fulbG//f7tsD9vr7fvL+fIJj162sp1vf99esPvXSS9TH7Hz+vwDZlq2b7fnf99et4cvIlqkzhIogqsWUUu0kfutYw/rgbVp0Yp7n0UV696L+ioysd+9yAKOBmxFJ9dWFJdMK1ZpP4spzmlezGDnrRi+JYb9xu/3Yh1n4tk72r6fPsHu669yLAXzsfv1PQX+IQVa4WJduLyo4IKbDE2RAnU8E4TS8FywNxi2ICSErQwJ+wrXaBOY7wIPu9gfT6dV77uIjOrAkaiALhw/K45mhi2PnDialZk42saOcHXOXC/YW1bC6F5VXHN/tx3Ppqynx/dsygdXbcCNhk8TUTjryBDuDeQgIVhkXSy6pQuqcTGjEcLAvuGdJrBBqCw8UWDrNaoTIRFjPeNbKniv7XZtZnV4piH0ATt8M33Dd5lKENcm7Af254q02qJv8GetTFUgfF5zR0/fYW9oAsR2OHVotlrlT+rax9QZ3WTFgM0Sx448nqFIT6Sdwg32DyuKHjQSkOEp02yHXTuLXYbeJaDwyMn2w+enhgzYZFviKJAv2hcZFLqBbAky72x3PHPJvnKSrSlwBiMCZ9txJYKoibKj7dgDSXqX7DNHz5l5Yq+JQ3ZciVPTftqOvmOem7gihlzP8DsqvI5Xd47L8Hq3ul5T8bz2qFpgRxiQH7pJ8hmbgKGHC5m6CIVNwtD0uKxcxZ6q3e1Vyod7Dzlxp7ohOxT2bol4Fs9BNHf0DoaBG8UeboMJAnK6QsRpjyxKYzZrivo6LivrXEevd12VSn7jqEDfkbPLoyeYPCSSjTyPl+1yFe2nu8zvM6SCAPHtKRQoBSWUvQmSjRaujR50pDQjV1TkVgsLyvEZHEXGMDtirIU6ET3HW2Db9zmOZ6gURzI5KZWk8LI8aMouwRtsGgAJE6lAdTjKdX+n7WeE+KMHSaKYaSv6TEOZ2XupuuxF9iUVMPY44+LioJBExBkYQ2VGiIm2Y/uw7jHa2dsxfJinepwV/Vrhzn0CK/9MWv6JEElKDg+b8deiIKJQ7Bv/RFhJkpjiP8M25irnJHpMSXA0RIx8EDyQ79hxPp3Oy9r17g+Xx19GqoyaJnrKAN0yVmalglmwhirHTI7Iaog81JVKSEmIuRXVI2Mg+l9/A3N+d+UdCgAA`);
+        var lines = drawing.setData(str);
+        drawing.play(context, lines);
+    })
+
+    function Drawing(){
+
+    }
+
+    Drawing.prototype.setData = function(str){
+        var list = JSON.parse(str);
+        var aim = [];
+        for(var i = 0; i < list.length; i++){
+            var line = new ColorsLine();
+            line.setData(list[i].type, list[i].color, list[i].size, list[i].points);
+            aim.push(line);
+        }
+        return aim;
+    }
+
+    Drawing.prototype.play = function(context, list){
+        context.clearRect(0, 0, context.canvas.clientWidth, context.canvas.clientHeight);
+        console.log(list);
+        console.log(JSON.stringify(list));
+        console.log(zip(JSON.stringify(list)));
+        var cid = 0;
+        var colorsLine;
+        var timerId = setInterval(()=>{
+            if(!colorsLine){
+                colorsLine = list.shift();
+                if(!colorsLine){
+                    clearInterval(timerId);
+                    console.log("draw over");
+                    return;
+                }
+                colorsLine.start(context);
+            }
+            if(!colorsLine.draw(context)){
+                colorsLine = null; 
+            }
+            else{
+                colorsLine.end(context);
+            }
+        }, 30);
+    }
+
+    function ColorsLine(type, color, size){
+        this.moveTo = true;
+    }
+
+    ColorsLine.prototype.setData = function(type, color, size, points){
+        this.type = type;
+        this.color = color;
+        this.size = size;
+        this.points = points ? points : [];
+    }
+
+    ColorsLine.prototype.end = function(context){
+        // context.restore();
+        // context.closePath();
+        context.stroke();
+    }
+
+    ColorsLine.prototype.start = function(context){
+        // context.save();
+        context.beginPath();
+        context.globalCompositeOperation = this.type;
+        context.lineWidth = this.size;
+        context.strokeStyle = this.color;
+        console.log(context.globalCompositeOperation, context.strokeStyle, context.lineWidth);
+    }
+
+    ColorsLine.prototype.add = function(x, y){
+        this.points.push(x, y);
+    }
+
+    ColorsLine.prototype.draw = function(context){
+        // context.globalCompositeOperation = this.type;
+        // context.lineWidth = this.size;
+        // context.strokeStyle = this.color;
+        if(this.points.length){
+            var x = this.points.shift();
+            var y = this.points.shift();
+            if(this.moveTo){
+                this.moveTo = false;
+                context.moveTo(x, y);
+            }
+            else{
+                context.lineTo(x, y);
+                context.stroke();
+            }
+            return true;
+        }
+        else{
+            return false;
+        }
+
+        /*
+        context.globalCompositeOperation = this.type;
+        context.lineWidth = this.size;
+        context.strokeStyle = this.color;
+        context.beginPath();
+        for(var i = 0; i < this.points.length; i += 2){
+            if(i == 0){
+                context.moveTo(this.points[i], this.points[i + 1]);
+            }
+            else{
+                context.lineTo(this.points[i], this.points[i + 1]);
+            }
+            context.stroke();
+        }
+        */
+    }
+
+    canvas.onmousedown = function (e) {
+        // context.save();
+        var ev = e||window.event;
+        var x = ev.clientX - canvas.offsetLeft;
+        var y = ev.clientY - canvas.offsetTop;
+        context.lineWidth = Math.floor(Math.random() * 5 + 1);
+        context.strokeStyle = `rgb(${Math.floor(255 * Math.random())}, ${Math.floor(255 * Math.random())}, ${Math.floor(255 * Math.random())})`;
+
+        console.log(context.globalCompositeOperation, context.strokeStyle, context.lineWidth);
+
+        context.beginPath();
+        context.moveTo(x,y);
+
+        line = new ColorsLine();
+        line.setData(context.globalCompositeOperation, context.strokeStyle, context.lineWidth);
+        line.add(x, y);
+
+        canvas.onmousemove = function (e) {
+            var ev = e||window.event;
+            var x = ev.clientX - canvas.offsetLeft;
+            var y = ev.clientY - canvas.offsetTop;
+            context.lineTo(x,y);
+            context.stroke();
+
+            line.add(x, y);
+        }
+
+        canvas.onmouseup = function () {
+            canvas.onmousemove = null;
+            lines.push(line);
+            // context.closePath();
+            // context.restore();
+        }
+    }
+</script>
+
+
+<script src="./pako.js"></script>
+<script >
+var b64Data     = 'H4sIAAAAAAAAAJ3UMQ7CMAwF0KugP2ewEzdpcxXUAbWAOiHUMqCqdyeVQAobfGXIYL8hP5ZXnEdkeNEk6vUgXTbLonC4zMjHFY/5Wm511ekdTsOCLKVp2rlIKOA2jTuBot/cr7BhobEwsbAloY8kDGyqoQ5H/oHsdwQ21cCmaspCz0L2jcYOgLHhNGw4TT1yVmBpuS9PZHWY35siqnxvimEvpE9FY4peQhfbhO0FDnuFqWAEAAA=';
+var ticketData = '{"ed":"20170121 09:44:01","fs":[{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"003","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"005","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"004","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"007","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"008","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"026","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"033","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"034","oids":["0"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"035","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"037","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"038","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"041","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"042","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"047","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"046","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"048","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"051","oids":["1"]},{"usg":[1,1,1,1,1,1,1],"act":0,"fid":"053","oids":["4"]}],"qty":1,"sd":"20161021 09:44:01","cd":"72016102116762039687"}';
+// Output to console
+var s = unzip(b64Data);
+console.log("unzipped:");
+console.log(s);
+
+var data = zip(ticketData);
+console.log("zipped:");
+console.log(data);
+
+function unzip(b64Data){
+    var strData     = atob(b64Data);
+    // Convert binary string to character-number array
+    var charData    = strData.split('').map(function(x){return x.charCodeAt(0);});
+    // Turn number array into byte-array
+    var binData     = new Uint8Array(charData);
+    // // unzip
+    var data        = pako.inflate(binData);
+    // Convert gunzipped byteArray back to ascii string:
+    strData     = String.fromCharCode.apply(null, new Uint16Array(data));
+    return strData;
+}
+
+function zip(str){
+    var binaryString = pako.gzip(str, { to: 'string' });
+    return btoa(binaryString);
+}
+</script>
+
+</html>

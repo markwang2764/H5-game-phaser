@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <title>游戏大厅</title>
+  #include("@layout/global/head640.html")
+  <script>
+    window.pageStartTime = +new Date();
+  </script>
+  <script type="text/javascript">
+
+  </script>
+  <!--<script src="//yun.dui88.com/h5-mami/webgame/user-pop/dest/welcome.js"></script>-->
+</head>
+
+<body>
+
+<div id="db-content">
+
+  <div class="new-banner">
+    <div class="new-header"></div>
+    <div class="new-info">
+      <div class="new-nickname"><span class="nickname-txt"></span>
+        <div class="sex-ico"></div>
+      </div>
+      <br>
+      <div class="new-amount">
+        <div class="new-coin"></div>
+        <div class="new-money"></div>
+        <div class="new-add"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-renwu-ico">
+    <div class="new-renwu-word">今日任务(0/0)</div>
+  </div>
+
+  <div class="new-renwu-box new-mask">
+    <div class="new-renwu-list">
+      <div class="new-renwu-scroll"></div>
+    </div>
+  </div>
+
+  <div class="qiandai-content"></div>
+
+  <div class="new-tell">
+    <div class="wall-ico-box">
+      <div class="wall-ico"></div>
+    </div>
+
+    <div class="new-wall">
+      <div class="word-container">
+        <div class="wall-word">
+        </div>
+      </div>
+    </div>
+    <div class="new-wall">
+      <div class="word-container">
+        <div class="wall-word">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-tell-bg"></div>
+
+  <!--提示信息-->
+  <div class="new-toast-mask">
+    <div class="new-toast-tip"></div>
+  </div>
+
+  <div class="index-page">
+    <div id="six" data-name="banner" class="block-container block-banner"></div>
+    <!--最热-->
+    <div id="one" data-name="hot" class="block-container block-hot">
+      <div class="title-wrap">
+        <div class="title-left">
+          <div class="t-icon"></div>
+          <div class="t-title">最热推荐</div>
+          <div class="t-subtitle"></div>
+        </div>
+        <div class="title-right hide">
+          <div class="t-more">更多</div>
+          <div class="t-arrow"></div>
+        </div>
+      </div>
+      <div id="horizontalScroll">
+        <ul class="block-list">
+        </ul>
+      </div>
+
+    </div>
+    <!--金币-->
+    <div id="two" data-name="coin" class="block-container block-coin">
+      <div class="title-wrap">
+        <div class="title-left">
+          <div class="t-icon"></div>
+          <div class="t-title">金币游戏</div>
+          <div class="t-subtitle">玩游戏，赚金币</div>
+        </div>
+        <div class="title-right hide">
+          <div class="t-more">更多</div>
+          <div class="t-arrow"></div>
+        </div>
+      </div>
+      <ul class="block-list">
+
+      </ul>
+    </div>
+    <!--对战-->
+    <div id="three" data-name="battle" class="block-container block-battle">
+      <div class="title-wrap">
+        <div class="title-left">
+          <div class="t-icon"></div>
+          <div class="t-title">PK游戏</div>
+          <div class="t-subtitle">人群之中，必有王者</div>
+        </div>
+        <div class="title-right hide">
+          <div class="t-more">更多</div>
+          <div class="t-arrow"></div>
+        </div>
+      </div>
+      <ul class="block-list">
+
+      </ul>
+    </div>
+    <!--<div class="thirteen-more">查看更多奖品>></div>-->
+    <!--<div class="thirteen-tip">*兑换项与活动皆和设备生产商Apple Inc.无关</div>-->
+  </div>
+
+  <div class="exchange-page">
+    <div id="four" data-name="exchange" class="block-container block-exchange">
+      <div class="title-wrap">
+        <div class="title-left">
+          <div class="t-icon"></div>
+          <div class="t-title">热门兑换</div>
+          <div class="t-subtitle"></div>
+        </div>
+        <div class="title-right hide">
+          <div class="t-more">更多</div>
+          <div class="t-arrow"></div>
+        </div>
+      </div>
+      <ul class="block-list">
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="bottom-menu">
+    <div class="btn-game-box active">
+      <div class="btn-icon"></div>
+      <div class="btn-name">游戏赚金币</div>
+    </div>
+    <div class="btn-coin-box">
+      <div class="btn-icon"></div>
+      <div class="btn-name">金币换现金</div>
+    </div>
+    <div class="half-round-box">
+      <div class="half-round"></div>
+    </div>
+    <div id="five" data-name="start" class="block-container block-start">
+
+    </div>
+  </div>
+</div>
+
+<!--广告券-->
+<div class="quan new-mask">
+  <div class="quan-content">
+    <div class="quan-light"></div>
+    <div class="quan-ads">
+      <div class="quan-img"></div>
+      <div class="quan-name">x</div>
+      <div class="quan-btn"></div>
+      <div class="quan-close"></div>
+    </div>
+  </div>
+</div>
+
+<!--每日任务弹层-->
+<div class="today-task new-mask">
+  <div class="content">
+    <div class="title">今日任务</div>
+    <div class="box">
+      <div class="img"></div>
+      <div class="money">20抓抓币</div>
+      <div class="tip">任意玩2局游戏</div>
+      <div class="line">
+        <div class="progress"></div>
+        <div class="num"><span class="red">2</span>/12</div>
+      </div>
+    </div>
+    <div class="close"></div>
+    <div class="btn">马上去玩</div>
+  </div>
+</div>
+
+<!--返回拦截弹层-->
+<div class="today-back new-mask">
+  <div class="content">
+      <div class="title">还有<span class="red">10000</span>个抓抓币红包未领取！</div>
+      <div class="tip">游戏结束后红包会随机出现哦</div>
+      <div class="btns">
+        <div class="btn-go">去意已决</div>
+        <div class="btn-again">再来一局</div>
+      </div>
+  </div>
+</div>
+
+<script id="qiandai-content" type="text/html">
+  <canvas id="canvas" width="640" height="800"></canvas>
+  <div class="qd-add-num">+<%== p.num =%></div>
+  <div class="qd-add-word">获得<%== p.num =%>抓抓币</div>
+</script>
+
+<script id="renwu-content" type="text/html">
+  <%= for(var i = 0; i < p.list.length; i++){ =%>
+  <div class="new-renwu-item">
+    <div class="new-renwu-top">
+      <div class="new-renwu-size"><%== p.list[i].desc =%></div>
+      <div class="new-renwu-min"><span class="new-red"><%== p.list[i].completedNum =%></span>/<%== p.list[i].targetCompleted =%></div>
+    </div>
+    <div class="new-renwu-bottom">
+      <img class="new-renwu-coin <%== p.list[i].boss =%>" src="<%== p.list[i].coin =%>">
+      <div class="new-renwu-size new-red"><%== p.list[i].reward =%></div>
+      <div class="new-renwu-zt <%== p.list[i].cls =%>" 
+        data-reward="<%== p.list[i].completedReward =%>" 
+        data-key="<%== p.list[i].taskKey =%>" 
+        data-url="<%== p.list[i].goToFinishUrl =%>" 
+        data-type="<%== p.list[i].taskType =%>"><%== p.list[i].btn =%></div>
+    </div>
+  </div>
+  <%= } =%>
+</script>
+
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/easeljs-0.6.0.min.js"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/tweenjs-0.4.0.min.js"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/movieclip-0.6.0.min.js"></script>
+<script src="//yun.tuisnake.com/h5-mami/webgame/lib/preloadjs-0.3.0.min.js"></script>
+<script type="text/javascript" src="//yun.tuisnake.com/h5-mami/webgame/lib/anime.min.js"></script>
+
+#include("../layout/common.html")
+
+</body>
+
+</html>

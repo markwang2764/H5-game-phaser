@@ -1,0 +1,115 @@
+
+@import "../../../../common/css/common";
+
+.share-page, .earn-page, .ask-page, .answer-page, popup-container, .result-container {
+  width: 750px;
+  height: 1206px;
+}
+//answer ask common style
+
+.ask-page .popup-wrapper,.answer-page .popup-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(127, 127, 127, 0.38);
+}
+.answer-page>.footer, .ask-page>.footer {
+  left: 24px;
+  right: 24px;
+  position: fixed;
+  bottom: 100px;
+  .tip2 {
+    padding: 32px 0;
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fe8c00;
+  }
+  .submit {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 16px;
+    background: #fe8c00;
+    color: white;
+    font-size: 32px;
+  }
+}
+
+//share earn common style
+.share-page,.earn-page{
+  height: 1624px;
+  background-color: #f75708;
+}
+.share-page>.main,.earn-page>.main{
+  position: absolute;
+  top: 268px;
+  left: 23px;
+  right: 23px;
+  height: 890px;
+  .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+    .a{
+      text-align: center;
+      font-size: 24px;
+      text-decoration: underline;
+      margin-bottom: 30px;
+    }
+    .button {
+      margin: 0 110px;
+      width: 484px;
+      height: 104px;
+      text-align: center;
+      line-height: 90px;
+      font-size: 42px;
+      color: rgb(117,49,23);
+      z-index: 11;
+      background-image: url("../img/short_button_bg.png");
+      background-position: center;
+      background-size: contain;
+      font-weight: 500;
+    }
+  }
+}
+//result popup common style
+.popup-container .footer ,.result-container .footer{
+  .button {
+    height: 106px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    color: #753117;
+    z-index: 11;
+    background-image: url("../img/button_bg.png");
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.money {
+  text-align: center;
+  font-size: 80px;
+  color: #fff06d !important;
+}
+
+.font-smaller {
+  font-size: 40px !important;
+}
+
+.color-yellow {
+  color: #ffd339 !important;
+}
+.color-red{
+  color: #F64739;
+}
+.color-light {
+  color: rgba(255, 255, 255, 0.61) !important;
+}
+
+.color-white {
+  color: white !important;
+}

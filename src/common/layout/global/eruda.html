@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  ;(function () {
+    if (!/eruda=true/.test(window.location.href)) return;
+    var oHead = document.head;
+    var oScript = document.createElement('script');
+    oScript.type = "text/javascript";
+    oScript.src = "//yun.tuisnake.com/h5-mami/optimize/eruda.min.js?t=20180514";
+    oHead.appendChild(oScript);
+    oScript.onload = function () { eruda.init() }
+  })();
+</script>

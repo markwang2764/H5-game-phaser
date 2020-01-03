@@ -1,0 +1,243 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "pageId": 734,
+    "region": {
+      "icon": {
+        "regionName": "icon",
+        "regionType": 7,
+        "blocks": [
+          {
+            "id": 52616,
+            "blockName": "50276",
+            "blockType": 8,
+            "url": "",
+            "pageId": 734,
+            "image": "http://localhost:8800/src/js/adpages/gameroom/img/1.png",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.1.1\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"1018.4.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.1.1\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1018.4.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.1.1",
+            "dcm": "1018.4.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "gameId": 4,
+            "title": "50276",
+            "bannerUrl": "http://localhost:8800/src/js/adpages/gameroom/img/2.png"
+          },
+          {
+            "id": 52617,
+            "blockName": "47649",
+            "blockType": 8,
+            "url": "",
+            "pageId": 734,
+            "image": "http://localhost:8800/src/js/adpages/gameroom/img/3.png",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.1.2\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"1018.9.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.1.2\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1018.9.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.1.2",
+            "dcm": "1018.9.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "gameId": 9,
+            "title": "47649",
+            "bannerUrl": "http://localhost:8800/src/js/adpages/gameroom/img/2.png"
+          },
+          {
+            "id": 52618,
+            "blockName": "64295",
+            "blockType": 8,
+            "url": "",
+            "pageId": 734,
+            "image": "http://localhost:8800/src/js/adpages/gameroom/img/2.png",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.1.3\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"1018.10.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.1.3\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"1018.10.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.1.3",
+            "dcm": "1018.10.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "gameId": 10,
+            "title": "64295",
+            "bannerUrl": "http://localhost:8800/src/js/adpages/gameroom/img/2.png"
+          },
+          {
+            "id": 52619,
+            "blockName": "简直完美",
+            "blockType": 4,
+            "url": "",
+            "pageId": 734,
+            "image": "http://localhost:8800/src/js/adpages/gameroom/img/4.png",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.1.4\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.1.4\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.1.4",
+            "dcm": null,
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null
+          }
+        ],
+        "blockNum": 4
+      },
+      "banner": {
+        "regionName": "banner",
+        "regionType": 8,
+        "blocks": [
+          {
+            "id": 52620,
+            "blockName": "百万金币",
+            "blockType": 5,
+            "url": "",
+            "pageId": 734,
+            "image": "//yun.tuisnake.com/mami-media/img/jts1pptj9f.jpg",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.2.1\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"701.5781.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.2.1\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"701.5781.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.2.1",
+            "dcm": "701.5781.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "activityId": 5781,
+            "title": null,
+            "bannerUrl": null,
+            "listUrl": null,
+            "recommendUrl": null
+          },
+          {
+            "id": 52621,
+            "blockName": "金币大派送",
+            "blockType": 5,
+            "url": "",
+            "pageId": 734,
+            "image": "//yun.tuisnake.com/mami-media/img/zrnok0or0n.png",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.2.2\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"701.5780.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.2.2\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"701.5780.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.2.2",
+            "dcm": "701.5780.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "activityId": 5780,
+            "title": null,
+            "bannerUrl": null,
+            "listUrl": null,
+            "recommendUrl": null
+          },
+          {
+            "id": 52622,
+            "blockName": "领金币啦",
+            "blockType": 5,
+            "url": "",
+            "pageId": 734,
+            "image": "//yun.tuisnake.com/mami-media/img/bwbmihl2bi.png",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.2.3\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"701.5778.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.2.3\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"701.5778.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.2.3",
+            "dcm": "701.5778.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "activityId": 5778,
+            "title": null,
+            "bannerUrl": null,
+            "listUrl": null,
+            "recommendUrl": null
+          },
+          {
+            "id": 52623,
+            "blockName": "每日领金币",
+            "blockType": 5,
+            "url": "",
+            "pageId": 734,
+            "image": "//yun.tuisnake.com/mami-media/img/sc6mb48yt6.jpg",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.2.4\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"701.5764.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.2.4\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"701.5764.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.2.4",
+            "dcm": "701.5764.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "activityId": 5764,
+            "title": null,
+            "bannerUrl": null,
+            "listUrl": null,
+            "recommendUrl": null
+          },
+          {
+            "id": 52624,
+            "blockName": "金币到手",
+            "blockType": 5,
+            "url": "",
+            "pageId": 734,
+            "image": "//yun.tuisnake.com/mami-media/img/viy604prs8.png",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.2.5\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"701.5777.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.2.5\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"701.5777.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.2.5",
+            "dcm": "701.5777.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "activityId": 5777,
+            "title": null,
+            "bannerUrl": null,
+            "listUrl": null,
+            "recommendUrl": null
+          },
+          {
+            "id": 52625,
+            "blockName": "小喇叭送金币",
+            "blockType": 5,
+            "url": "",
+            "pageId": 734,
+            "image": "//yun.tuisnake.com/mami-media/img/przq61oiug.jpg",
+            "embedInfo": {
+              "st_info_dpm_exposure":
+                "{\"dpm\":\"1.48.2.6\",\"consumerId\":4307542682,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":1,\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"dcm\":\"701.5779.3.734\",\"dsm\":\"-1.-1.-1.-1\"}",
+              "st_info_dpm_click":
+                "{\"dpm\":\"1.48.2.6\",\"consumerId\":4307542682,\"appId\":1,\"domain4Web\":\"//activity.tuia.cn\",\"deliveryType\":2,\"host\":\"activity.tuia.cn\",\"url\":\"/statistics/click\",\"dcm\":\"701.5779.3.734\",\"dsm\":\"-1.-1.-1.-1\"}"
+            },
+            "dpm": "1.48.2.6",
+            "dcm": "701.5779.3.734",
+            "dsm": "-1.-1.-1.-1",
+            "isReward": null,
+            "activityId": 5779,
+            "title": null,
+            "bannerUrl": null,
+            "listUrl": null,
+            "recommendUrl": null
+          }
+        ],
+        "blockNum": 6
+      }
+    }
+  },
+  "success": true
+}
