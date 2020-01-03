@@ -1,8 +1,6 @@
-# 推啊游戏webpack工程
-
 ## 安装和开发
 
-``` bash
+```bash
 # 安装依赖（建议使用cnpm或yarn）
 npm install
 
@@ -57,3 +55,4 @@ npm run upload-prod '文件夹名' 上传文件到线上环境
 |--gulpfile.js          // gulp配置
 |--postcss.config.js    // postcss配置
 |--tsconfig.json        // typescript配置
+```
