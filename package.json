@@ -22,7 +22,7 @@
   "devDependencies": {
     "ali-oss": "^5.3.0",
     "autoprefixer": "^8.6.3",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
